@@ -1,0 +1,327 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1475" measuredH="912" mockupW="1402" mockupH="510">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Paragraph" x="120" y="748" w="203" h="52" measuredW="200" measuredH="80" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Team%20A%09%09%09%090%20%0A%20%0ATeam%20B%20%09%09%090</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="103" y="776" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>LightningIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::iPhone" x="73" y="402" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>topBlackBottom</bgPattern>
+        <bgTransparent>true</bgTransparent>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Button" x="224" y="507" w="-1" h="-1" measuredW="96" measuredH="27" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>crear%20torneo</text>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::RoundButton" x="116" y="509" w="22" h="22" measuredW="32" measuredH="32" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderColor>13369344</borderColor>
+        <color>13369344</color>
+        <size>14</size>
+        <text>2</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::IconLabel" x="199" y="788" w="-1" h="-1" measuredW="48" measuredH="39" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>SlideShareIcon%7Csmall</icon>
+        <text>Torneos</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::IconLabel" x="282" y="788" w="-1" h="-1" measuredW="30" measuredH="39" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>ContactIcon%7Csmall</icon>
+        <text>Perfil</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Canvas" x="101" y="549" w="222" h="27" measuredW="100" measuredH="70" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>13421772</color>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="105" y="552" w="-1" h="-1" measuredW="189" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Torneo%20Open%20Cangallo%20-%20Fecha%201</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Paragraph" x="120" y="588" w="203" h="52" measuredW="200" measuredH="80" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Team%20A%09%09%09%090%20%0A%20%0ATeam%20B%20%09%09%090</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Icon" x="103" y="588" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CopyrightIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Icon" x="103" y="616" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>LightningIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::HRule" x="109" y="640" w="206" h="-1" measuredW="100" measuredH="10" zOrder="13" locked="false" isInGroup="-1"/>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Paragraph" x="120" y="654" w="203" h="52" measuredW="200" measuredH="80" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Team%20A%09%09%09%093%20%0A%20%0ATeam%20B%20%09%09%092</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Icon" x="103" y="654" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CopyrightIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Icon" x="103" y="682" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>LightningIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Canvas" x="101" y="782" w="77" h="45" measuredW="100" measuredH="70" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+        <borderStyle>none</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::IconLabel" x="114" y="788" w="-1" h="-1" measuredW="49" measuredH="39" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>HLinesIcon%7Csmall</icon>
+        <text>Timeline</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::Canvas" x="101" y="709" w="222" h="27" measuredW="100" measuredH="70" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>13421772</color>
+      </controlProperties>
+    </control>
+    <control controlID="19" controlTypeID="com.balsamiq.mockups::Label" x="105" y="712" w="-1" h="-1" measuredW="212" measuredH="21" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Torneo%20Alvarez%20%26%20Thomas%20-%20Fecha%208</text>
+      </controlProperties>
+    </control>
+    <control controlID="20" controlTypeID="com.balsamiq.mockups::Icon" x="103" y="748" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CopyrightIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="23" controlTypeID="com.balsamiq.mockups::iPhone" x="433" y="402" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>topBlackBottom</bgPattern>
+        <bgTransparent>true</bgTransparent>
+      </controlProperties>
+    </control>
+    <control controlID="24" controlTypeID="com.balsamiq.mockups::Button" x="584" y="507" w="-1" h="-1" measuredW="96" measuredH="27" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>crear%20torneo</text>
+      </controlProperties>
+    </control>
+    <control controlID="26" controlTypeID="com.balsamiq.mockups::IconLabel" x="559" y="788" w="-1" h="-1" measuredW="48" measuredH="39" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>SlideShareIcon%7Csmall</icon>
+        <text>Torneos</text>
+      </controlProperties>
+    </control>
+    <control controlID="27" controlTypeID="com.balsamiq.mockups::IconLabel" x="642" y="788" w="-1" h="-1" measuredW="30" measuredH="39" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>ContactIcon%7Csmall</icon>
+        <text>Perfil</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Canvas" x="541" y="782" w="77" h="45" measuredW="100" measuredH="70" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>0.25</backgroundAlpha>
+        <borderStyle>none</borderStyle>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::IconLabel" x="474" y="788" w="-1" h="-1" measuredW="49" measuredH="39" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <icon>HLinesIcon%7Csmall</icon>
+        <text>Timeline</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::ButtonBar" x="451" y="540" w="-1" h="-1" measuredW="246" measuredH="27" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Mis%20Torneos%2C%20Abiertos%2C%20Explorar</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="__group__" x="465" y="578" w="216" h="69" measuredW="216" measuredH="69" zOrder="29" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Paragraph" x="2" y="0" w="200" h="54" measuredW="200" measuredH="80" zOrder="0" locked="false" isInGroup="49">
+          <controlProperties>
+            <text>*Torneo%20Open%20Cangallo*%0A20%20equipos%20-%20Fecha%201%0AInicio%20el%2020/03/2012</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="200" y="10" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="1" locked="false" isInGroup="49">
+          <controlProperties>
+            <icon>RightFillTriangleIcon%7Cxsmall</icon>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="59" w="215" h="-1" measuredW="100" measuredH="10" zOrder="2" locked="false" isInGroup="49"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="51" controlTypeID="__group__" x="465" y="656" w="216" h="69" measuredW="216" measuredH="69" zOrder="30" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Paragraph" x="2" y="0" w="200" h="54" measuredW="200" measuredH="80" zOrder="0" locked="false" isInGroup="51">
+          <controlProperties>
+            <text>*Torneo%20Open%20Cangallo*%0A20%20equipos%20-%20Fecha%201%0AInicio%20el%2020/03/2012</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="200" y="10" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="1" locked="false" isInGroup="51">
+          <controlProperties>
+            <icon>RightFillTriangleIcon%7Cxsmall</icon>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="59" w="215" h="-1" measuredW="100" measuredH="10" zOrder="2" locked="false" isInGroup="51"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="52" controlTypeID="__group__" x="465" y="732" w="216" h="69" measuredW="216" measuredH="69" zOrder="0" locked="false" isInGroup="-1">
+      <groupChildrenDescriptors>
+        <control controlID="0" controlTypeID="com.balsamiq.mockups::Paragraph" x="2" y="0" w="200" h="54" measuredW="200" measuredH="80" zOrder="0" locked="false" isInGroup="52">
+          <controlProperties>
+            <text>*Torneo%20Open%20Cangallo*%0A20%20equipos%20-%20Fecha%201%0AInicio%20el%2020/03/2012</text>
+          </controlProperties>
+        </control>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Icon" x="200" y="10" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="1" locked="false" isInGroup="52">
+          <controlProperties>
+            <icon>RightFillTriangleIcon%7Cxsmall</icon>
+          </controlProperties>
+        </control>
+        <control controlID="2" controlTypeID="com.balsamiq.mockups::HRule" x="0" y="59" w="215" h="-1" measuredW="100" measuredH="10" zOrder="2" locked="false" isInGroup="52"/>
+      </groupChildrenDescriptors>
+    </control>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::iPhone" x="813" y="402" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>topOnly</bgPattern>
+        <bgTransparent>true</bgTransparent>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Label" x="849" y="550" w="-1" h="-1" measuredW="168" measuredH="24" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>16</size>
+        <text>Torneo%20Open%20Cangallo</text>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::ButtonBar" x="840" y="576" w="227" h="27" measuredW="120" measuredH="27" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tabla%2C%20Fixture</text>
+      </controlProperties>
+    </control>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::DataGrid" x="849" y="604" w="211" h="132" measuredW="218" measuredH="111" zOrder="34" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Equipo%2C%20PJ%2C%20GF%2C%20GC%2C%20Dif%2C%20Pts%0AEquipo%201%2C%203%2C%203%2C%204%2C%20-1%2C%206%0AEquipo%202%2C%203%2C%201%2C%203%2C%20-2%2C%204%0AEquipo%203%2C%203%2C%206%2C%203%2C%203%2C%203</text>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::PointyButton" x="849" y="507" w="-1" h="-1" measuredW="56" measuredH="27" zOrder="35" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>left</direction>
+        <text>Volver</text>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::Arrow" x="680" y="591" w="150" h="10" measuredW="150" measuredH="100" zOrder="36" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13369344</color>
+        <leftArrow>false</leftArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::Arrow" x="224" y="660" w="220" h="140" measuredW="150" measuredH="100" zOrder="37" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13369344</color>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::iPhone" x="1193" y="402" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="38" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bgPattern>topOnly</bgPattern>
+        <bgTransparent>true</bgTransparent>
+      </controlProperties>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::Label" x="1229" y="550" w="-1" h="-1" measuredW="168" measuredH="24" zOrder="39" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>16</size>
+        <text>Torneo%20Open%20Cangallo</text>
+      </controlProperties>
+    </control>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::ButtonBar" x="1220" y="576" w="227" h="27" measuredW="120" measuredH="27" zOrder="40" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>1</selectedIndex>
+        <text>Tabla%2C%20Fixture</text>
+      </controlProperties>
+    </control>
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::PointyButton" x="1229" y="507" w="-1" h="-1" measuredW="56" measuredH="27" zOrder="41" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>left</direction>
+        <text>Volver</text>
+      </controlProperties>
+    </control>
+    <control controlID="77" controlTypeID="com.balsamiq.mockups::Arrow" x="1058" y="582" w="150" h="10" measuredW="150" measuredH="100" zOrder="42" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>13369344</color>
+        <leftArrow>false</leftArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="78" controlTypeID="com.balsamiq.mockups::Canvas" x="1223" y="613" w="222" h="27" measuredW="100" measuredH="70" zOrder="43" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>13421772</color>
+      </controlProperties>
+    </control>
+    <control controlID="79" controlTypeID="com.balsamiq.mockups::Label" x="1310" y="616" w="-1" h="-1" measuredW="48" measuredH="21" zOrder="44" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Fecha%204</text>
+      </controlProperties>
+    </control>
+    <control controlID="80" controlTypeID="com.balsamiq.mockups::Label" x="1234" y="647" w="-1" h="-1" measuredW="201" measuredH="21" zOrder="45" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>Equipo%201%20%09Vs%09%20Equipo%202</text>
+      </controlProperties>
+    </control>
+    <control controlID="81" controlTypeID="com.balsamiq.mockups::Label" x="1234" y="681" w="-1" h="-1" measuredW="201" measuredH="21" zOrder="46" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>Equipo%201%20%09Vs%09%20Equipo%202</text>
+      </controlProperties>
+    </control>
+    <control controlID="82" controlTypeID="com.balsamiq.mockups::Label" x="1234" y="715" w="-1" h="-1" measuredW="201" measuredH="21" zOrder="47" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>Equipo%201%20%09Vs%09%20Equipo%202</text>
+      </controlProperties>
+    </control>
+    <control controlID="84" controlTypeID="com.balsamiq.mockups::HRule" x="1285" y="670" w="-1" h="-1" measuredW="100" measuredH="10" zOrder="48" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="85" controlTypeID="com.balsamiq.mockups::HRule" x="1285" y="704" w="-1" h="-1" measuredW="100" measuredH="10" zOrder="49" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>10066329</color>
+      </controlProperties>
+    </control>
+    <control controlID="91" controlTypeID="com.balsamiq.mockups::StickyNote" x="1236" y="764" w="191" h="135" measuredW="109" measuredH="123" zOrder="50" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>Hay%20que%20definir%20la%20interaccion%20en%20esta%20pantalla.%20%BFPasamos%20las%20fechas%20con%20el%20gesto%20de%20swipe%20o%20hacemos%20una%20lista%20larga%2C%20con%20la%20ultima%20arriba%3F</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
