@@ -309,101 +309,150 @@
         <text>Datos%20para%20%3F%3F%3F</text>
       </controlProperties>
     </control>
-    <control controlID="91" controlTypeID="com.balsamiq.mockups::StickyNote" x="1282" y="682" w="222" h="165" measuredW="109" measuredH="123" zOrder="55" locked="false" isInGroup="-1">
-      <controlProperties>
-        <text>Vi%E9ndolo%20como%20algo%20lineal%2C%20me%20parece%20que%20estos%20datos%2C%20deber%EDan%20formar%20parte%20de%20la%20creaci%F3n%20del%20torneo%2C%20donde%20aparecen%20los%20datos%20que%20yo%2C%20como%20jugador%2C%20querr%EDa%20saber%20para%20decidir%20anotarme%20o%20no.%20Qu%E9%20les%20parece%3F</text>
-      </controlProperties>
-    </control>
-    <control controlID="92" controlTypeID="com.balsamiq.mockups::Arrow" x="1843" y="515" w="150" h="10" measuredW="150" measuredH="100" zOrder="56" locked="false" isInGroup="-1">
+    <control controlID="92" controlTypeID="com.balsamiq.mockups::Arrow" x="1843" y="515" w="150" h="10" measuredW="150" measuredH="100" zOrder="55" locked="false" isInGroup="-1">
       <controlProperties>
         <color>13369344</color>
         <leftArrow>false</leftArrow>
       </controlProperties>
     </control>
-    <control controlID="93" controlTypeID="com.balsamiq.mockups::Arrow" x="1843" y="518" w="176" h="237" measuredW="150" measuredH="100" zOrder="57" locked="false" isInGroup="-1">
+    <control controlID="93" controlTypeID="com.balsamiq.mockups::Arrow" x="1843" y="518" w="176" h="237" measuredW="150" measuredH="100" zOrder="56" locked="false" isInGroup="-1">
       <controlProperties>
         <color>13369344</color>
         <leftArrow>false</leftArrow>
       </controlProperties>
     </control>
-    <control controlID="94" controlTypeID="com.balsamiq.mockups::Label" x="1668" y="545" w="-1" h="-1" measuredW="133" measuredH="21" zOrder="58" locked="false" isInGroup="-1">
+    <control controlID="94" controlTypeID="com.balsamiq.mockups::Label" x="1668" y="545" w="-1" h="-1" measuredW="133" measuredH="21" zOrder="57" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
         <text>Datos%20de%20las%20canchas</text>
       </controlProperties>
     </control>
-    <control controlID="95" controlTypeID="com.balsamiq.mockups::Label" x="2019" y="282" w="-1" h="-1" measuredW="194" measuredH="26" zOrder="59" locked="false" isInGroup="-1">
+    <control controlID="95" controlTypeID="com.balsamiq.mockups::Label" x="2019" y="282" w="-1" h="-1" measuredW="194" measuredH="26" zOrder="58" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
         <size>18</size>
         <text>Que%20todos%20se%20enteren%21%20</text>
       </controlProperties>
     </control>
-    <control controlID="96" controlTypeID="com.balsamiq.mockups::Label" x="2018" y="308" w="-1" h="-1" measuredW="192" measuredH="21" zOrder="60" locked="false" isInGroup="-1">
+    <control controlID="96" controlTypeID="com.balsamiq.mockups::Label" x="2018" y="308" w="-1" h="-1" measuredW="192" measuredH="21" zOrder="59" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Compart%ED%20el%20torneo%20en%20Facebook.</text>
       </controlProperties>
     </control>
-    <control controlID="97" controlTypeID="com.balsamiq.mockups::Button" x="2035" y="345" w="-1" h="-1" measuredW="158" measuredH="27" zOrder="61" locked="false" isInGroup="-1">
+    <control controlID="97" controlTypeID="com.balsamiq.mockups::Button" x="2035" y="345" w="-1" h="-1" measuredW="158" measuredH="27" zOrder="60" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Compartir%20en%20facebook</text>
       </controlProperties>
     </control>
-    <control controlID="98" controlTypeID="com.balsamiq.mockups::Label" x="2017" y="847" w="-1" h="-1" measuredW="194" measuredH="26" zOrder="62" locked="false" isInGroup="-1">
+    <control controlID="98" controlTypeID="com.balsamiq.mockups::Label" x="2017" y="847" w="-1" h="-1" measuredW="194" measuredH="26" zOrder="61" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
         <size>18</size>
         <text>Que%20todos%20se%20enteren%21%20</text>
       </controlProperties>
     </control>
-    <control controlID="99" controlTypeID="com.balsamiq.mockups::Label" x="2058" y="873" w="-1" h="-1" measuredW="113" measuredH="21" zOrder="63" locked="false" isInGroup="-1">
+    <control controlID="99" controlTypeID="com.balsamiq.mockups::Label" x="2058" y="873" w="-1" h="-1" measuredW="113" measuredH="21" zOrder="62" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Invit%E1%20a%20tus%20amigos</text>
       </controlProperties>
     </control>
-    <control controlID="100" controlTypeID="com.balsamiq.mockups::TextInput" x="2012" y="936" w="-1" h="-1" measuredW="204" measuredH="27" zOrder="64" locked="false" isInGroup="-1">
+    <control controlID="100" controlTypeID="com.balsamiq.mockups::TextInput" x="2012" y="896" w="-1" h="-1" measuredW="204" measuredH="27" zOrder="63" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Escribi%20sus%20direcciones%20de%20email</text>
       </controlProperties>
     </control>
-    <control controlID="101" controlTypeID="com.balsamiq.mockups::iPhone" x="2333" y="403" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="65" locked="false" isInGroup="-1">
+    <control controlID="101" controlTypeID="com.balsamiq.mockups::iPhone" x="2333" y="403" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="64" locked="false" isInGroup="-1">
       <controlProperties>
         <bgPattern>allWhite</bgPattern>
         <bgTransparent>true</bgTransparent>
       </controlProperties>
     </control>
-    <control controlID="104" controlTypeID="com.balsamiq.mockups::Label" x="2412" y="570" w="-1" h="-1" measuredW="124" measuredH="26" zOrder="66" locked="false" isInGroup="-1">
+    <control controlID="104" controlTypeID="com.balsamiq.mockups::Label" x="2412" y="570" w="-1" h="-1" measuredW="124" measuredH="26" zOrder="65" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
         <size>18</size>
         <text>Felicitaciones%21</text>
       </controlProperties>
     </control>
-    <control controlID="105" controlTypeID="com.balsamiq.mockups::Label" x="2379" y="596" w="-1" h="-1" measuredW="190" measuredH="21" zOrder="67" locked="false" isInGroup="-1">
+    <control controlID="105" controlTypeID="com.balsamiq.mockups::Label" x="2379" y="596" w="-1" h="-1" measuredW="190" measuredH="21" zOrder="66" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Creaste%20exitosamente%20el%20torneo.</text>
       </controlProperties>
     </control>
-    <control controlID="107" controlTypeID="com.balsamiq.mockups::Arrow" x="2203" y="515" w="150" h="10" measuredW="150" measuredH="100" zOrder="68" locked="false" isInGroup="-1">
+    <control controlID="107" controlTypeID="com.balsamiq.mockups::Arrow" x="2203" y="515" w="150" h="10" measuredW="150" measuredH="100" zOrder="67" locked="false" isInGroup="-1">
       <controlProperties>
         <color>13369344</color>
         <leftArrow>false</leftArrow>
       </controlProperties>
     </control>
-    <control controlID="108" controlTypeID="com.balsamiq.mockups::Arrow" x="2203" y="735" w="150" h="10" measuredW="150" measuredH="100" zOrder="69" locked="false" isInGroup="-1">
+    <control controlID="108" controlTypeID="com.balsamiq.mockups::Arrow" x="2203" y="735" w="150" h="10" measuredW="150" measuredH="100" zOrder="68" locked="false" isInGroup="-1">
       <controlProperties>
         <color>13369344</color>
         <leftArrow>false</leftArrow>
       </controlProperties>
     </control>
-    <control controlID="109" controlTypeID="com.balsamiq.mockups::Button" x="2414" y="667" w="-1" h="-1" measuredW="120" measuredH="27" zOrder="70" locked="false" isInGroup="-1">
+    <control controlID="109" controlTypeID="com.balsamiq.mockups::Button" x="2414" y="667" w="-1" h="-1" measuredW="120" measuredH="27" zOrder="69" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Explorar%20torneos</text>
       </controlProperties>
     </control>
-    <control controlID="110" controlTypeID="com.balsamiq.mockups::Button" x="2412" y="715" w="-1" h="-1" measuredW="125" measuredH="27" zOrder="71" locked="false" isInGroup="-1">
+    <control controlID="110" controlTypeID="com.balsamiq.mockups::Button" x="2412" y="715" w="-1" h="-1" measuredW="125" measuredH="27" zOrder="70" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Crear%20otro%20torneo</text>
+      </controlProperties>
+    </control>
+    <control controlID="111" controlTypeID="com.balsamiq.mockups::StickyNote" x="582" y="318" w="222" h="165" measuredW="109" measuredH="123" zOrder="71" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Nombre%2C%20privacidad%2C%20tipo%20de%20torneo%2C%20costo%20inscripcion%2C%20costo%20partido</text>
+      </controlProperties>
+    </control>
+    <control controlID="112" controlTypeID="com.balsamiq.mockups::StickyNote" x="899" y="304" w="222" h="165" measuredW="109" measuredH="123" zOrder="72" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Deporte%2C%20puntaje</text>
+      </controlProperties>
+    </control>
+    <control controlID="113" controlTypeID="com.balsamiq.mockups::StickyNote" x="1299" y="304" w="222" h="165" measuredW="109" measuredH="123" zOrder="73" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Fecha%20inicio%2C%20fecha%20fin%20+%20lo%20que%20esta%20en%20la%20pantalla</text>
+      </controlProperties>
+    </control>
+    <control controlID="114" controlTypeID="com.balsamiq.mockups::StickyNote" x="1623" y="411" w="222" h="52" measuredW="109" measuredH="123" zOrder="74" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>textields</text>
+      </controlProperties>
+    </control>
+    <control controlID="115" controlTypeID="com.balsamiq.mockups::StickyNote" x="1830" y="588" w="222" h="52" measuredW="109" measuredH="123" zOrder="75" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>info%20extra%2C%20con%20campo%20libre</text>
+      </controlProperties>
+    </control>
+    <control controlID="116" controlTypeID="com.balsamiq.mockups::PointyButton" x="2171" y="225" w="-1" h="-1" measuredW="44" measuredH="27" zOrder="76" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>center</direction>
+        <text>skip</text>
+      </controlProperties>
+    </control>
+    <control controlID="117" controlTypeID="com.balsamiq.mockups::PointyButton" x="2171" y="785" w="-1" h="-1" measuredW="44" measuredH="27" zOrder="77" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>center</direction>
+        <text>skip</text>
+      </controlProperties>
+    </control>
+    <control controlID="118" controlTypeID="com.balsamiq.mockups::TextInput" x="2012" y="386" w="-1" h="-1" measuredW="204" measuredH="27" zOrder="78" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Escribi%20sus%20direcciones%20de%20email</text>
+      </controlProperties>
+    </control>
+    <control controlID="119" controlTypeID="com.balsamiq.mockups::TextArea" x="2012" y="927" w="201" h="140" measuredW="200" measuredH="140" zOrder="79" locked="false" isInGroup="-1"/>
+    <control controlID="120" controlTypeID="com.balsamiq.mockups::StickyNote" x="2029" y="940" w="159" h="85" measuredW="109" measuredH="123" zOrder="80" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <text>texto%20precargado%20con%20datos%20del%20torneo</text>
+      </controlProperties>
+    </control>
+    <control controlID="121" controlTypeID="com.balsamiq.mockups::Button" x="2059" y="1073" w="-1" h="-1" measuredW="127" measuredH="27" zOrder="81" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>mandar%20invitacion</text>
       </controlProperties>
     </control>
   </controls>
