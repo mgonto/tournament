@@ -1,0 +1,10 @@
+platform :ios, '6.0'
+
+pod 'RestKit', ' ~> 0.20.0rc'
+pod 'TestFlightSDK', '~> 1.2'
+
+
+target :test do
+  link_with 'CronoTests'
+  pod 'Kiwi', '~> 1.1.1'
+end

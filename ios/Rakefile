@@ -1,0 +1,23 @@
+require 'rubygems'
+require 'betabuilder'
+
+BetaBuilder::Tasks.new do |config|
+  # your Xcode target name
+  config.target = "Tournament"
+
+  # the Xcode configuration profile
+  config.configuration = "Release"
+
+  config.build_dir = :derived
+  config.xcode4_archive_mode = true
+
+  config.workspace_path = "Tournament.xcworkspace"
+  config.scheme         = "Tournament"
+  config.app_name       = "Tournamen" 
+
+  config.deploy_using(:testflight) do |tf|
+    tf.api_token  = "a2d04e49cd840502cc2f4e009b5ccc0c_NDQ2MzMxMjAxMi0wNS0xNyAxNzozNzo1NS42NDQ2NDU"
+    tf.team_token = "5cdbee0a47bdfbce9a3d165334c975b4_MTg2MzQ4MjAxMy0wMi0xMiAwOToxNDoyOS4xMzg3Nz"
+  end
+end
+

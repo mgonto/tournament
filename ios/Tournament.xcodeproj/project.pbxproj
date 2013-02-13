@@ -1,446 +1,998 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		DF3402C816B76F440061D4E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C716B76F440061D4E8 /* UIKit.framework */; };
-		DF3402CA16B76F440061D4E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C916B76F440061D4E8 /* Foundation.framework */; };
-		DF3402CC16B76F440061D4E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402CB16B76F440061D4E8 /* CoreGraphics.framework */; };
-		DF3402D216B76F440061D4E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3402D016B76F440061D4E8 /* InfoPlist.strings */; };
-		DF3402D416B76F440061D4E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3402D316B76F440061D4E8 /* main.m */; };
-		DF3402D816B76F440061D4E8 /* TAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3402D716B76F440061D4E8 /* TAppDelegate.m */; };
-		DF3402DA16B76F450061D4E8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3402D916B76F450061D4E8 /* Default.png */; };
-		DF3402DC16B76F450061D4E8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3402DB16B76F450061D4E8 /* Default@2x.png */; };
-		DF3402DE16B76F450061D4E8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3402DD16B76F450061D4E8 /* Default-568h@2x.png */; };
-		DF3402E616B76F450061D4E8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402E516B76F450061D4E8 /* SenTestingKit.framework */; };
-		DF3402E716B76F450061D4E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C716B76F440061D4E8 /* UIKit.framework */; };
-		DF3402E816B76F450061D4E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C916B76F440061D4E8 /* Foundation.framework */; };
-		DF3402F016B76F450061D4E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3402EE16B76F450061D4E8 /* InfoPlist.strings */; };
-		DF3402F316B76F450061D4E8 /* TournamentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3402F216B76F450061D4E8 /* TournamentTests.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DF3402E916B76F450061D4E8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DF3402BA16B76F440061D4E8 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DF3402C216B76F440061D4E8;
-			remoteInfo = Tournament;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		DF3402C316B76F440061D4E8 /* Tournament.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tournament.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF3402C716B76F440061D4E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		DF3402C916B76F440061D4E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		DF3402CB16B76F440061D4E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		DF3402CF16B76F440061D4E8 /* Tournament-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tournament-Info.plist"; sourceTree = "<group>"; };
-		DF3402D116B76F440061D4E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DF3402D316B76F440061D4E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		DF3402D516B76F440061D4E8 /* Tournament-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tournament-Prefix.pch"; sourceTree = "<group>"; };
-		DF3402D616B76F440061D4E8 /* TAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAppDelegate.h; sourceTree = "<group>"; };
-		DF3402D716B76F440061D4E8 /* TAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TAppDelegate.m; sourceTree = "<group>"; };
-		DF3402D916B76F450061D4E8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		DF3402DB16B76F450061D4E8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		DF3402DD16B76F450061D4E8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		DF3402E416B76F450061D4E8 /* TournamentTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TournamentTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF3402E516B76F450061D4E8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		DF3402ED16B76F450061D4E8 /* TournamentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TournamentTests-Info.plist"; sourceTree = "<group>"; };
-		DF3402EF16B76F450061D4E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DF3402F116B76F450061D4E8 /* TournamentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TournamentTests.h; sourceTree = "<group>"; };
-		DF3402F216B76F450061D4E8 /* TournamentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TournamentTests.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		DF3402C016B76F440061D4E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF3402C816B76F440061D4E8 /* UIKit.framework in Frameworks */,
-				DF3402CA16B76F440061D4E8 /* Foundation.framework in Frameworks */,
-				DF3402CC16B76F440061D4E8 /* CoreGraphics.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF3402E016B76F450061D4E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF3402E616B76F450061D4E8 /* SenTestingKit.framework in Frameworks */,
-				DF3402E716B76F450061D4E8 /* UIKit.framework in Frameworks */,
-				DF3402E816B76F450061D4E8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		DF3402B816B76F440061D4E8 = {
-			isa = PBXGroup;
-			children = (
-				DF3402CD16B76F440061D4E8 /* Tournament */,
-				DF3402EB16B76F450061D4E8 /* TournamentTests */,
-				DF3402C616B76F440061D4E8 /* Frameworks */,
-				DF3402C416B76F440061D4E8 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		DF3402C416B76F440061D4E8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DF3402C316B76F440061D4E8 /* Tournament.app */,
-				DF3402E416B76F450061D4E8 /* TournamentTests.octest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DF3402C616B76F440061D4E8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				DF3402C716B76F440061D4E8 /* UIKit.framework */,
-				DF3402C916B76F440061D4E8 /* Foundation.framework */,
-				DF3402CB16B76F440061D4E8 /* CoreGraphics.framework */,
-				DF3402E516B76F450061D4E8 /* SenTestingKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DF3402CD16B76F440061D4E8 /* Tournament */ = {
-			isa = PBXGroup;
-			children = (
-				DF3402D616B76F440061D4E8 /* TAppDelegate.h */,
-				DF3402D716B76F440061D4E8 /* TAppDelegate.m */,
-				DF3402CE16B76F440061D4E8 /* Supporting Files */,
-			);
-			path = Tournament;
-			sourceTree = "<group>";
-		};
-		DF3402CE16B76F440061D4E8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DF3402CF16B76F440061D4E8 /* Tournament-Info.plist */,
-				DF3402D016B76F440061D4E8 /* InfoPlist.strings */,
-				DF3402D316B76F440061D4E8 /* main.m */,
-				DF3402D516B76F440061D4E8 /* Tournament-Prefix.pch */,
-				DF3402D916B76F450061D4E8 /* Default.png */,
-				DF3402DB16B76F450061D4E8 /* Default@2x.png */,
-				DF3402DD16B76F450061D4E8 /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DF3402EB16B76F450061D4E8 /* TournamentTests */ = {
-			isa = PBXGroup;
-			children = (
-				DF3402F116B76F450061D4E8 /* TournamentTests.h */,
-				DF3402F216B76F450061D4E8 /* TournamentTests.m */,
-				DF3402EC16B76F450061D4E8 /* Supporting Files */,
-			);
-			path = TournamentTests;
-			sourceTree = "<group>";
-		};
-		DF3402EC16B76F450061D4E8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DF3402ED16B76F450061D4E8 /* TournamentTests-Info.plist */,
-				DF3402EE16B76F450061D4E8 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		DF3402C216B76F440061D4E8 /* Tournament */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DF3402F616B76F450061D4E8 /* Build configuration list for PBXNativeTarget "Tournament" */;
-			buildPhases = (
-				DF3402BF16B76F440061D4E8 /* Sources */,
-				DF3402C016B76F440061D4E8 /* Frameworks */,
-				DF3402C116B76F440061D4E8 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Tournament;
-			productName = Tournament;
-			productReference = DF3402C316B76F440061D4E8 /* Tournament.app */;
-			productType = "com.apple.product-type.application";
-		};
-		DF3402E316B76F450061D4E8 /* TournamentTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DF3402F916B76F450061D4E8 /* Build configuration list for PBXNativeTarget "TournamentTests" */;
-			buildPhases = (
-				DF3402DF16B76F450061D4E8 /* Sources */,
-				DF3402E016B76F450061D4E8 /* Frameworks */,
-				DF3402E116B76F450061D4E8 /* Resources */,
-				DF3402E216B76F450061D4E8 /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DF3402EA16B76F450061D4E8 /* PBXTargetDependency */,
-			);
-			name = TournamentTests;
-			productName = TournamentTests;
-			productReference = DF3402E416B76F450061D4E8 /* TournamentTests.octest */;
-			productType = "com.apple.product-type.bundle";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		DF3402BA16B76F440061D4E8 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = T;
-				LastUpgradeCheck = 0450;
-			};
-			buildConfigurationList = DF3402BD16B76F440061D4E8 /* Build configuration list for PBXProject "Tournament" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = DF3402B816B76F440061D4E8;
-			productRefGroup = DF3402C416B76F440061D4E8 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				DF3402C216B76F440061D4E8 /* Tournament */,
-				DF3402E316B76F450061D4E8 /* TournamentTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		DF3402C116B76F440061D4E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF3402D216B76F440061D4E8 /* InfoPlist.strings in Resources */,
-				DF3402DA16B76F450061D4E8 /* Default.png in Resources */,
-				DF3402DC16B76F450061D4E8 /* Default@2x.png in Resources */,
-				DF3402DE16B76F450061D4E8 /* Default-568h@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF3402E116B76F450061D4E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF3402F016B76F450061D4E8 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		DF3402E216B76F450061D4E8 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		DF3402BF16B76F440061D4E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF3402D416B76F440061D4E8 /* main.m in Sources */,
-				DF3402D816B76F440061D4E8 /* TAppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DF3402DF16B76F450061D4E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DF3402F316B76F450061D4E8 /* TournamentTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DF3402EA16B76F450061D4E8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DF3402C216B76F440061D4E8 /* Tournament */;
-			targetProxy = DF3402E916B76F450061D4E8 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DF3402D016B76F440061D4E8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF3402D116B76F440061D4E8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		DF3402EE16B76F450061D4E8 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DF3402EF16B76F450061D4E8 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		DF3402F416B76F450061D4E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DF3402F516B76F450061D4E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		DF3402F716B76F450061D4E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tournament/Tournament-Prefix.pch";
-				INFOPLIST_FILE = "Tournament/Tournament-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		DF3402F816B76F450061D4E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tournament/Tournament-Prefix.pch";
-				INFOPLIST_FILE = "Tournament/Tournament-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		DF3402FA16B76F450061D4E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tournament.app/Tournament";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tournament/Tournament-Prefix.pch";
-				INFOPLIST_FILE = "TournamentTests/TournamentTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Debug;
-		};
-		DF3402FB16B76F450061D4E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tournament.app/Tournament";
-				FRAMEWORK_SEARCH_PATHS = (
-					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
-					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tournament/Tournament-Prefix.pch";
-				INFOPLIST_FILE = "TournamentTests/TournamentTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		DF3402BD16B76F440061D4E8 /* Build configuration list for PBXProject "Tournament" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF3402F416B76F450061D4E8 /* Debug */,
-				DF3402F516B76F450061D4E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DF3402F616B76F450061D4E8 /* Build configuration list for PBXNativeTarget "Tournament" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF3402F716B76F450061D4E8 /* Debug */,
-				DF3402F816B76F450061D4E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		DF3402F916B76F450061D4E8 /* Build configuration list for PBXNativeTarget "TournamentTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DF3402FA16B76F450061D4E8 /* Debug */,
-				DF3402FB16B76F450061D4E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = DF3402BA16B76F440061D4E8 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>264495F1A11F444E93F2C1D1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+		</dict>
+		<key>7522D0D3B43E461D816B921F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>1</string>
+		</dict>
+		<key>BDC76A535B6547389B893411</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E1E36014811E4DE8992F1CE2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict/>
+		</dict>
+		<key>DF3402B816B76F440061D4E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DF3402CD16B76F440061D4E8</string>
+				<string>DF3402EB16B76F450061D4E8</string>
+				<string>DF3402C616B76F440061D4E8</string>
+				<string>DF3402C416B76F440061D4E8</string>
+				<string>264495F1A11F444E93F2C1D1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402BA16B76F440061D4E8</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>T</string>
+				<key>LastUpgradeCheck</key>
+				<string>0450</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>DF3402BD16B76F440061D4E8</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>DF3402B816B76F440061D4E8</string>
+			<key>productRefGroup</key>
+			<string>DF3402C416B76F440061D4E8</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>DF3402C216B76F440061D4E8</string>
+				<string>DF3402E316B76F450061D4E8</string>
+			</array>
+		</dict>
+		<key>DF3402BD16B76F440061D4E8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>DF3402F416B76F450061D4E8</string>
+				<string>DF3402F516B76F450061D4E8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DF3402BF16B76F440061D4E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DF3402D416B76F440061D4E8</string>
+				<string>DF3402D816B76F440061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DF3402C016B76F440061D4E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DF3402C816B76F440061D4E8</string>
+				<string>DF3402CA16B76F440061D4E8</string>
+				<string>DF3402CC16B76F440061D4E8</string>
+				<string>BDC76A535B6547389B893411</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DF3402C116B76F440061D4E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DF3402D216B76F440061D4E8</string>
+				<string>DF3402DA16B76F450061D4E8</string>
+				<string>DF3402DC16B76F450061D4E8</string>
+				<string>DF3402DE16B76F450061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DF3402C216B76F440061D4E8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DF3402F616B76F450061D4E8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>DF3402BF16B76F440061D4E8</string>
+				<string>DF3402C016B76F440061D4E8</string>
+				<string>DF3402C116B76F440061D4E8</string>
+				<string>7522D0D3B43E461D816B921F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Tournament</string>
+			<key>productName</key>
+			<string>Tournament</string>
+			<key>productReference</key>
+			<string>DF3402C316B76F440061D4E8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>DF3402C316B76F440061D4E8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Tournament.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>DF3402C416B76F440061D4E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DF3402C316B76F440061D4E8</string>
+				<string>DF3402E416B76F450061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402C616B76F440061D4E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DF3402C716B76F440061D4E8</string>
+				<string>DF3402C916B76F440061D4E8</string>
+				<string>DF3402CB16B76F440061D4E8</string>
+				<string>DF3402E516B76F450061D4E8</string>
+				<string>E1E36014811E4DE8992F1CE2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402C716B76F440061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>DF3402C816B76F440061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402C716B76F440061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402C916B76F440061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>DF3402CA16B76F440061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402C916B76F440061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402CB16B76F440061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>DF3402CC16B76F440061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402CB16B76F440061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402CD16B76F440061D4E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DF3402D616B76F440061D4E8</string>
+				<string>DF3402D716B76F440061D4E8</string>
+				<string>DF3402CE16B76F440061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Tournament</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402CE16B76F440061D4E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DF3402CF16B76F440061D4E8</string>
+				<string>DF3402D016B76F440061D4E8</string>
+				<string>DF3402D316B76F440061D4E8</string>
+				<string>DF3402D516B76F440061D4E8</string>
+				<string>DF3402D916B76F450061D4E8</string>
+				<string>DF3402DB16B76F450061D4E8</string>
+				<string>DF3402DD16B76F450061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402CF16B76F440061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Tournament-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402D016B76F440061D4E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DF3402D116B76F440061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402D116B76F440061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402D216B76F440061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402D016B76F440061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402D316B76F440061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402D416B76F440061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402D316B76F440061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402D516B76F440061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Tournament-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402D616B76F440061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402D716B76F440061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402D816B76F440061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402D716B76F440061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402D916B76F450061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402DA16B76F450061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402D916B76F450061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402DB16B76F450061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402DC16B76F450061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402DB16B76F450061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402DD16B76F450061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>image.png</string>
+			<key>path</key>
+			<string>Default-568h@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402DE16B76F450061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402DD16B76F450061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402DF16B76F450061D4E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DF3402F316B76F450061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DF3402E016B76F450061D4E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DF3402E616B76F450061D4E8</string>
+				<string>DF3402E716B76F450061D4E8</string>
+				<string>DF3402E816B76F450061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DF3402E116B76F450061D4E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DF3402F016B76F450061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DF3402E216B76F450061D4E8</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string># Run the unit tests in this test bundle.
+"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests"
+</string>
+		</dict>
+		<key>DF3402E316B76F450061D4E8</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>DF3402F916B76F450061D4E8</string>
+			<key>buildPhases</key>
+			<array>
+				<string>DF3402DF16B76F450061D4E8</string>
+				<string>DF3402E016B76F450061D4E8</string>
+				<string>DF3402E116B76F450061D4E8</string>
+				<string>DF3402E216B76F450061D4E8</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>DF3402EA16B76F450061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TournamentTests</string>
+			<key>productName</key>
+			<string>TournamentTests</string>
+			<key>productReference</key>
+			<string>DF3402E416B76F450061D4E8</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>DF3402E416B76F450061D4E8</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TournamentTests.octest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>DF3402E516B76F450061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>SenTestingKit.framework</string>
+			<key>path</key>
+			<string>Library/Frameworks/SenTestingKit.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>DF3402E616B76F450061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402E516B76F450061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402E716B76F450061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402C716B76F440061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402E816B76F450061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402C916B76F440061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402E916B76F450061D4E8</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>DF3402BA16B76F440061D4E8</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>DF3402C216B76F440061D4E8</string>
+			<key>remoteInfo</key>
+			<string>Tournament</string>
+		</dict>
+		<key>DF3402EA16B76F450061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>DF3402C216B76F440061D4E8</string>
+			<key>targetProxy</key>
+			<string>DF3402E916B76F450061D4E8</string>
+		</dict>
+		<key>DF3402EB16B76F450061D4E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DF3402F116B76F450061D4E8</string>
+				<string>DF3402F216B76F450061D4E8</string>
+				<string>DF3402EC16B76F450061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TournamentTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402EC16B76F450061D4E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DF3402ED16B76F450061D4E8</string>
+				<string>DF3402EE16B76F450061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402ED16B76F450061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>TournamentTests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402EE16B76F450061D4E8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DF3402EF16B76F450061D4E8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402EF16B76F450061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402F016B76F450061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402EE16B76F450061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402F116B76F450061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TournamentTests.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402F216B76F450061D4E8</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TournamentTests.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF3402F316B76F450061D4E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DF3402F216B76F450061D4E8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DF3402F416B76F450061D4E8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>DF3402F516B76F450061D4E8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>OTHER_CFLAGS</key>
+				<string>-DNS_BLOCK_ASSERTIONS=1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DF3402F616B76F450061D4E8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>DF3402F716B76F450061D4E8</string>
+				<string>DF3402F816B76F450061D4E8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DF3402F716B76F450061D4E8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>264495F1A11F444E93F2C1D1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Tournament/Tournament-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Tournament/Tournament-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>DF3402F816B76F450061D4E8</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>264495F1A11F444E93F2C1D1</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Tournament/Tournament-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Tournament/Tournament-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>DF3402F916B76F450061D4E8</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>DF3402FA16B76F450061D4E8</string>
+				<string>DF3402FB16B76F450061D4E8</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>DF3402FA16B76F450061D4E8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Tournament.app/Tournament</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
+					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Tournament/Tournament-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TournamentTests/TournamentTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>DF3402FB16B76F450061D4E8</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(BUILT_PRODUCTS_DIR)/Tournament.app/Tournament</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>"$(SDKROOT)/Developer/Library/Frameworks"</string>
+					<string>"$(DEVELOPER_LIBRARY_DIR)/Frameworks"</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Tournament/Tournament-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>TournamentTests/TournamentTests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUNDLE_LOADER)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>octest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E1E36014811E4DE8992F1CE2</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>libPods.a</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>DF3402BA16B76F440061D4E8</string>
+</dict>
+</plist>
