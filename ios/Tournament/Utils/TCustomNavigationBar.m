@@ -28,6 +28,9 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
+        
+        self.barStyle = UIBarStyleBlackOpaque;
+        
         _inbox = [[UIButton alloc] initWithFrame:CGRectMake(20, 15, kButtonWidth, kButtonHeight)];
         _inbox.backgroundColor = [UIColor redColor];
         
@@ -47,6 +50,7 @@
         [self addSubview:self.inbox];
         [self addSubview:self.notifications];
         [self addSubview:self.createButton];
+        
     }
     return self;
 }

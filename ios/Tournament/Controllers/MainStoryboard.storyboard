@@ -4,45 +4,138 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tournaments View Controller-->
         <scene sceneID="h8J-J4-216">
             <objects>
-                <viewController id="JKX-hS-lBx" sceneMemberID="viewController">
+                <viewController id="JKX-hS-lBx" customClass="TTournamentsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jv3-Qo-L01">
-                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="fJ7-7G-EI6" customClass="TCustomNavigationBar"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zT8-6W-Sfl">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="wJU-mk-XHs">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="P3c-6L-qzb">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="320" type="user" id="a8O-fH-aWb"/>
+                                                <constraint firstAttribute="height" constant="50" type="user" id="ndd-DD-o0K"/>
+                                            </constraints>
+                                            <segments>
+                                                <segment title="My Tournament"/>
+                                                <segment title="Publics"/>
+                                            </segments>
+                                        </segmentedControl>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="P3c-6L-qzb" firstAttribute="leading" secondItem="wJU-mk-XHs" secondAttribute="leading" type="default" id="bNR-p2-fgN"/>
+                                        <constraint firstItem="P3c-6L-qzb" firstAttribute="top" secondItem="wJU-mk-XHs" secondAttribute="top" type="default" id="raJ-lq-gXn"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="TournamentCell" rowHeight="90" id="OaQ-gy-igv">
+                                        <rect key="frame" x="0.0" y="72" width="320" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="89"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Torneo Open Cangallo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkY-LA-iSD">
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="259" id="2Fk-Sy-XdS"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="20 Teams - Fecha 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDm-04-Uj7">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="2et-J8-XAF"/>
+                                                        <constraint firstAttribute="width" constant="220" id="WYs-Kd-rYU"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Inicio el 20/03/2012" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbO-iL-jjy">
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="mws-sM-sM4"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="dkY-LA-iSD" firstAttribute="leading" secondItem="OaQ-gy-igv" secondAttribute="leading" constant="18" id="8Vy-la-ROj"/>
+                                            <constraint firstItem="dkY-LA-iSD" firstAttribute="top" secondItem="OaQ-gy-igv" secondAttribute="top" constant="13" id="C93-V8-7ss"/>
+                                            <constraint firstItem="dbO-iL-jjy" firstAttribute="trailing" secondItem="mDm-04-Uj7" secondAttribute="trailing" type="default" id="Rue-li-Y6D"/>
+                                            <constraint firstItem="mDm-04-Uj7" firstAttribute="leading" secondItem="dkY-LA-iSD" secondAttribute="leading" type="default" id="Tt5-II-um9"/>
+                                            <constraint firstItem="dbO-iL-jjy" firstAttribute="leading" secondItem="mDm-04-Uj7" secondAttribute="leading" type="default" id="fVw-w7-tzd"/>
+                                            <constraint firstAttribute="bottom" secondItem="dbO-iL-jjy" secondAttribute="bottom" constant="11" id="o9E-id-zEX"/>
+                                            <constraint firstItem="mDm-04-Uj7" firstAttribute="centerY" secondItem="OaQ-gy-igv" secondAttribute="centerY" type="default" id="sJY-k9-V6V"/>
+                                        </constraints>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="JKX-hS-lBx" id="cY6-hl-aXa"/>
+                                    <outlet property="delegate" destination="JKX-hS-lBx" id="DwI-9P-vfx"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fJ7-7G-EI6" customClass="TCustomNavigationBar"/>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.088377149629999999" blue="0.06977087102" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fJ7-7G-EI6" firstAttribute="top" secondItem="jv3-Qo-L01" secondAttribute="top" type="default" id="1Lz-wP-wk1"/>
                             <constraint firstItem="fJ7-7G-EI6" firstAttribute="leading" secondItem="jv3-Qo-L01" secondAttribute="leading" type="default" id="7DF-xJ-aol"/>
+                            <constraint firstItem="zT8-6W-Sfl" firstAttribute="leading" secondItem="jv3-Qo-L01" secondAttribute="leading" type="default" id="9mo-Dl-HFR"/>
+                            <constraint firstItem="zT8-6W-Sfl" firstAttribute="trailing" secondItem="jv3-Qo-L01" secondAttribute="trailing" type="default" id="Da3-dK-8qd"/>
                             <constraint firstItem="fJ7-7G-EI6" firstAttribute="trailing" secondItem="jv3-Qo-L01" secondAttribute="trailing" type="default" id="Q6b-Pc-jEk"/>
+                            <constraint firstItem="zT8-6W-Sfl" firstAttribute="bottom" secondItem="jv3-Qo-L01" secondAttribute="bottom" type="user" id="ZQm-B9-SIs"/>
+                            <constraint firstItem="zT8-6W-Sfl" firstAttribute="top" secondItem="fJ7-7G-EI6" secondAttribute="bottom" type="user" id="yJZ-ve-nFj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jgw-cP-viC"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="segmentedControl" destination="P3c-6L-qzb" id="kgv-AA-4zv"/>
+                        <outlet property="tableView" destination="zT8-6W-Sfl" id="FX7-ve-C8d"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pe7-Ea-XOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1532" y="-183"/>
         </scene>
-        <!--View Controller-->
+        <!--Timeline View Controller-->
         <scene sceneID="o8v-Be-v7I">
             <objects>
-                <viewController id="5Va-O0-uyH" sceneMemberID="viewController">
+                <viewController id="5Va-O0-uyH" customClass="TTimelineViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YYZ-JU-Q0y">
-                        <rect key="frame" x="0.0" y="20" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2PL-cB-tiy" customClass="TCustomNavigationBar"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Timeline" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzF-Yv-70W">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="109" id="TBy-FY-eGA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.93065321680000002" blue="0.12955222750000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="YzF-Yv-70W" firstAttribute="leading" secondItem="YYZ-JU-Q0y" secondAttribute="leading" constant="115" id="3Wj-fj-y47"/>
                             <constraint firstItem="2PL-cB-tiy" firstAttribute="trailing" secondItem="YYZ-JU-Q0y" secondAttribute="trailing" type="default" id="4Rk-Oj-jFF"/>
                             <constraint firstItem="2PL-cB-tiy" firstAttribute="leading" secondItem="YYZ-JU-Q0y" secondAttribute="leading" type="default" id="Lc5-fa-KJN"/>
-                            <constraint firstItem="2PL-cB-tiy" firstAttribute="top" secondItem="YYZ-JU-Q0y" secondAttribute="top" type="default" id="hHJ-xW-d0p"/>
+                            <constraint firstItem="2PL-cB-tiy" firstAttribute="top" secondItem="YYZ-JU-Q0y" secondAttribute="top" type="default" id="ZAV-Do-ge7"/>
+                            <constraint firstAttribute="bottom" secondItem="YzF-Yv-70W" secondAttribute="bottom" constant="230" id="iqU-2v-P9e"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -58,7 +151,7 @@
         <scene sceneID="SkW-S4-ogH">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="Jdj-co-KWX" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="wCT-uM-JzW">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -119,10 +212,20 @@
         <class className="TCustomNavigationBar" superclassName="UINavigationBar">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TCustomNavigationBar.h"/>
         </class>
+        <class className="TTimelineViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TTimelineViewController.h"/>
+        </class>
+        <class className="TTournamentsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TTournamentsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="segmentedControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

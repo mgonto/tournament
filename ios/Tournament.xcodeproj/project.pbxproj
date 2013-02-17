@@ -12,7 +12,7 @@
 		DF3402C816B76F440061D4E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C716B76F440061D4E8 /* UIKit.framework */; };
 		DF3402CA16B76F440061D4E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C916B76F440061D4E8 /* Foundation.framework */; };
 		DF3402CC16B76F440061D4E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402CB16B76F440061D4E8 /* CoreGraphics.framework */; };
-		DF3402D216B76F440061D4E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3402D016B76F440061D4E8 /* InfoPlist.strings */; };
+		DF3402D216B76F440061D4E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3402D016B76F440061D4E8 /* Localizable.strings */; };
 		DF3402D416B76F440061D4E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3402D316B76F440061D4E8 /* main.m */; };
 		DF3402D816B76F440061D4E8 /* TAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3402D716B76F440061D4E8 /* TAppDelegate.m */; };
 		DF3402DA16B76F450061D4E8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DF3402D916B76F450061D4E8 /* Default.png */; };
@@ -23,7 +23,9 @@
 		DF3402E816B76F450061D4E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C916B76F440061D4E8 /* Foundation.framework */; };
 		DF3402F016B76F450061D4E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3402EE16B76F450061D4E8 /* InfoPlist.strings */; };
 		DF3402F316B76F450061D4E8 /* TournamentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3402F216B76F450061D4E8 /* TournamentTests.m */; };
-		DFB4FAD316CD115F0014A427 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFB4FAD216CD115F0014A427 /* MainStoryboard.storyboard */; };
+		DF7DEC6616D116410092D578 /* TTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7DEC6516D116410092D578 /* TTimelineViewController.m */; };
+		DF7DEC6916D116570092D578 /* TTournamentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7DEC6816D116570092D578 /* TTournamentsViewController.m */; };
+		DF7DEC7416D124710092D578 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7DEC7316D124700092D578 /* MainStoryboard.storyboard */; };
 		DFB4FAD616CD18320014A427 /* TCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB4FAD516CD18320014A427 /* TCustomNavigationBar.m */; };
 /* End PBXBuildFile section */
 
@@ -46,7 +48,7 @@
 		DF3402C916B76F440061D4E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF3402CB16B76F440061D4E8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DF3402CF16B76F440061D4E8 /* Tournament-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tournament-Info.plist"; sourceTree = "<group>"; };
-		DF3402D116B76F440061D4E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF3402D116B76F440061D4E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DF3402D316B76F440061D4E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF3402D516B76F440061D4E8 /* Tournament-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tournament-Prefix.pch"; sourceTree = "<group>"; };
 		DF3402D616B76F440061D4E8 /* TAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TAppDelegate.h; sourceTree = "<group>"; };
@@ -60,7 +62,13 @@
 		DF3402EF16B76F450061D4E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF3402F116B76F450061D4E8 /* TournamentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TournamentTests.h; sourceTree = "<group>"; };
 		DF3402F216B76F450061D4E8 /* TournamentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TournamentTests.m; sourceTree = "<group>"; };
-		DFB4FAD216CD115F0014A427 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DF7DEC6416D116410092D578 /* TTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTimelineViewController.h; sourceTree = "<group>"; };
+		DF7DEC6516D116410092D578 /* TTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTimelineViewController.m; sourceTree = "<group>"; };
+		DF7DEC6716D116570092D578 /* TTournamentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTournamentsViewController.h; sourceTree = "<group>"; };
+		DF7DEC6816D116570092D578 /* TTournamentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTournamentsViewController.m; sourceTree = "<group>"; };
+		DF7DEC6A16D11BCE0092D578 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DF7DEC6B16D11BCE0092D578 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF7DEC7316D124700092D578 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DFB4FAD416CD18320014A427 /* TCustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCustomNavigationBar.h; sourceTree = "<group>"; };
 		DFB4FAD516CD18320014A427 /* TCustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCustomNavigationBar.m; sourceTree = "<group>"; };
 		E1E36014811E4DE8992F1CE2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				DF3402CF16B76F440061D4E8 /* Tournament-Info.plist */,
-				DF3402D016B76F440061D4E8 /* InfoPlist.strings */,
+				DF3402D016B76F440061D4E8 /* Localizable.strings */,
 				DF3402D316B76F440061D4E8 /* main.m */,
 				DF3402D516B76F440061D4E8 /* Tournament-Prefix.pch */,
 				DF3402D916B76F450061D4E8 /* Default.png */,
@@ -175,9 +183,9 @@
 		DFB4FACD16CD10EB0014A427 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DF7DEC7316D124700092D578 /* MainStoryboard.storyboard */,
 				DFB4FAD116CD110B0014A427 /* Tournaments */,
 				DFB4FAD016CD11050014A427 /* Timeline */,
-				DFB4FAD216CD115F0014A427 /* MainStoryboard.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -201,6 +209,8 @@
 		DFB4FAD016CD11050014A427 /* Timeline */ = {
 			isa = PBXGroup;
 			children = (
+				DF7DEC6416D116410092D578 /* TTimelineViewController.h */,
+				DF7DEC6516D116410092D578 /* TTimelineViewController.m */,
 			);
 			name = Timeline;
 			sourceTree = "<group>";
@@ -208,6 +218,8 @@
 		DFB4FAD116CD110B0014A427 /* Tournaments */ = {
 			isa = PBXGroup;
 			children = (
+				DF7DEC6716D116570092D578 /* TTournamentsViewController.h */,
+				DF7DEC6816D116570092D578 /* TTournamentsViewController.m */,
 			);
 			name = Tournaments;
 			sourceTree = "<group>";
@@ -268,6 +280,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				es,
 			);
 			mainGroup = DF3402B816B76F440061D4E8;
 			productRefGroup = DF3402C416B76F440061D4E8 /* Products */;
@@ -285,11 +298,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF3402D216B76F440061D4E8 /* InfoPlist.strings in Resources */,
+				DF3402D216B76F440061D4E8 /* Localizable.strings in Resources */,
 				DF3402DA16B76F450061D4E8 /* Default.png in Resources */,
 				DF3402DC16B76F450061D4E8 /* Default@2x.png in Resources */,
 				DF3402DE16B76F450061D4E8 /* Default-568h@2x.png in Resources */,
-				DFB4FAD316CD115F0014A427 /* MainStoryboard.storyboard in Resources */,
+				DF7DEC7416D124710092D578 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +368,8 @@
 				DF3402D416B76F440061D4E8 /* main.m in Sources */,
 				DF3402D816B76F440061D4E8 /* TAppDelegate.m in Sources */,
 				DFB4FAD616CD18320014A427 /* TCustomNavigationBar.m in Sources */,
+				DF7DEC6616D116410092D578 /* TTimelineViewController.m in Sources */,
+				DF7DEC6916D116570092D578 /* TTournamentsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,18 +392,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DF3402D016B76F440061D4E8 /* InfoPlist.strings */ = {
+		DF3402D016B76F440061D4E8 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DF3402D116B76F440061D4E8 /* en */,
+				DF7DEC6A16D11BCE0092D578 /* es */,
 			);
-			name = InfoPlist.strings;
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		DF3402EE16B76F450061D4E8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DF3402EF16B76F450061D4E8 /* en */,
+				DF7DEC6B16D11BCE0092D578 /* es */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -508,6 +525,59 @@
 			};
 			name = Release;
 		};
+		DF7DEC6C16D11BD60092D578 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AdHoc;
+		};
+		DF7DEC6D16D11BD60092D578 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 264495F1A11F444E93F2C1D1 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tournament/Tournament-Prefix.pch";
+				INFOPLIST_FILE = "Tournament/Tournament-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = AdHoc;
+		};
+		DF7DEC6E16D11BD60092D578 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7017C02E1F9B4C598F60C603 /* Pods-test.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tournament.app/Tournament";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tournament/Tournament-Prefix.pch";
+				INFOPLIST_FILE = "TournamentTests/TournamentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = AdHoc;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -516,6 +586,7 @@
 			buildConfigurations = (
 				DF3402F416B76F450061D4E8 /* Debug */,
 				DF3402F516B76F450061D4E8 /* Release */,
+				DF7DEC6C16D11BD60092D578 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -525,6 +596,7 @@
 			buildConfigurations = (
 				DF3402F716B76F450061D4E8 /* Debug */,
 				DF3402F816B76F450061D4E8 /* Release */,
+				DF7DEC6D16D11BD60092D578 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -534,6 +606,7 @@
 			buildConfigurations = (
 				DF3402FA16B76F450061D4E8 /* Debug */,
 				DF3402FB16B76F450061D4E8 /* Release */,
+				DF7DEC6E16D11BD60092D578 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
