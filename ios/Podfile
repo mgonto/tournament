@@ -2,9 +2,11 @@ platform :ios, '6.0'
 
 pod 'RestKit', ' ~> 0.20.0rc'
 pod 'TestFlightSDK', '~> 1.2'
-
+pod 'JSBadgeView', '~>0.0.1'
+pod 'MBProgressHUD', '~> 0.5'
+pod 'PSAlertView',  '~> 0.0.1'
 
 target :test do
-  link_with 'CronoTests'
+  link_with 'TournamentTests'
   pod 'Kiwi', '~> 1.1.1'
 end

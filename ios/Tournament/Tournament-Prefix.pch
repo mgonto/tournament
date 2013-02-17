@@ -11,4 +11,32 @@
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+
+    #define S(x)                    NSLocalizedString(x, nil)
+
+    #define RectX(view)            view.frame.origin.x
+    #define RectY(view)            view.frame.origin.y
+    #define RectWidth(view)        view.frame.size.width
+    #define RectHeight(view)       view.frame.size.height
+    #define RectLastXPoint(view)   RectX(view) + RectWidth(view)
+    #define RectLastYPoint(view)   RectY(view) + RectHeight(view)
+
+    #ifdef TESTFLIGHT
+        #import <TestFlightSDK/TestFlight.h>
+        #define NSLog TFLog
+    #endif
+
+    #ifdef DEBUG
+        #   define DLog(__FORMAT__, ...) NSLog(__FORMAT__, ##__VA_ARGS__);
+    #else
+        #   define DLog(...)
+    #endif
+        #define ALog(__FORMAT__, ...) NSLog(__FORMAT__, ##__VA_ARGS__);
+        #ifdef DEBUG
+        #   define ULog(fmt, ...)  { UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"%s\n [Line %d] ", __PRETTY_FUNCTION__, __LINE__] message:[NSString stringWithFormat:fmt, ##__VA_ARGS__]  delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil]; [alert show]; }
+    #else
+        #   define ULog(...)
+    #endif
+
+
 #endif

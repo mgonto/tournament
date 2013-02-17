@@ -1,24 +1,12 @@
 
-SPEC CHECKSUMS: 
-  TestFlightSDK: f638b08651a37af099e40c47241fc58fd3cb1a66
-  RestKit/ObjectMapping: 0382132969d823a872b377c1ab2e383f3c74a339
-  RestKit/CoreData: 0382132969d823a872b377c1ab2e383f3c74a339
-  RestKit: 0382132969d823a872b377c1ab2e383f3c74a339
-  Kiwi: ab0fa8d13b97dca05915e31df9b2d888d74ab717
-  RestKit/Network: 0382132969d823a872b377c1ab2e383f3c74a339
-  SOCKit: 179515c1a621dd5652a60e9be02ea4adcd25bc9b
-  RestKit/Support: 0382132969d823a872b377c1ab2e383f3c74a339
-  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
-  RestKit/Core: 0382132969d823a872b377c1ab2e383f3c74a339
-
-DEPENDENCIES: 
-- Kiwi (~> 1.1.1)
-- RestKit (~> 0.20.0rc)
-- TestFlightSDK (~> 1.2)
+COCOAPODS: 0.16.2
 
 PODS: 
 - AFNetworking (1.1.0)
+- JSBadgeView (0.0.1)
 - Kiwi (1.1.1)
+- MBProgressHUD (0.5)
+- PSAlertView (0.0.1)
 - RestKit (0.20.0rc1): 
   - RestKit/Core (= 0.20.0rc1)
 - RestKit/Core (0.20.0rc1): 
@@ -36,4 +24,25 @@ PODS:
 - SOCKit (1.1)
 - TestFlightSDK (1.2.3.beta1)
 
-COCOAPODS: 0.16.2
+DEPENDENCIES: 
+- JSBadgeView (~> 0.0.1)
+- Kiwi (~> 1.1.1)
+- MBProgressHUD (~> 0.5)
+- PSAlertView (~> 0.0.1)
+- RestKit (~> 0.20.0rc)
+- TestFlightSDK (~> 1.2)
+
+SPEC CHECKSUMS: 
+  TestFlightSDK: f638b08651a37af099e40c47241fc58fd3cb1a66
+  PSAlertView: 5bc4685d044af02724f7d1ac8cd5e113afbee648
+  MBProgressHUD: b23ee11c42253d6d804e8e0bfabdc334e8b2571f
+  JSBadgeView: 2508c3bf431b4de495733d8f95272b3594219ca2
+  RestKit/Network: 0382132969d823a872b377c1ab2e383f3c74a339
+  SOCKit: 179515c1a621dd5652a60e9be02ea4adcd25bc9b
+  RestKit/Support: 0382132969d823a872b377c1ab2e383f3c74a339
+  Kiwi: ab0fa8d13b97dca05915e31df9b2d888d74ab717
+  RestKit/ObjectMapping: 0382132969d823a872b377c1ab2e383f3c74a339
+  RestKit/CoreData: 0382132969d823a872b377c1ab2e383f3c74a339
+  RestKit/Core: 0382132969d823a872b377c1ab2e383f3c74a339
+  RestKit: 0382132969d823a872b377c1ab2e383f3c74a339
+  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
