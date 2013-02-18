@@ -29,7 +29,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         
-        self.barStyle = UIBarStyleBlackOpaque;
+        self.tintColor = kCustomNavigationColor;
         
         _inbox = [[UIButton alloc] initWithFrame:CGRectMake(20, 15, kButtonWidth, kButtonHeight)];
         _inbox.backgroundColor = [UIColor redColor];

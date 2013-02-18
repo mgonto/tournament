@@ -15,6 +15,7 @@
     #import "UIStoryboard+ViewControllerInstantiate.h"
     #import "UIViewController+MultipleStoryboardNavigation.h"
     #import "UINavigationController+MultipleStoryboardNavigation.h"
+    #import "UIColor+CustomBuilders.h"
 
     #import "TCustomNavigationBar.h"
 
