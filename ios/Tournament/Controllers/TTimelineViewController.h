@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TCustomNavigationBarViewController.h"
 
-@interface TTimelineViewController : UIViewController
+@interface TTimelineViewController : TCustomNavigationBarViewController
 
 @end

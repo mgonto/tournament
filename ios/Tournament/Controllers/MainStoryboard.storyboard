@@ -103,6 +103,7 @@
                     <navigationItem key="navigationItem" id="jgw-cP-viC"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="customNavigationBar" destination="fJ7-7G-EI6" id="pU8-lo-9fF"/>
                         <outlet property="segmentedControl" destination="P3c-6L-qzb" id="kgv-AA-4zv"/>
                         <outlet property="tableView" destination="zT8-6W-Sfl" id="FX7-ve-C8d"/>
                     </connections>
@@ -142,6 +143,9 @@
                     <navigationItem key="navigationItem" id="FNW-TP-VI8"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="customNavigationBar" destination="2PL-cB-tiy" id="eMm-cg-imN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMB-VO-6SW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -212,10 +216,16 @@
         <class className="TCustomNavigationBar" superclassName="UINavigationBar">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TCustomNavigationBar.h"/>
         </class>
-        <class className="TTimelineViewController" superclassName="UIViewController">
+        <class className="TCustomNavigationBarViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TCustomNavigationBarViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="customNavigationBar" candidateClass="TCustomNavigationBar"/>
+            </relationships>
+        </class>
+        <class className="TTimelineViewController" superclassName="TCustomNavigationBarViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TTimelineViewController.h"/>
         </class>
-        <class className="TTournamentsViewController" superclassName="UIViewController">
+        <class className="TTournamentsViewController" superclassName="TCustomNavigationBarViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TTournamentsViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="segmentedControl" candidateClass="UISegmentedControl"/>

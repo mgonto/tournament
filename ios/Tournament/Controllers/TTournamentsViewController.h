@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TCustomNavigationBarViewController.h"
 
-@interface TTournamentsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface TTournamentsViewController : TCustomNavigationBarViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

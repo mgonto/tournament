@@ -33,18 +33,21 @@
         
         _inbox = [[UIButton alloc] initWithFrame:CGRectMake(20, 15, kButtonWidth, kButtonHeight)];
         _inbox.backgroundColor = [UIColor redColor];
+        [_inbox addTarget:self action:@selector(showInbox:) forControlEvents:UIControlEventTouchUpInside];
         
         _inboxBadgeView = [[JSBadgeView alloc] initWithParentView:self.inbox alignment:JSBadgeViewAlignmentTopLeft];
         _inboxBadgeView.badgePositionAdjustment = CGPointMake(0, 0);
         
         _notifications = [[UIButton alloc] initWithFrame:CGRectMake(RectX(self.inbox) + RectWidth(self.inbox) + 30, RectY(self.inbox), kButtonWidth, kButtonHeight)];
         _notifications.backgroundColor = [UIColor yellowColor];
-
+        [_notifications addTarget:self action:@selector(showNotifications:) forControlEvents:UIControlEventTouchUpInside];
+        
         _notificationsBadgeView = [[JSBadgeView alloc] initWithParentView:self.notifications alignment:JSBadgeViewAlignmentTopLeft];
         _notificationsBadgeView.badgePositionAdjustment = CGPointMake(0, 0);
         
         _createButton = [[UIButton alloc] initWithFrame:CGRectMake(RectLastXPoint(self.notifications) + 50, RectY(self.inbox), 150, kButtonHeight)];
         _createButton.backgroundColor = [UIColor blueColor];
+        [_createButton addTarget:self action:@selector(createNewTournament:) forControlEvents:UIControlEventTouchUpInside];
         [_createButton setTitle:S(@"New Tournament") forState:UIControlStateNormal];
         
         [self addSubview:self.inbox];
@@ -53,6 +56,24 @@
         
     }
     return self;
+}
+
+- (void) showInbox:(UIButton *)button {
+    if ([self.customDelegate respondsToSelector:@selector(didSelectInbox:)]) {
+        [self.customDelegate didSelectInbox:button];
+    }
+}
+
+- (void) showNotifications:(UIButton *)button {
+    if ([self.customDelegate respondsToSelector:@selector(didSelectNotification:)]) {
+        [self.customDelegate didSelectNotification:button];
+    }
+}
+
+- (void) createNewTournament:(UIButton *)button {
+    if ([self.customDelegate respondsToSelector:@selector(didSelectNewTournament:)]) {
+        [self.customDelegate didSelectNewTournament:button];
+    }
 }
 
 - (void)setInboxBadgeNumber:(int)number {
