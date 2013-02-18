@@ -17,7 +17,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationController.navigationBarHidden = YES;
     self.customNavigationBar.customDelegate = self;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    self.navigationController.navigationBarHidden = YES;
 }
 
 #pragma mark - TCustomNavigationBarDelegate
@@ -31,7 +38,10 @@
 }
 
 - (void)didSelectNewTournament:(UIButton *)button {
-
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"CreateTournament" bundle:nil];
+    UIViewController *viewController = [storyboard instantiateInitialViewController];
+    viewController.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 @end

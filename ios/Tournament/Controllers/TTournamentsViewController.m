@@ -20,8 +20,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.navigationController.navigationBarHidden = YES;
 }
 
 - (void)didReceiveMemoryWarning
