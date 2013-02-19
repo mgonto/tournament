@@ -26,13 +26,13 @@
 		DF7DEC6616D116410092D578 /* TTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7DEC6516D116410092D578 /* TTimelineViewController.m */; };
 		DF7DEC6916D116570092D578 /* TTournamentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7DEC6816D116570092D578 /* TTournamentsViewController.m */; };
 		DF7DEC7416D124710092D578 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7DEC7316D124700092D578 /* MainStoryboard.storyboard */; };
+		DF9B642C16D41FC700D663A2 /* TCreateTournamentFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B642B16D41FC700D663A2 /* TCreateTournamentFirstViewController.m */; };
 		DFB4FAD616CD18320014A427 /* TCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB4FAD516CD18320014A427 /* TCustomNavigationBar.m */; };
 		DFD3543616D1A3F200AC0BE2 /* UINavigationController+MultipleStoryboardNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD3543116D1A3F200AC0BE2 /* UINavigationController+MultipleStoryboardNavigation.m */; };
 		DFD3543716D1A3F200AC0BE2 /* UIStoryboard+ViewControllerInstantiate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD3543316D1A3F200AC0BE2 /* UIStoryboard+ViewControllerInstantiate.m */; };
 		DFD3543816D1A3F200AC0BE2 /* UIViewController+MultipleStoryboardNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD3543516D1A3F200AC0BE2 /* UIViewController+MultipleStoryboardNavigation.m */; };
 		DFD3543C16D1A5CE00AC0BE2 /* TCustomNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD3543B16D1A5CE00AC0BE2 /* TCustomNavigationBarViewController.m */; };
 		DFD3543F16D1ACFF00AC0BE2 /* CreateTournament.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD3543E16D1ACFF00AC0BE2 /* CreateTournament.storyboard */; };
-		DFD3544216D1B0E500AC0BE2 /* TNewTournamentFirstStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD3544116D1B0E500AC0BE2 /* TNewTournamentFirstStepViewController.m */; };
 		DFD3544516D1C3AE00AC0BE2 /* UIColor+CustomBuilders.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD3544416D1C3AE00AC0BE2 /* UIColor+CustomBuilders.m */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +76,8 @@
 		DF7DEC6A16D11BCE0092D578 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DF7DEC6B16D11BCE0092D578 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF7DEC7316D124700092D578 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DF9B642A16D41FC600D663A2 /* TCreateTournamentFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCreateTournamentFirstViewController.h; sourceTree = "<group>"; };
+		DF9B642B16D41FC700D663A2 /* TCreateTournamentFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCreateTournamentFirstViewController.m; sourceTree = "<group>"; };
 		DFB4FAD416CD18320014A427 /* TCustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCustomNavigationBar.h; sourceTree = "<group>"; };
 		DFB4FAD516CD18320014A427 /* TCustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCustomNavigationBar.m; sourceTree = "<group>"; };
 		DFD3543016D1A3F200AC0BE2 /* UINavigationController+MultipleStoryboardNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MultipleStoryboardNavigation.h"; sourceTree = "<group>"; };
@@ -87,8 +89,6 @@
 		DFD3543A16D1A5CE00AC0BE2 /* TCustomNavigationBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCustomNavigationBarViewController.h; sourceTree = "<group>"; };
 		DFD3543B16D1A5CE00AC0BE2 /* TCustomNavigationBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCustomNavigationBarViewController.m; sourceTree = "<group>"; };
 		DFD3543E16D1ACFF00AC0BE2 /* CreateTournament.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateTournament.storyboard; sourceTree = "<group>"; };
-		DFD3544016D1B0E500AC0BE2 /* TNewTournamentFirstStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNewTournamentFirstStepViewController.h; sourceTree = "<group>"; };
-		DFD3544116D1B0E500AC0BE2 /* TNewTournamentFirstStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TNewTournamentFirstStepViewController.m; sourceTree = "<group>"; };
 		DFD3544316D1C3AE00AC0BE2 /* UIColor+CustomBuilders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomBuilders.h"; sourceTree = "<group>"; };
 		DFD3544416D1C3AE00AC0BE2 /* UIColor+CustomBuilders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomBuilders.m"; sourceTree = "<group>"; };
 		E1E36014811E4DE8992F1CE2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -275,8 +275,8 @@
 			isa = PBXGroup;
 			children = (
 				DFD3543E16D1ACFF00AC0BE2 /* CreateTournament.storyboard */,
-				DFD3544016D1B0E500AC0BE2 /* TNewTournamentFirstStepViewController.h */,
-				DFD3544116D1B0E500AC0BE2 /* TNewTournamentFirstStepViewController.m */,
+				DF9B642A16D41FC600D663A2 /* TCreateTournamentFirstViewController.h */,
+				DF9B642B16D41FC700D663A2 /* TCreateTournamentFirstViewController.m */,
 			);
 			name = "New Tournaments";
 			sourceTree = "<group>";
@@ -432,8 +432,8 @@
 				DFD3543716D1A3F200AC0BE2 /* UIStoryboard+ViewControllerInstantiate.m in Sources */,
 				DFD3543816D1A3F200AC0BE2 /* UIViewController+MultipleStoryboardNavigation.m in Sources */,
 				DFD3543C16D1A5CE00AC0BE2 /* TCustomNavigationBarViewController.m in Sources */,
-				DFD3544216D1B0E500AC0BE2 /* TNewTournamentFirstStepViewController.m in Sources */,
 				DFD3544516D1C3AE00AC0BE2 /* UIColor+CustomBuilders.m in Sources */,
+				DF9B642C16D41FC700D663A2 /* TCreateTournamentFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

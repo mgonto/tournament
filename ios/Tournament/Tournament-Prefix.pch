@@ -19,7 +19,7 @@
 
     #import "TCustomNavigationBar.h"
 
-    #define S(x)                    NSLocalizedString(x, nil)
+    #define S(x)                   NSLocalizedString(x, nil)
 
     #define RectX(view)            view.frame.origin.x
     #define RectY(view)            view.frame.origin.y

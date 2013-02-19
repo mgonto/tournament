@@ -40,8 +40,18 @@
 - (void)didSelectNewTournament:(UIButton *)button {
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"CreateTournament" bundle:nil];
     UIViewController *viewController = [storyboard instantiateInitialViewController];
-    viewController.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:viewController animated:YES];
+    [self.navigationController presentViewController:viewController animated:YES completion:nil];
 }
+
+#pragma mark - Unwind Segues
+
+- (IBAction)cancelTournamentCreation:(UIStoryboardSegue *)segue {
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)finishedTournamentCreation:(UIStoryboardSegue *)segue {
+    //TODO
+}
+
 
 @end

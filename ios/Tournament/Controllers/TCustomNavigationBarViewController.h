@@ -12,4 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet TCustomNavigationBar *customNavigationBar;
 
+- (IBAction)cancelTournamentCreation:(UIStoryboardSegue *)segue;
+- (IBAction)finishedTournamentCreation:(UIStoryboardSegue *)segue;
+
 @end
