@@ -58,6 +58,7 @@ gem 'versionist'
 
 # Database
 gem 'mongoid', '~> 3.0.2'
+gem 'sqlite3'
 
 # Pagination
 gem 'kaminari'
