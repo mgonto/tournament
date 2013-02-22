@@ -1,8 +1,14 @@
 Tournament::Application.routes.draw do
 
-  devise_for :users
+  api_version(:path=>"v1") do
+    devise_for :users , skip: :registrations
 
-  root :to => "home#index"
+    resources :users, only: [:create, :destroy] do
+      collection do
+        post :login
+    end
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
