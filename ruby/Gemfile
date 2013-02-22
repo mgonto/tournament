@@ -17,16 +17,47 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-group :development, :test do
+group :test, :development do
+
+  gem 'factory_girl_rails'
+  gem "database_cleaner"
+
+  gem "rspec-rails", "~> 2.0"
+  
+
+  gem 'mongoid-rspec'
+  gem 'validation_matcher'
+  gem 'json_spec'
+
   gem 'pry'
   gem 'pry-nav'
+
+  gem 'rest-client'
+
+  gem 'timecop'
+
+  gem 'spork'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
+  gem 'guard-spork'
+  
+  gem 'terminal-notifier-guard', :require => false
 end
 
-# LogIn
+# Users Login
 gem 'koala'
 gem 'devise'
+gem 'validates_email_format_of'
 
-gem 'jquery-rails'
+# API Rest
+gem 'versionist'
+
+# Database
+gem 'mongoid', '~> 3.0.2'
+
+# Pagination
+gem 'kaminari'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -35,7 +66,7 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'
