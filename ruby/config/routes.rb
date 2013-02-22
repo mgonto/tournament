@@ -1,6 +1,6 @@
 Tournament::Application.routes.draw do
 
-  api_version(:path=>"v1") do
+  api_version(:path => {:value => "v1"}) do
     devise_for :users , skip: :registrations
 
     resources :users, only: [:create, :destroy] do
