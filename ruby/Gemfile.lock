@@ -134,6 +134,7 @@ GEM
       thor (>= 0.14.6, < 2.0)
     raindrops (0.10.0)
     rake (10.0.3)
+    rb-fsevent (0.9.3)
     rdoc (3.12.1)
       json (~> 1.4)
     rest-client (1.6.7)
@@ -212,6 +213,7 @@ DEPENDENCIES
   pry
   pry-nav
   rails (= 3.2.11)
+  rb-fsevent
   rest-client
   rspec-rails
   spork

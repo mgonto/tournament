@@ -39,7 +39,7 @@ group :test, :development do
   gem 'guard-rspec'
   gem 'guard-bundler'
   gem 'guard-spork'
-  
+  gem 'rb-fsevent'
   gem 'terminal-notifier-guard', :require => false
 end
 
