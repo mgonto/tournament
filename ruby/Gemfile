@@ -20,7 +20,7 @@ group :test, :development do
   gem 'fabrication'
   gem "database_cleaner"
 
-  gem "rspec-rails", "~> 2.0"
+  gem "rspec-rails"
   
 
   gem 'mongoid-rspec'
