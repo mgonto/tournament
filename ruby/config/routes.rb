@@ -6,6 +6,7 @@ Tournament::Application.routes.draw do
     resources :users, only: [:create, :destroy] do
       collection do
         post :login
+      end
     end
   end
 
