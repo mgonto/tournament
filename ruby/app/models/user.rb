@@ -47,15 +47,13 @@ class User
   ## Token authenticatable
   field :authentication_token, :type => String
   
-  field :name, type: String
   field :email, type: String
   field :password, type: String
   field :facebook_id, type: String
   field :facebook_token, type: String
   
-  attr_accessible :name, :email, :password
+  attr_accessible :email, :password
 
-  validates :name, presence: true, length: { minimum: 5, maximum: 20 }
   validates :password, presence: true, length: { minimum: 6, maximum: 128 }, on: :create
   validates :email, presence: true, uniqueness: true, email_format: true
 
