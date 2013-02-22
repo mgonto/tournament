@@ -1,26 +1,7 @@
 require 'spec_helper'
 
-describe UserController do
+describe V1::UserController do
 
-  describe "GET 'create'" do
-    it "returns http success" do
-      get 'create'
-      response.should be_success
-    end
-  end
-
-  describe "GET 'destroy'" do
-    it "returns http success" do
-      get 'destroy'
-      response.should be_success
-    end
-  end
-
-  describe "GET 'login'" do
-    it "returns http success" do
-      get 'login'
-      response.should be_success
-    end
-  end
+  
 
 end

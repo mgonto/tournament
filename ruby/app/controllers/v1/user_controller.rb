@@ -2,6 +2,7 @@ class V1::UserController < ApplicationController
   respond_to :json
 
   before_filter :authenticate_user!, :only => :destroy
+  
   def create
     if params[:user][:email]
       @user = User.new(params[:user])
@@ -10,7 +11,7 @@ class V1::UserController < ApplicationController
       else
         render json: @user.errors, status: :unprocessable_entity
       end
-    else params[:facebook_token]
+    elsif params[:facebook_token]
     else
        raise ArgumentError.new("Email or Facebook token are required")
     end
