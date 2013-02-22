@@ -101,6 +101,7 @@ GEM
     moped (1.4.2)
     multi_json (1.6.1)
     multipart-post (1.1.5)
+    oj (2.0.7)
     origin (1.0.11)
     orm_adapter (0.4.0)
     polyglot (0.3.3)
@@ -110,6 +111,8 @@ GEM
       slop (~> 3.4)
     pry-nav (0.2.3)
       pry (~> 0.9.10)
+    rabl (0.8.0)
+      activesupport (>= 2.3.14)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -210,8 +213,10 @@ DEPENDENCIES
   koala
   mongoid (~> 3.0.2)
   mongoid-rspec
+  oj
   pry
   pry-nav
+  rabl
   rails (= 3.2.11)
   rb-fsevent
   rest-client

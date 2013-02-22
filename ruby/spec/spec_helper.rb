@@ -45,9 +45,14 @@ Spork.prefork do
     DatabaseCleaner.strategy = :truncation
     DatabaseCleaner.orm = "mongoid"
 
+
     config.before(:each) do
       DatabaseCleaner.clean
     end
+
+    ##Mongo matchers
+    require 'mongoid-rspec'
+    config.include Mongoid::Matchers
 
     #json spec configuration
     require "json_spec"

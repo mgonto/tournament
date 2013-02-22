@@ -1,4 +1,4 @@
-class V1::UserController < ApplicationController
+class V1::UsersController < ApplicationController
   respond_to :json
 
   before_filter :authenticate_user!, :only => :destroy
@@ -7,7 +7,7 @@ class V1::UserController < ApplicationController
     if params[:user][:email]
       @user = User.new(params[:user])
       if @user.save
-        render json: @user.as_json(except: [:password, :facebook_id, :facebook_token]), status: :created
+        respond_with @user, status: :created
       else
         render json: @user.errors, status: :unprocessable_entity
       end

@@ -60,6 +60,10 @@ gem 'versionist'
 gem 'mongoid', '~> 3.0.2'
 gem 'sqlite3'
 
+# Json
+gem 'rabl'
+gem 'oj'
+
 # Pagination
 gem 'kaminari'
 

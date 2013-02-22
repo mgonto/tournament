@@ -1,0 +1,28 @@
+require 'spec_helper'
+
+describe User do
+
+  it { should validate(:presence).of(:password) }
+  it { should validate(:presence).of(:email) }
+  it { should validate(:uniqueness).of(:email) }
+  it { should validate_length_of(:password).within(6..128) }
+  
+
+  it "should check for a valid email" do
+    u = Fabricate.build(:user, email: "pepe@pepe")
+    u.valid?.should be_false
+    u.errors.should include(:email)
+  end
+
+  context "when trying to persist it" do
+
+    it "should fail if invalid" do
+      expect { Fabricate(:user, email: "pepe@pepe") }.to raise_error
+    end
+
+    it "should success if valid" do
+      Fabricate(:user).should be_persisted
+    end
+  end
+end
+
