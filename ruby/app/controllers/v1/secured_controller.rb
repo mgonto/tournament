@@ -1,4 +1,4 @@
-class SecuredController < ApplicationController
+class V1::SecuredController < ApplicationController
     before_filter :authenticate_user!
 
   def authenticate_user!
