@@ -7,31 +7,29 @@
 //
 
 #import "TCreateTournamentFirstViewController.h"
+#import "TRemoteTournament.h"
+#import "TTournamentModel.h"
+
+#import <QuartzCore/QuartzCore.h>
 
 @interface TCreateTournamentFirstViewController ()
+
+@property (weak, nonatomic) TRemoteTournament *tournament;
 
 @end
 
 @implementation TCreateTournamentFirstViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    for (UIView *squares in self.textFieldFrames) {
+        squares.layer.borderColor = [UIColor grayColor].CGColor;
+        squares.layer.borderWidth = 1.0;
+    }
+    
+    self.tournament = [[[TTournament application] model] inProgressTournament];
 }
 
 - (void)didReceiveMemoryWarning

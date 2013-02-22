@@ -17,6 +17,7 @@
     #import "UINavigationController+MultipleStoryboardNavigation.h"
     #import "UIColor+CustomBuilders.h"
 
+    #import "TTournament.h"
     #import "TCustomNavigationBar.h"
 
     #define S(x)                   NSLocalizedString(x, nil)

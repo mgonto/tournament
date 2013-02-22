@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F0CC8E489664C67BDA1935E /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A707D111D3D549D89300469D /* libPods-test.a */; };
 		BDC76A535B6547389B893411 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E36014811E4DE8992F1CE2 /* libPods.a */; };
+		DF00D94F16D71E730098AB4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00D94E16D71E730098AB4F /* QuartzCore.framework */; };
 		DF3402C816B76F440061D4E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C716B76F440061D4E8 /* UIKit.framework */; };
 		DF3402CA16B76F440061D4E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C916B76F440061D4E8 /* Foundation.framework */; };
 		DF3402CC16B76F440061D4E8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402CB16B76F440061D4E8 /* CoreGraphics.framework */; };
@@ -27,6 +28,12 @@
 		DF7DEC6916D116570092D578 /* TTournamentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7DEC6816D116570092D578 /* TTournamentsViewController.m */; };
 		DF7DEC7416D124710092D578 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7DEC7316D124700092D578 /* MainStoryboard.storyboard */; };
 		DF9B642C16D41FC700D663A2 /* TCreateTournamentFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B642B16D41FC700D663A2 /* TCreateTournamentFirstViewController.m */; };
+		DF9B642F16D53DC300D663A2 /* TRemoteTournament.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B642E16D53DC300D663A2 /* TRemoteTournament.m */; };
+		DF9B643416D5456600D663A2 /* TTransientSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B643316D5456600D663A2 /* TTransientSchedule.m */; };
+		DF9B643716D545D700D663A2 /* TTransientStadium.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B643616D545D700D663A2 /* TTransientStadium.m */; };
+		DF9B643A16D547F500D663A2 /* TTournament.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B643916D547F500D663A2 /* TTournament.m */; };
+		DF9B643D16D548AA00D663A2 /* TTournamentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B643C16D548AA00D663A2 /* TTournamentModel.m */; };
+		DF9B644016D7012100D663A2 /* TTournamentUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B643F16D7012100D663A2 /* TTournamentUserDefaults.m */; };
 		DFB4FAD616CD18320014A427 /* TCustomNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB4FAD516CD18320014A427 /* TCustomNavigationBar.m */; };
 		DFD3543616D1A3F200AC0BE2 /* UINavigationController+MultipleStoryboardNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD3543116D1A3F200AC0BE2 /* UINavigationController+MultipleStoryboardNavigation.m */; };
 		DFD3543716D1A3F200AC0BE2 /* UIStoryboard+ViewControllerInstantiate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD3543316D1A3F200AC0BE2 /* UIStoryboard+ViewControllerInstantiate.m */; };
@@ -50,6 +57,7 @@
 		264495F1A11F444E93F2C1D1 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		7017C02E1F9B4C598F60C603 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
 		A707D111D3D549D89300469D /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF00D94E16D71E730098AB4F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DF3402C316B76F440061D4E8 /* Tournament.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tournament.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3402C716B76F440061D4E8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DF3402C916B76F440061D4E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,8 +86,20 @@
 		DF7DEC7316D124700092D578 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		DF9B642A16D41FC600D663A2 /* TCreateTournamentFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCreateTournamentFirstViewController.h; sourceTree = "<group>"; };
 		DF9B642B16D41FC700D663A2 /* TCreateTournamentFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCreateTournamentFirstViewController.m; sourceTree = "<group>"; };
-		DFB4FAD416CD18320014A427 /* TCustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCustomNavigationBar.h; sourceTree = "<group>"; };
-		DFB4FAD516CD18320014A427 /* TCustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCustomNavigationBar.m; sourceTree = "<group>"; };
+		DF9B642D16D53DC300D663A2 /* TRemoteTournament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRemoteTournament.h; sourceTree = "<group>"; };
+		DF9B642E16D53DC300D663A2 /* TRemoteTournament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRemoteTournament.m; sourceTree = "<group>"; };
+		DF9B643216D5456600D663A2 /* TTransientSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransientSchedule.h; sourceTree = "<group>"; };
+		DF9B643316D5456600D663A2 /* TTransientSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTransientSchedule.m; sourceTree = "<group>"; };
+		DF9B643516D545D700D663A2 /* TTransientStadium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTransientStadium.h; sourceTree = "<group>"; };
+		DF9B643616D545D700D663A2 /* TTransientStadium.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTransientStadium.m; sourceTree = "<group>"; };
+		DF9B643816D547F500D663A2 /* TTournament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTournament.h; sourceTree = "<group>"; };
+		DF9B643916D547F500D663A2 /* TTournament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTournament.m; sourceTree = "<group>"; };
+		DF9B643B16D548AA00D663A2 /* TTournamentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTournamentModel.h; sourceTree = "<group>"; };
+		DF9B643C16D548AA00D663A2 /* TTournamentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTournamentModel.m; sourceTree = "<group>"; };
+		DF9B643E16D7012100D663A2 /* TTournamentUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTournamentUserDefaults.h; sourceTree = "<group>"; };
+		DF9B643F16D7012100D663A2 /* TTournamentUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTournamentUserDefaults.m; sourceTree = "<group>"; };
+		DFB4FAD416CD18320014A427 /* TCustomNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TCustomNavigationBar.h; path = ../Utils/TCustomNavigationBar.h; sourceTree = "<group>"; };
+		DFB4FAD516CD18320014A427 /* TCustomNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TCustomNavigationBar.m; path = ../Utils/TCustomNavigationBar.m; sourceTree = "<group>"; };
 		DFD3543016D1A3F200AC0BE2 /* UINavigationController+MultipleStoryboardNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+MultipleStoryboardNavigation.h"; sourceTree = "<group>"; };
 		DFD3543116D1A3F200AC0BE2 /* UINavigationController+MultipleStoryboardNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+MultipleStoryboardNavigation.m"; sourceTree = "<group>"; };
 		DFD3543216D1A3F200AC0BE2 /* UIStoryboard+ViewControllerInstantiate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStoryboard+ViewControllerInstantiate.h"; sourceTree = "<group>"; };
@@ -99,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF00D94F16D71E730098AB4F /* QuartzCore.framework in Frameworks */,
 				DF3402C816B76F440061D4E8 /* UIKit.framework in Frameworks */,
 				DF3402CA16B76F440061D4E8 /* Foundation.framework in Frameworks */,
 				DF3402CC16B76F440061D4E8 /* CoreGraphics.framework in Frameworks */,
@@ -144,6 +165,7 @@
 		DF3402C616B76F440061D4E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF00D94E16D71E730098AB4F /* QuartzCore.framework */,
 				DF3402C716B76F440061D4E8 /* UIKit.framework */,
 				DF3402C916B76F440061D4E8 /* Foundation.framework */,
 				DF3402CB16B76F440061D4E8 /* CoreGraphics.framework */,
@@ -200,11 +222,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DF9B643016D5452500D663A2 /* Remote Objects */ = {
+			isa = PBXGroup;
+			children = (
+				DF9B642D16D53DC300D663A2 /* TRemoteTournament.h */,
+				DF9B642E16D53DC300D663A2 /* TRemoteTournament.m */,
+			);
+			name = "Remote Objects";
+			sourceTree = "<group>";
+		};
+		DF9B643116D5453400D663A2 /* Transient Objects */ = {
+			isa = PBXGroup;
+			children = (
+				DF9B643216D5456600D663A2 /* TTransientSchedule.h */,
+				DF9B643316D5456600D663A2 /* TTransientSchedule.m */,
+				DF9B643516D545D700D663A2 /* TTransientStadium.h */,
+				DF9B643616D545D700D663A2 /* TTransientStadium.m */,
+			);
+			name = "Transient Objects";
+			sourceTree = "<group>";
+		};
 		DFB4FACD16CD10EB0014A427 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DFD3543D16D1AC4100AC0BE2 /* New Tournaments */,
 				DFD3543916D1A5A200AC0BE2 /* General */,
+				DFD3543D16D1AC4100AC0BE2 /* New Tournaments */,
 				DFB4FAD116CD110B0014A427 /* Tournaments */,
 				DFB4FAD016CD11050014A427 /* Timeline */,
 			);
@@ -214,6 +256,8 @@
 		DFB4FACE16CD10F70014A427 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DF9B643116D5453400D663A2 /* Transient Objects */,
+				DF9B643016D5452500D663A2 /* Remote Objects */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,8 +266,10 @@
 			isa = PBXGroup;
 			children = (
 				DFD3542F16D1A3BA00AC0BE2 /* Categories */,
-				DFB4FAD416CD18320014A427 /* TCustomNavigationBar.h */,
-				DFB4FAD516CD18320014A427 /* TCustomNavigationBar.m */,
+				DF9B643B16D548AA00D663A2 /* TTournamentModel.h */,
+				DF9B643C16D548AA00D663A2 /* TTournamentModel.m */,
+				DF9B643E16D7012100D663A2 /* TTournamentUserDefaults.h */,
+				DF9B643F16D7012100D663A2 /* TTournamentUserDefaults.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -265,8 +311,12 @@
 			isa = PBXGroup;
 			children = (
 				DF7DEC7316D124700092D578 /* MainStoryboard.storyboard */,
+				DFB4FAD416CD18320014A427 /* TCustomNavigationBar.h */,
+				DFB4FAD516CD18320014A427 /* TCustomNavigationBar.m */,
 				DFD3543A16D1A5CE00AC0BE2 /* TCustomNavigationBarViewController.h */,
 				DFD3543B16D1A5CE00AC0BE2 /* TCustomNavigationBarViewController.m */,
+				DF9B643816D547F500D663A2 /* TTournament.h */,
+				DF9B643916D547F500D663A2 /* TTournament.m */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -434,6 +484,12 @@
 				DFD3543C16D1A5CE00AC0BE2 /* TCustomNavigationBarViewController.m in Sources */,
 				DFD3544516D1C3AE00AC0BE2 /* UIColor+CustomBuilders.m in Sources */,
 				DF9B642C16D41FC700D663A2 /* TCreateTournamentFirstViewController.m in Sources */,
+				DF9B642F16D53DC300D663A2 /* TRemoteTournament.m in Sources */,
+				DF9B643416D5456600D663A2 /* TTransientSchedule.m in Sources */,
+				DF9B643716D545D700D663A2 /* TTransientStadium.m in Sources */,
+				DF9B643A16D547F500D663A2 /* TTournament.m in Sources */,
+				DF9B643D16D548AA00D663A2 /* TTournamentModel.m in Sources */,
+				DF9B644016D7012100D663A2 /* TTournamentUserDefaults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

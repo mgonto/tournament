@@ -22,20 +22,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Tournament Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hMD-8g-sj7">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tBE-b2-fky">
+                                                    <subviews>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tournament Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hMD-8g-sj7">
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" type="user" id="65g-FU-PKl"/>
+                                                                <constraint firstAttribute="width" constant="280" id="WCb-Bb-ivD"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="Ak2-zh-YU6"/>
+                                                        <constraint firstAttribute="width" constant="300" type="user" id="8g3-Wa-XUC"/>
+                                                        <constraint firstAttribute="centerY" secondItem="hMD-8g-sj7" secondAttribute="centerY" type="user" id="F2g-xk-YoR"/>
+                                                        <constraint firstAttribute="height" constant="50" type="user" id="O6C-dd-XdI"/>
+                                                        <constraint firstItem="hMD-8g-sj7" firstAttribute="centerX" secondItem="tBE-b2-fky" secondAttribute="centerX" type="default" id="j2s-hN-4f0"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <textInputTraits key="textInputTraits"/>
-                                                </textField>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstAttribute="centerY" secondItem="hMD-8g-sj7" secondAttribute="centerY" type="user" id="8c6-KH-ZPP"/>
-                                            <constraint firstItem="hMD-8g-sj7" firstAttribute="leading" secondItem="wiB-hx-csv" secondAttribute="leading" constant="20" type="default" id="M2m-fe-ima"/>
-                                            <constraint firstAttribute="centerX" secondItem="hMD-8g-sj7" secondAttribute="centerX" type="user" id="dwI-DC-POu"/>
+                                            <constraint firstItem="tBE-b2-fky" firstAttribute="centerX" secondItem="wiB-hx-csv" secondAttribute="centerX" type="user" id="QSD-cM-lr7"/>
+                                            <constraint firstAttribute="centerY" secondItem="tBE-b2-fky" secondAttribute="centerY" type="user" id="bb5-2O-IS5"/>
+                                            <constraint firstItem="tBE-b2-fky" firstAttribute="leading" secondItem="wiB-hx-csv" secondAttribute="leading" constant="10" type="user" id="xi9-SP-K2a"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="6VG-or-nvq">
@@ -67,20 +79,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Inscription Cost" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nJi-Ym-7we">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Xu-Pk-y69">
+                                                    <subviews>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Inscription Price" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="o3B-aU-NeH">
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="280" id="7fM-GK-9Io"/>
+                                                                <constraint firstAttribute="height" constant="44" type="user" id="kmA-GY-DaQ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="T0W-tm-lVe"/>
+                                                        <constraint firstAttribute="width" constant="300" type="user" id="AYZ-ai-fpu"/>
+                                                        <constraint firstAttribute="centerY" secondItem="o3B-aU-NeH" secondAttribute="centerY" type="user" id="EHy-8s-xUm"/>
+                                                        <constraint firstItem="o3B-aU-NeH" firstAttribute="centerX" secondItem="4Xu-Pk-y69" secondAttribute="centerX" type="default" id="NM1-hL-got"/>
+                                                        <constraint firstAttribute="height" constant="50" type="user" id="WaK-Eb-6VZ"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                                                </textField>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="nJi-Ym-7we" firstAttribute="leading" secondItem="wde-S7-HZO" secondAttribute="leading" constant="20" type="default" id="Oef-Qa-kUm"/>
-                                            <constraint firstAttribute="trailing" secondItem="nJi-Ym-7we" secondAttribute="trailing" constant="20" type="default" id="Qm1-MA-nhy"/>
-                                            <constraint firstItem="nJi-Ym-7we" firstAttribute="centerY" secondItem="wde-S7-HZO" secondAttribute="centerY" type="default" id="tEV-tE-95u"/>
+                                            <constraint firstItem="4Xu-Pk-y69" firstAttribute="centerY" secondItem="wde-S7-HZO" secondAttribute="centerY" type="default" id="izc-Fx-4iH"/>
+                                            <constraint firstItem="4Xu-Pk-y69" firstAttribute="centerX" secondItem="wde-S7-HZO" secondAttribute="centerX" type="default" id="ncU-eh-C7s"/>
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="RAi-cu-9dR">
@@ -90,20 +113,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Match Price" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bDv-U0-DgL">
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ynK-rk-Qfx">
+                                                    <subviews>
+                                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Match Price" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KTh-DJ-IQX">
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" type="user" id="3i3-Sq-utn"/>
+                                                                <constraint firstAttribute="width" constant="280" id="EIv-ta-DMF"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="AXD-6q-CAT"/>
+                                                        <constraint firstAttribute="width" constant="300" type="user" id="GbV-h8-ygs"/>
+                                                        <constraint firstItem="KTh-DJ-IQX" firstAttribute="centerX" secondItem="ynK-rk-Qfx" secondAttribute="centerX" type="default" id="Ky6-Fa-cAf"/>
+                                                        <constraint firstAttribute="centerY" secondItem="KTh-DJ-IQX" secondAttribute="centerY" type="user" id="pVG-ui-Xh0"/>
+                                                        <constraint firstAttribute="height" constant="50" type="user" id="ykt-M0-jTV"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                                </textField>
+                                                </view>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="bDv-U0-DgL" firstAttribute="leading" secondItem="RAi-cu-9dR" secondAttribute="leading" constant="20" type="default" id="Joa-gD-UcK"/>
-                                            <constraint firstAttribute="trailing" secondItem="bDv-U0-DgL" secondAttribute="trailing" constant="20" type="default" id="K7A-k3-Ue1"/>
-                                            <constraint firstItem="bDv-U0-DgL" firstAttribute="centerY" secondItem="RAi-cu-9dR" secondAttribute="centerY" type="default" id="yod-N2-V4S"/>
+                                            <constraint firstItem="ynK-rk-Qfx" firstAttribute="centerX" secondItem="RAi-cu-9dR" secondAttribute="centerX" type="default" id="8hG-Lm-HwP"/>
+                                            <constraint firstItem="ynK-rk-Qfx" firstAttribute="centerY" secondItem="RAi-cu-9dR" secondAttribute="centerY" type="default" id="VCG-oe-k0a"/>
                                         </constraints>
                                     </tableViewCell>
                                 </cells>
@@ -123,6 +157,15 @@
                         <barButtonItem key="rightBarButtonItem" title="Next" id="1Zs-lY-Fty"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <connections>
+                        <outlet property="inscriptionCost" destination="o3B-aU-NeH" id="WUy-aJ-jMv"/>
+                        <outlet property="matchPrice" destination="KTh-DJ-IQX" id="NQb-v7-cY1"/>
+                        <outlet property="tournamentName" destination="hMD-8g-sj7" id="1rb-YW-txi"/>
+                        <outlet property="typeOfTournament" destination="dBb-JN-cML" id="zFT-yu-NOS"/>
+                        <outletCollection property="textFieldFrames" destination="tBE-b2-fky" id="JOR-wd-SRL"/>
+                        <outletCollection property="textFieldFrames" destination="4Xu-Pk-y69" id="tU9-Jv-0ch"/>
+                        <outletCollection property="textFieldFrames" destination="ynK-rk-Qfx" id="Qeb-Zr-dc5"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mqF-im-Rlv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Qvl-c9-pas" userLabel="Exit" sceneMemberID="exit"/>
@@ -156,6 +199,12 @@
         </class>
         <class className="TCreateTournamentFirstViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentFirstViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="inscriptionCost" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="matchPrice" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="tournamentName" candidateClass="UITextField"/>
+                <relationship kind="outletCollection" name="textFieldFrames" candidateClass="UIView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
