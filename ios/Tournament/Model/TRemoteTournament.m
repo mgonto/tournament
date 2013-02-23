@@ -7,14 +7,19 @@
 //
 
 #import "TRemoteTournament.h"
-
-NSString *const TWinPoints = @"kWinPointsKey";
-NSString *const TLosePoints = @"kLosePointsKey";
-NSString *const TTiePoints = @"kTiePointsKey";
+#import "TSport.h"
 
 @implementation TRemoteTournament
 
 #pragma mark - NSCoding Protocol
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        _sport = [TSport initSportWith:kSoccer name:S(@"SPORT_SOCCER") availablePoints:@{TWinPoints : @(3), TTiePoints : @(1) , TLosePoints : @(0)}];
+    }
+    return self;
+}
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super init];
@@ -25,13 +30,13 @@ NSString *const TTiePoints = @"kTiePointsKey";
         self.inscriptionCost = [aDecoder decodeFloatForKey:NSStringFromSelector(@selector(inscriptionCost))];
         self.matchPrice = [aDecoder decodeFloatForKey:NSStringFromSelector(@selector(matchPrice))];
         
-        self.sport = [aDecoder decodeIntegerForKey:NSStringFromSelector(@selector(sport))];
+        self.sport = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(sport))];
         self.mode = [aDecoder decodeIntegerForKey:NSStringFromSelector(@selector(mode))];
-        self.points = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(points))];
+        self.points = [NSMutableDictionary dictionaryWithDictionary:[aDecoder decodeObjectForKey:NSStringFromSelector(@selector(points))]];
         
         self.schedule = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(schedule))];
         
-        self.stadiums = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(stadiums))];
+        self.stadiums = [NSMutableArray arrayWithArray:[aDecoder decodeObjectForKey:NSStringFromSelector(@selector(stadiums))]];
     }
     return self;
 }
@@ -43,7 +48,7 @@ NSString *const TTiePoints = @"kTiePointsKey";
     [aCoder encodeFloat:self.inscriptionCost forKey:NSStringFromSelector(@selector(inscriptionCost))];
     [aCoder encodeFloat:self.matchPrice forKey:NSStringFromSelector(@selector(matchPrice))];
     
-    [aCoder encodeInteger:self.sport forKey:NSStringFromSelector(@selector(sport))];
+    [aCoder encodeObject:self.sport forKey:NSStringFromSelector(@selector(sport))];
     [aCoder encodeInteger:self.mode forKey:NSStringFromSelector(@selector(mode))];
     [aCoder encodeObject:self.points forKey:NSStringFromSelector(@selector(points))];
     

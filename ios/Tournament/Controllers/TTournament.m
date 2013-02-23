@@ -9,11 +9,13 @@
 #import "TTournament.h"
 #import "TTournamentModel.h"
 #import "TTournamentUserDefaults.h"
+#import "TTournamentConfigurations.h"
 
 @interface TTournament ()
 
 @property (strong, nonatomic) TTournamentModel *model;
 @property (strong, nonatomic) TTournamentUserDefaults *userDefaults;
+@property (strong, nonatomic) TTournamentConfigurations *configurations;
 
 @end
 
@@ -24,6 +26,7 @@
     if (self) {
         _model = [[TTournamentModel alloc] init];
         _userDefaults = [[TTournamentUserDefaults alloc] init];
+        _configurations = [[TTournamentConfigurations alloc] init];
     }
     return self;
 }

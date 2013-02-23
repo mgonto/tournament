@@ -19,6 +19,7 @@
 
     #import "TTournament.h"
     #import "TCustomNavigationBar.h"
+    #import "TTournamentConfigurations.h"
 
     #define S(x)                   NSLocalizedString(x, nil)
 

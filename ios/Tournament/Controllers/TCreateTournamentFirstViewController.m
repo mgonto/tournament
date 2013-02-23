@@ -30,6 +30,18 @@
     }
     
     self.tournament = [[[TTournament application] model] inProgressTournament];
+    
+    self.tournamentName.text = self.tournament.name;
+    self.inscriptionCost.text = [NSString stringWithFormat:@"%.2f", self.tournament.inscriptionCost];
+    self.matchPrice.text = [NSString stringWithFormat:@"%.2f", self.tournament.matchPrice];
+    self.typeOfTournament.selectedSegmentIndex = self.tournament.type;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    self.tournament.name = self.tournamentName.text;
+    self.tournament.inscriptionCost = [self.inscriptionCost.text floatValue];
+    self.tournament.matchPrice = [self.matchPrice.text floatValue];
+    self.tournament.type = self.typeOfTournament.selectedSegmentIndex;
 }
 
 - (void)didReceiveMemoryWarning

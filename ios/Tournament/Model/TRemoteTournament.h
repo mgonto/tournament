@@ -10,26 +10,7 @@
 
 @class TTransientSchedule;
 @class TTransientStadium;
-
-extern NSString *const TWinPoints;
-extern NSString *const TLosePoints;
-extern NSString *const TTiePoints;
-
-typedef NS_ENUM(NSInteger, kTournamentType) {
-    kPublic,
-    kPrivate
-};
-
-typedef NS_ENUM(NSInteger, ktournamentMode) {
-    kHome,
-    kHomeAndAway
-};
-
-typedef NS_ENUM(NSInteger, kSport) {
-    kSoccer,
-    kBasketball,
-    kOther
-};
+@class TSport;
 
 @interface TRemoteTournament : NSObject <NSCoding>
 
@@ -39,12 +20,12 @@ typedef NS_ENUM(NSInteger, kSport) {
 @property (assign, nonatomic) float inscriptionCost;
 @property (assign, nonatomic) float matchPrice;
 
-@property (assign, nonatomic) kSport sport;
+@property (strong, nonatomic) TSport *sport;
 @property (assign, nonatomic) ktournamentMode mode;
-@property (strong, nonatomic) NSDictionary *points;
+@property (strong, nonatomic) NSMutableDictionary *points;
 
 @property (strong, nonatomic) TTransientSchedule *schedule;
 
-@property (strong, nonatomic) NSArray *stadiums;
+@property (strong, nonatomic) NSMutableArray *stadiums;
 
 @end

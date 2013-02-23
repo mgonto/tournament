@@ -10,11 +10,15 @@
 
 @class TTournamentModel;
 @class TTournamentUserDefaults;
+@class TTournamentConfigurations;
 
 @interface TTournament : NSObject
 
+#pragma mark - Singleton Application objects
+
 - (TTournamentModel *)model;
 - (TTournamentUserDefaults *)userDefaults;
+- (TTournamentConfigurations *)configurations;
 
 + (TTournament *) application;
 
