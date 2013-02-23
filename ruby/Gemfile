@@ -28,8 +28,9 @@ group :test, :development do
   gem 'json_spec'
 
   gem 'pry'
-  gem 'pry-nav'
-
+  gem 'pry'
+  gem 'pry-stack_explorer'
+  gem 'pry-debugger'
   gem 'rest-client'
 
   gem 'timecop'
