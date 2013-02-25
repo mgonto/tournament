@@ -4,101 +4,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Create Tournament-->
-        <scene sceneID="wVI-Jk-Svr">
-            <objects>
-                <viewController id="KGk-yB-DHc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dJk-KI-RXr">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2lV-67-DN9">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="ltt-Ob-Z1k" kind="embed" id="xv9-YQ-fd1"/>
-                                </connections>
-                            </containerView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="vvp-CQ-8xW">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="236" id="CLT-ot-LMv"/>
-                                    <constraint firstAttribute="height" constant="20" type="user" id="nhb-b8-sBa"/>
-                                </constraints>
-                            </pageControl>
-                        </subviews>
-                        <color key="backgroundColor" red="0.2274509804" green="0.25098039220000001" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="2lV-67-DN9" firstAttribute="trailing" secondItem="dJk-KI-RXr" secondAttribute="trailing" type="default" id="Ayh-3g-gXd"/>
-                            <constraint firstItem="2lV-67-DN9" firstAttribute="top" secondItem="dJk-KI-RXr" secondAttribute="top" type="default" id="HfN-bJ-64G"/>
-                            <constraint firstAttribute="bottom" secondItem="2lV-67-DN9" secondAttribute="bottom" constant="27" id="Ro7-PS-O5o"/>
-                            <constraint firstItem="2lV-67-DN9" firstAttribute="leading" secondItem="dJk-KI-RXr" secondAttribute="leading" type="default" id="VMj-nt-AZ2"/>
-                            <constraint firstAttribute="centerX" secondItem="vvp-CQ-8xW" secondAttribute="centerX" type="user" id="dG5-2z-WKY"/>
-                            <constraint firstAttribute="bottom" secondItem="vvp-CQ-8xW" secondAttribute="bottom" constant="4" id="e2c-8x-nst"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Create Tournament" id="lUD-3g-0OW">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="9tf-EZ-8Mc"/>
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Efb-4n-rny">
-                            <connections>
-                                <segue destination="rPW-HV-iWA" kind="unwind" unwindAction="cancelTournamentCreation:" id="789-nC-bez"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Next" id="MdO-EA-ntp">
-                            <connections>
-                                <segue destination="O31-4o-IfP" kind="push" id="pmQ-3z-599"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k63-tt-395" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="rPW-HV-iWA" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="-471" y="22"/>
-        </scene>
-        <!--View Controller - Create Tournament-->
-        <scene sceneID="3dw-Cc-y9a">
-            <objects>
-                <viewController id="O31-4o-IfP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="n5b-lo-gcP">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85T-rE-3bn">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="MeS-Ll-OdR" kind="embed" id="s7T-rE-I7J"/>
-                                </connections>
-                            </containerView>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="Dma-eb-0P6">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="236" id="aDM-Aa-MQt"/>
-                                    <constraint firstAttribute="height" constant="20" type="user" id="blv-sE-DAe"/>
-                                </constraints>
-                            </pageControl>
-                        </subviews>
-                        <color key="backgroundColor" red="0.21153603830000001" green="0.25229964719999998" blue="0.27066532259999998" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="85T-rE-3bn" firstAttribute="leading" secondItem="n5b-lo-gcP" secondAttribute="leading" type="default" id="96C-00-Bpr"/>
-                            <constraint firstAttribute="bottom" secondItem="Dma-eb-0P6" secondAttribute="bottom" constant="3" id="AeZ-un-ekF"/>
-                            <constraint firstItem="85T-rE-3bn" firstAttribute="top" secondItem="n5b-lo-gcP" secondAttribute="top" type="default" id="Xhe-ZS-ha6"/>
-                            <constraint firstItem="85T-rE-3bn" firstAttribute="trailing" secondItem="n5b-lo-gcP" secondAttribute="trailing" type="default" id="o4x-dc-4dZ"/>
-                            <constraint firstAttribute="bottom" secondItem="85T-rE-3bn" secondAttribute="bottom" constant="27" id="tZS-vl-08D"/>
-                            <constraint firstItem="Dma-eb-0P6" firstAttribute="leading" secondItem="n5b-lo-gcP" secondAttribute="leading" constant="41" id="zBm-l7-lPP"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Create Tournament" id="PKN-xO-HkK"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AHw-DV-S6H" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-468" y="685"/>
-        </scene>
         <!--Create Tournament Second View Controller-->
         <scene sceneID="4lu-qb-gxA">
             <objects>
-                <tableViewController id="MeS-Ll-OdR" customClass="TCreateTournamentSecondViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CTSport" id="MeS-Ll-OdR" customClass="TCreateTournamentSecondViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="95D-Yy-a8E">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="477"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SportCell" rowHeight="50" id="meR-lI-MmN" customClass="TSportCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="50"/>
@@ -247,16 +160,39 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsd-9M-hWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45" y="729"/>
+            <point key="canvasLocation" x="-526" y="251"/>
+        </scene>
+        <!--Create Tournament Page View Controller - Create Tournament-->
+        <scene sceneID="9yN-uj-DvN">
+            <objects>
+                <viewController id="oBN-rU-K4S" customClass="TCreateTournamentPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cJE-aL-Vup">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create Tournament" id="ZNj-hF-Hii">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="gXY-dG-X4B">
+                            <connections>
+                                <segue destination="r8e-1r-xIw" kind="unwind" unwindAction="cancelTournamentCreation:" id="KYO-a8-KGd"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="gjW-XU-zIw"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JT5-Jq-kZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="r8e-1r-xIw" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-438" y="-422"/>
         </scene>
         <!--Create Tournament First View Controller - Create Tournament-->
         <scene sceneID="8d5-GY-mwQ">
             <objects>
-                <tableViewController storyboardIdentifier="CreateTournament" id="ltt-Ob-Z1k" customClass="TCreateTournamentFirstViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CTMainData" id="ltt-Ob-Z1k" customClass="TCreateTournamentFirstViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="YUc-9W-Twg">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="477"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="PvO-5o-5DQ">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -265,7 +201,7 @@
                         <sections>
                             <tableViewSection id="khF-23-nkX">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="wiB-hx-csv">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="wiB-hx-csv">
                                         <rect key="frame" x="0.0" y="30" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -300,7 +236,7 @@
                                             <constraint firstItem="tBE-b2-fky" firstAttribute="leading" secondItem="wiB-hx-csv" secondAttribute="leading" constant="10" type="user" id="xi9-SP-K2a"/>
                                         </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="6VG-or-nvq">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="6VG-or-nvq">
                                         <rect key="frame" x="0.0" y="90" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -322,7 +258,7 @@
                                             <constraint firstItem="dBb-JN-cML" firstAttribute="leading" secondItem="6VG-or-nvq" secondAttribute="leading" constant="20" type="default" id="Z98-4A-xpw"/>
                                         </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="wde-S7-HZO">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="wde-S7-HZO">
                                         <rect key="frame" x="0.0" y="150" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -356,7 +292,7 @@
                                             <constraint firstItem="4Xu-Pk-y69" firstAttribute="centerX" secondItem="wde-S7-HZO" secondAttribute="centerX" type="default" id="ncU-eh-C7s"/>
                                         </constraints>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="RAi-cu-9dR">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="60" id="RAi-cu-9dR">
                                         <rect key="frame" x="0.0" y="210" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -419,7 +355,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mqF-im-Rlv" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Qvl-c9-pas" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="38" y="69"/>
+            <point key="canvasLocation" x="-873" y="247"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HRN-Pa-3oH">
@@ -434,12 +370,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="KGk-yB-DHc" kind="relationship" relationship="rootViewController" id="K09-Ap-59m"/>
+                        <segue destination="oBN-rU-K4S" kind="relationship" relationship="rootViewController" id="Rx0-kh-Bv5"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kcJ-7d-VHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-884" y="20"/>
+            <point key="canvasLocation" x="-880" y="-424"/>
         </scene>
     </scenes>
     <classes>
@@ -455,6 +391,9 @@
                 <relationship kind="outlet" name="typeOfTournament" candidateClass="UISegmentedControl"/>
                 <relationship kind="outletCollection" name="textFieldFrames" candidateClass="UIView"/>
             </relationships>
+        </class>
+        <class className="TCreateTournamentPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentPageViewController.h"/>
         </class>
         <class className="TCreateTournamentSecondViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentSecondViewController.h"/>
