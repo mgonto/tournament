@@ -5,6 +5,7 @@ describe User do
   it { should validate(:presence).of(:password) }
   it { should validate(:presence).of(:email) }
   it { should validate(:uniqueness).of(:email) }
+  it { should validate(:uniqueness).of(:facebook_id) }
   it { should validate_length_of(:password).within(6..128) }
   
 

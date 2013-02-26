@@ -58,7 +58,7 @@ class User
 
   validates :password, presence: true, length: { minimum: 6, maximum: 128 }, on: :create
   validates :email, presence: true, uniqueness: true, email_format: true
-  validates :facebook_id, uniqueness: true
+  validates :facebook_id, uniqueness: true, allow_nil: true
 
  class << self
     def from_facebook_user(facebook_user, token)
