@@ -1,6 +1,8 @@
 require 'rails/application'
 require 'rubygems'
 require 'spork'
+require 'webmock/rspec'
+require 'vcr'
 #uncomment the following line to use spork with the debugger
 #require 'spork/ext/ruby-debug'
 
@@ -71,6 +73,11 @@ end
 
 Spork.each_run do
   # This code will be run each time you run your specs.
+
+  VCR.configure do |c|
+    c.cassette_library_dir = 'spec/vcr_cassettes/'
+    c.hook_into :webmock # or :fakeweb
+  end
 
   Fabrication.clear_definitions
 end

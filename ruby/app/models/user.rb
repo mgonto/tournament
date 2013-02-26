@@ -58,18 +58,19 @@ class User
 
   validates :password, presence: true, length: { minimum: 6, maximum: 128 }, on: :create
   validates :email, presence: true, uniqueness: true, email_format: true
+  validates :facebook_id, uniqueness: true
 
-  def self.create_user_from_facebook_user(facebook_user)
-    @user = User.new
-    @user.facebook_id = facebook_user.identifier
-    @user.facebook_token = facebook_user.access_token
-    @user.email = facebook_user.email
-    @user.name = facebook_user.name
-    @user.password = (0...50).map{ ('a'..'z').to_a[rand(26)] }.join
-    @user.save!
-    @user
-  end
+ class << self
+    def from_facebook_user(facebook_user, token)
+      user = User.new
+      user.facebook_id = facebook_user["id"]
+      user.facebook_token = token
+      user.email = facebook_user["email"]
+      user.password = (0...50).map{ ('a'..'z').to_a[rand(26)] }.join
+      user
+    end
+  end 
 
   
-
+  
 end
