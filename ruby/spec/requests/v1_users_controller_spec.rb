@@ -105,6 +105,12 @@ describe V1::UsersController do
         response.status.should be(200)
       end
 
+      it "will return auth token" do
+        @user = Fabricate(:normal_user)
+        post login_v1_users_path, :user => {email: @user.email, password: @user.password }, :format => :json
+        response.body.should have_json_path("authentication_token")
+      end
+
       it "will return 403 for wrong mail" do
         @user = Fabricate(:normal_user)
         post login_v1_users_path, :user => {email: "gogo@gogo.com", password: @user.password }, :format => :json
@@ -132,6 +138,14 @@ describe V1::UsersController do
           @user = Fabricate(:facebook_user)
           post login_v1_users_path, :user => {"facebook_token" => @user.facebook_token}, :format => :json
           response.status.should be(200)
+        end
+      end
+
+      it "will return auth token" do
+        VCR.use_cassette('gonto_facebook') do
+          @user = Fabricate(:facebook_user)
+          post login_v1_users_path, :user => {"facebook_token" => @user.facebook_token}, :format => :json
+          response.body.should have_json_path("authentication_token")
         end
       end
 
