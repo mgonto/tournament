@@ -10,7 +10,7 @@ describe User do
   
 
   it "should check for a valid email" do
-    u = Fabricate.build(:user, email: "pepe@pepe")
+    u = Fabricate.build(:normal_user, email: "pepe@pepe")
     u.valid?.should be_false
     u.errors.should include(:email)
   end
@@ -18,11 +18,11 @@ describe User do
   context "when trying to persist it" do
 
     it "should fail if invalid" do
-      expect { Fabricate(:user, email: "pepe@pepe") }.to raise_error
+      expect { Fabricate(:normal_user, email: "pepe@pepe") }.to raise_error
     end
 
     it "should success if valid" do
-      Fabricate(:user).should be_persisted
+      Fabricate(:normal_user).should be_persisted
     end
   end
 end

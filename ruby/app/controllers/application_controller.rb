@@ -5,7 +5,11 @@ class ApplicationController < ActionController::Base
     render json: {errors: ex.message, status: 422}.to_json, status: 422
   end 
 
-  SecurityError
+  rescue_from SecurityError do |ex|
+    render json: {errors: ex.message, status: 403}.to_json, status: 403
+  end
+
+  
   
   #Hook for taking the auth_token from the header and 
   #inserting it in to the params

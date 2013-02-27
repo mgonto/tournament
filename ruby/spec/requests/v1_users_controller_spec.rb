@@ -14,7 +14,7 @@ describe V1::UsersController do
   end
 
   def valid_facebook_attributes 
-    {"facebook_token" => "BAABxOZCc0HksBAEvDVQHODGwzuYhT05D17uGswzfV4Uhsf73qCsyeYZBkiINU7gjDqZCyMFbirZBCZCO1aNQplKflP1T8rUj3LAYDJ2zzrLwdARYxQdgD"}
+    {"facebook_token" => "BAABxOZCc0HksBAAUIAeT6mXe5O7gFZCaWljwM9qXAxTiZB9DFUXp0Tneh98yZAWcYOW8sj5x3X0LU4HSECLAyghJcPKT35H1hZAYO23hfuh9rGmQuULBG"}
   end
 
   def invalid_facebook_attributes 
@@ -97,6 +97,46 @@ describe V1::UsersController do
         end
       end
     end
+
+    describe "login with email" do 
+      it "will return 200" do
+        @user = Fabricate(:normal_user)
+        post login_v1_users_path, :user => {email: @user.email, password: @user.password }, :format => :json
+        response.status.should be(200)
+      end
+
+      it "will return 403 for wrong mail" do
+        @user = Fabricate(:normal_user)
+        post login_v1_users_path, :user => {email: "gogo@gogo.com", password: @user.password }, :format => :json
+        response.status.should be(403)
+      end
+
+      it "will return 403 for wrong password" do
+        @user = Fabricate(:normal_user)
+        post login_v1_users_path, :user => {email: @user.email, password: "this isnt the pass dude" }, :format => :json
+        response.status.should be(403)
+      end
+
+    end
+
+    describe "login with facebook" do 
+      it "will return 201 for non existent facebook" do
+        VCR.use_cassette('gonto_facebook') do
+          post login_v1_users_path, :user => valid_facebook_attributes, :format => :json
+          response.status.should be(201)
+        end
+      end
+
+      it "will return 200 for non existent facebook" do
+        VCR.use_cassette('gonto_facebook') do
+          @user = Fabricate(:facebook_user)
+          post login_v1_users_path, :user => {"facebook_token" => @user.facebook_token}, :format => :json
+          response.status.should be(200)
+        end
+      end
+
+    end
+
 
   
 

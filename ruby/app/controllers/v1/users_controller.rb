@@ -31,7 +31,9 @@ class V1::UsersController < ApplicationController
 
   def login
     if params[:user][:email]
-
+      @user = User.where(email: params[:user][:email]).first 
+      raise SecurityError.new("Invalid email or password.") if @user.nil? || !@user.valid_password?(params[:user][:password])
+      respond_with @user, status: :ok
     elsif params[:user][:facebook_token]
       create_or_get_facebook_user
     else

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://graph.facebook.com/me?access_token=BAABxOZCc0HksBAEvDVQHODGwzuYhT05D17uGswzfV4Uhsf73qCsyeYZBkiINU7gjDqZCyMFbirZBCZCO1aNQplKflP1T8rUj3LAYDJ2zzrLwdARYxQdgD
+    uri: https://graph.facebook.com/me?access_token=BAABxOZCc0HksBAAUIAeT6mXe5O7gFZCaWljwM9qXAxTiZB9DFUXp0Tneh98yZAWcYOW8sj5x3X0LU4HSECLAyghJcPKT35H1hZAYO23hfuh9rGmQuULBG
     body:
       encoding: US-ASCII
       string: ''
@@ -33,11 +33,11 @@ http_interactions:
       Pragma:
       - no-cache
       X-Fb-Rev:
-      - '743554'
+      - '744460'
       X-Fb-Debug:
-      - /e68io/EYPw9iZU25aMZwqpJ3/MA+CvHmTeRSyPeCbU=
+      - //3cd2P4TcyuN8VVBTRVQafD7nPlkfKKmQMI+kZzaAg=
       Date:
-      - Tue, 26 Feb 2013 22:05:36 GMT
+      - Wed, 27 Feb 2013 01:59:28 GMT
       Connection:
       - keep-alive
       Content-Length:
@@ -46,5 +46,52 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"id":"857085301","name":"Martin Gonto","first_name":"Martin","last_name":"Gonto","link":"http:\/\/www.facebook.com\/gonto","username":"gonto","gender":"male","email":"martin\u0040gonto.com.ar","timezone":-3,"locale":"en_US","verified":true,"updated_time":"2013-02-10T00:21:50+0000"}'
     http_version: 
-  recorded_at: Tue, 26 Feb 2013 22:05:36 GMT
+  recorded_at: Wed, 27 Feb 2013 01:59:27 GMT
+- request:
+    method: get
+    uri: https://graph.facebook.com/me?access_token=BAABxOZCc0HksBAAUIAeT6mXe5O7gFZCaWljwM9qXAxTiZB9DFUXp0Tneh98yZAWcYOW8sj5x3X0LU4HSECLAyghJcPKT35H1hZAYO23hfuh9rGmQuULBG
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Content-Type:
+      - text/javascript; charset=UTF-8
+      Etag:
+      - ! '"df701e7fdcca6ce4e7fc273f340bfdc3d5283915"'
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      Last-Modified:
+      - '2013-02-10T00:21:50+0000'
+      Pragma:
+      - no-cache
+      X-Fb-Rev:
+      - '744460'
+      X-Fb-Debug:
+      - EqGKTDSAyI0od7KzaDd0F7R9oD39anHPpdXq5IRW7y4=
+      Date:
+      - Wed, 27 Feb 2013 01:59:29 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '283'
+    body:
+      encoding: US-ASCII
+      string: ! '{"id":"857085301","name":"Martin Gonto","first_name":"Martin","last_name":"Gonto","link":"http:\/\/www.facebook.com\/gonto","username":"gonto","gender":"male","email":"martin\u0040gonto.com.ar","timezone":-3,"locale":"en_US","verified":true,"updated_time":"2013-02-10T00:21:50+0000"}'
+    http_version: 
+  recorded_at: Wed, 27 Feb 2013 01:59:28 GMT
 recorded_with: VCR 2.4.0
