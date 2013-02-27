@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
   rescue_from ArgumentError do |ex|
     render json: {errors: ex.message, status: 422}.to_json, status: 422
   end 
+
+  SecurityError
   
   #Hook for taking the auth_token from the header and 
   #inserting it in to the params
