@@ -56,7 +56,7 @@ gem 'validates_email_format_of'
 
 # Database
 gem 'mongoid', '~> 3.0.2'
-gem 'sqlite3'
+gem 'simple_enum'
 
 # Json
 gem 'rabl'
