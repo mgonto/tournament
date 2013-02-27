@@ -16,8 +16,6 @@ NSString *const TTiePoints = @"KEY_TIE_POINTS";
 
 @interface TTournamentConfigurations ()
 
-@property (strong, nonatomic) NSArray *sports;
-
 @end
 
 @implementation TTournamentConfigurations

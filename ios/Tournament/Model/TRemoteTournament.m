@@ -32,11 +32,12 @@
         
         self.sport = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(sport))];
         self.mode = [aDecoder decodeIntegerForKey:NSStringFromSelector(@selector(mode))];
-        self.points = [NSMutableDictionary dictionaryWithDictionary:[aDecoder decodeObjectForKey:NSStringFromSelector(@selector(points))]];
         
         self.schedule = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(schedule))];
         
         self.stadiums = [NSMutableArray arrayWithArray:[aDecoder decodeObjectForKey:NSStringFromSelector(@selector(stadiums))]];
+        
+        self.extraInformation = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(extraInformation))];
     }
     return self;
 }
@@ -50,11 +51,12 @@
     
     [aCoder encodeObject:self.sport forKey:NSStringFromSelector(@selector(sport))];
     [aCoder encodeInteger:self.mode forKey:NSStringFromSelector(@selector(mode))];
-    [aCoder encodeObject:self.points forKey:NSStringFromSelector(@selector(points))];
     
     [aCoder encodeObject:self.schedule forKey:NSStringFromSelector(@selector(schedule))];
     
     [aCoder encodeObject:self.stadiums forKey:NSStringFromSelector(@selector(stadiums))];
+    
+    [aCoder encodeObject:self.extraInformation forKey:NSStringFromSelector(@selector(extraInformation))];
 }
 
 @end

@@ -12,7 +12,7 @@
 
 @property (assign, nonatomic) kSport identifier;
 @property (strong, nonatomic) NSString *name;
-@property (strong, nonatomic) NSDictionary *defaultPoints;
+@property (strong, nonatomic) NSMutableDictionary *defaultPoints;
 
 + (TSport *)initSportWith:(kSport)idenifier name:(NSString *)name availablePoints:(NSDictionary *)defaultPoints;
 

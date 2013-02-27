@@ -32,8 +32,13 @@
     self.tournament = [[[TTournament application] model] inProgressTournament];
     
     self.tournamentName.text = self.tournament.name;
-    self.inscriptionCost.text = [NSString stringWithFormat:@"%.2f", self.tournament.inscriptionCost];
-    self.matchPrice.text = [NSString stringWithFormat:@"%.2f", self.tournament.matchPrice];
+
+    if (self.tournament.inscriptionCost > 0) {
+        self.inscriptionCost.text = [NSString stringWithFormat:@"%.2f", self.tournament.inscriptionCost];
+    }
+    if (self.tournament.matchPrice > 0) {
+        self.matchPrice.text = [NSString stringWithFormat:@"%.2f", self.tournament.matchPrice];
+    }
     self.typeOfTournament.selectedSegmentIndex = self.tournament.type;
 }
 

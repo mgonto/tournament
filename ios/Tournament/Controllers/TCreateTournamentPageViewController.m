@@ -14,6 +14,7 @@
 
 @property (nonatomic, strong) UIPageViewController* pageViewController;
 @property (nonatomic, strong) NSArray* viewControllers;
+@property (nonatomic, strong) UIBarButtonItem *backButton;
 
 @end
 
@@ -22,6 +23,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.backButton = [self setCustomBackButton];
     
     TCreateTournamentFirstViewController *firstStep = [self.storyboard instantiateViewControllerWithIdentifier:@"CTMainData"];
     TCreateTournamentSecondViewController *secondStep = [self.storyboard instantiateViewControllerWithIdentifier:@"CTSport"];
@@ -55,8 +58,10 @@
 #pragma mark - UIPageViewControllerDataSource
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
+    [self changeCancelButtonIntoBackButton];
     NSUInteger index = [self.viewControllers indexOfObject:viewController];
     if (index == NSNotFound || (index + 1) >= self.viewControllers.count) {
+        [self changeNextButtonIntoDoneButton];
         return nil;
     } else {
         return [self.viewControllers objectAtIndex:(index + 1)];
@@ -64,8 +69,11 @@
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
+
+    [self changeDoneButtonIntoNextButton];
     NSUInteger index = [self.viewControllers indexOfObject:viewController];
     if (index == NSNotFound || index == 0) {
+        [self changeBackButtonIntoCancelButton];
         return nil;
     } else {
         return [self.viewControllers objectAtIndex:(index - 1)];
@@ -82,11 +90,50 @@
 
 #pragma mark - UIPageViewControllerDelegate
 
-- (void)pageViewController:(UIPageViewController *)pageViewController didFinishAnimating:(BOOL)finished previousViewControllers:(NSArray *)previousViewControllers transitionCompleted:(BOOL)completed {
-    
-    if (completed) {
-        //TODO Send Request to server and Dismiss Modal.
+#pragma mark - Private methods
+
+- (void)changeNextButtonIntoDoneButton {
+    self.navigationItem.rightBarButtonItem.title = S(@"DONE_BUTTON");
+}
+
+- (void)changeDoneButtonIntoNextButton {
+    self.navigationItem.rightBarButtonItem.title = S(@"NEXT_BUTTON");
+}
+
+- (void)changeBackButtonIntoCancelButton {
+    self.navigationItem.leftBarButtonItem = self.cancelButton;
+}
+
+- (void)changeCancelButtonIntoBackButton {
+    self.navigationItem.leftBarButtonItem = nil;
+    self.navigationItem.leftBarButtonItem = self.backButton;
+}
+
+- (IBAction)next:(id)sender {
+    UIViewController* viewController = [self pageViewController:self.pageViewController viewControllerAfterViewController:self.pageViewController.viewControllers[0]];
+    if (viewController) {
+        if ([viewController isEqual:self.viewControllers.lastObject]) {
+            [self changeNextButtonIntoDoneButton];
+        }
+        [self.pageViewController setViewControllers:@[viewController] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    } else {
+//        if ([[TTournament application] isSessionAvailable]) {
+//             TODO Create tournament request.
+//        }else{
+//             TODO show authentication form.
+//    s    }
     }
 }
+
+- (IBAction)back:(id)sender {
+    UIViewController* viewController = [self pageViewController:self.pageViewController viewControllerBeforeViewController:self.pageViewController.viewControllers[0]];
+    if (viewController) {
+        if ([viewController isEqual:self.viewControllers[0]]) {
+            [self changeBackButtonIntoCancelButton];
+        }
+        [self.pageViewController setViewControllers:@[viewController] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:nil];
+    }
+}
+
 
 @end

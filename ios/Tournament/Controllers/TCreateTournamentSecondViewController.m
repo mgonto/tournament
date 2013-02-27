@@ -7,6 +7,7 @@
 //
 
 #import "TCreateTournamentSecondViewController.h"
+#import "TSportsViewController.h"
 #import "TRemoteTournament.h"
 #import "TSportCell.h"
 #import "TPointsCell.h"
@@ -37,13 +38,24 @@ typedef NS_ENUM(NSInteger, kStatsSection) {
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     [self.tableView reloadData];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"SelectSport"]) {
+        TSportsViewController *sportViewController = segue.destinationViewController;
+        __weak TCreateTournamentSecondViewController *weakSelf = self;
+        sportViewController.completion = ^(TSport *sport){
+            __strong TCreateTournamentSecondViewController *strongSelf = weakSelf;
+            strongSelf.tournament.sport = sport;
+            [strongSelf.tableView reloadData];
+        };
+    }
 }
 
 #pragma mark - Table view data source
@@ -71,11 +83,12 @@ typedef NS_ENUM(NSInteger, kStatsSection) {
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, RectWidth(self.tableView), 40)];
-    headerView.backgroundColor = [UIColor whiteColor];
+    headerView.backgroundColor = [UIColor clearColor];
 
     if (section == kModalitySection || section == kPointsSection) {
         UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(10, 0, RectWidth(headerView) - 20, RectHeight(headerView))];
-        title.textColor = [UIColor grayColor];
+        title.textColor = [UIColor colorWithWhite:0.322 alpha:1.000];
+        title.backgroundColor = [UIColor clearColor];
         title.font = [UIFont boldSystemFontOfSize:17];
         title.text = section == kModalitySection ? S(@"MODALITY_TITLE") : S(@"POINTS_TITLE");
         
@@ -94,6 +107,7 @@ typedef NS_ENUM(NSInteger, kStatsSection) {
     
     if (indexPath.section == kSportSection) {
         TSportCell *sportCell = [tableView dequeueReusableCellWithIdentifier:sportId forIndexPath:indexPath];
+        sportCell.sport.text = self.tournament.sport.name;
         cell = sportCell;
     }else if(indexPath.section == kModalitySection) {
         cell = [tableView dequeueReusableCellWithIdentifier:modalityId forIndexPath:indexPath];
@@ -105,69 +119,19 @@ typedef NS_ENUM(NSInteger, kStatsSection) {
         __weak TCreateTournamentSecondViewController *weakSelf = self;
         pointsCell.completion = ^(NSString *pointsKey, int points){
             __strong TCreateTournamentSecondViewController *strongSelf = weakSelf;
-            [strongSelf.tournament.points setObject:@(points) forKey:pointsKey];
+            [strongSelf.tournament.sport.defaultPoints setObject:@(points) forKey:pointsKey];
         };
         
         cell = pointsCell;
     }
     
-    // Configure the cell...
-    
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-#pragma mark - Table view delegate
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
-}
+#pragma mark - Private Methods
 
 - (IBAction)didChangeModality:(UISegmentedControl *)sender {
+    self.tournament.mode = sender.selectedSegmentIndex;
 }
+
 @end

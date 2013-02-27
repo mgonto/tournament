@@ -16,6 +16,8 @@
     #import "UIViewController+MultipleStoryboardNavigation.h"
     #import "UINavigationController+MultipleStoryboardNavigation.h"
     #import "UIColor+CustomBuilders.h"
+    #import "UIImage+ResizableImages.h"
+    #import "UIViewController+CustomNavigation.h"
 
     #import "TTournament.h"
     #import "TCustomNavigationBar.h"

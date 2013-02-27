@@ -22,10 +22,11 @@
 
 @property (strong, nonatomic) TSport *sport;
 @property (assign, nonatomic) ktournamentMode mode;
-@property (strong, nonatomic) NSMutableDictionary *points;
 
 @property (strong, nonatomic) TTransientSchedule *schedule;
 
 @property (strong, nonatomic) NSMutableArray *stadiums;
+
+@property (strong, nonatomic) NSString *extraInformation;
 
 @end

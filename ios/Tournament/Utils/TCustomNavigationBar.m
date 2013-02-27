@@ -37,6 +37,7 @@
         
         _inboxBadgeView = [[JSBadgeView alloc] initWithParentView:self.inbox alignment:JSBadgeViewAlignmentTopLeft];
         _inboxBadgeView.badgePositionAdjustment = CGPointMake(0, 0);
+        _inboxBadgeView.badgeText = @"2";
         
         _notifications = [[UIButton alloc] initWithFrame:CGRectMake(RectX(self.inbox) + RectWidth(self.inbox) + 30, RectY(self.inbox), kButtonWidth, kButtonHeight)];
         _notifications.backgroundColor = [UIColor yellowColor];
@@ -44,10 +45,11 @@
         
         _notificationsBadgeView = [[JSBadgeView alloc] initWithParentView:self.notifications alignment:JSBadgeViewAlignmentTopLeft];
         _notificationsBadgeView.badgePositionAdjustment = CGPointMake(0, 0);
+        _notificationsBadgeView.badgeText = @"5";
         
         _createButton = [[UIButton alloc] initWithFrame:CGRectMake(RectLastXPoint(self.notifications) + 50, RectY(self.inbox), 150, kButtonHeight)];
         [_createButton addTarget:self action:@selector(createNewTournament:) forControlEvents:UIControlEventTouchUpInside];
-        [_createButton setTitle:S(@"New Tournament") forState:UIControlStateNormal];
+        [_createButton setTitle:S(@"NEW_TOURNAMENT") forState:UIControlStateNormal];
         
         [self addSubview:self.inbox];
         [self addSubview:self.notifications];

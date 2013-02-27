@@ -1,2 +1,24 @@
 /* Localized versions of Info.plist keys */
 
+// Custom Navigation Bar
+"NEW_TOURNAMENT" = "New Tournament";
+
+// Create Tournament Form
+"MODALITY_TITLE" = "Modality";
+"POINTS_TITLE" = "Points";
+"NEXT_BUTTON" = "Next";
+"DONE_BUTTON" = "Done";
+"BACK_BUTTON" = "Back";
+
+// Sports
+"SPORT_SOCCER" = "Soccer";
+"SPORT_BASKETBALL" = "Basketball";
+"SPORT_OTHER" = "Other";
+"KEY_WIN_POINTS" = "Win";
+"KEY_LOSE_POINTS" = "Lose";
+"KEY_TIE_POINTS" = "Tie";
+
+
+
+
+

@@ -10,4 +10,9 @@
 
 @interface TCreateTournamentPageViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *nextButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *cancelButton;
+
+- (IBAction)next:(id)sender;
+
 @end
