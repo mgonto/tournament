@@ -38,7 +38,10 @@ GEM
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.0.9)
     columnize (0.3.6)
+    countries (0.9.1)
+      currencies (>= 0.4.0)
     crack (0.3.2)
+    currencies (0.4.0)
     database_cleaner (0.9.1)
     debug_inspector (0.0.2)
     debugger (1.2.4)
@@ -115,6 +118,11 @@ GEM
     oj (2.0.7)
     origin (1.0.11)
     orm_adapter (0.4.0)
+    phony (1.9.0)
+    phony_rails (0.2.0)
+      activerecord (>= 3.0)
+      countries (>= 0.8.2)
+      phony (>= 1.7.7)
     polyglot (0.3.3)
     pry (0.9.12)
       coderay (~> 1.0.5)
@@ -226,6 +234,7 @@ DEPENDENCIES
   mongoid (~> 3.0.2)
   mongoid-rspec
   oj
+  phony_rails
   pry
   pry-debugger
   pry-stack_explorer

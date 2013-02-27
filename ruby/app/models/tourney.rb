@@ -6,8 +6,9 @@ class Tourney
   field :inscriptionCost, type: BigDecimal
   field :matchCost, type: BigDecimal
   field :extraInformation, type: String
-
   as_enum :privacy, :public => 1, :private => 0
+
+  embeds_many :stadiums
 
   # Validations
 

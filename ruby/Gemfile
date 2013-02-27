@@ -52,7 +52,10 @@ end
 # Users Login
 gem 'koala'
 gem 'devise'
+
+#Model
 gem 'validates_email_format_of'
+gem 'phony_rails'
 
 # Database
 gem 'mongoid', '~> 3.0.2'
