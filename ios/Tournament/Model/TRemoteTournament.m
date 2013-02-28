@@ -8,6 +8,7 @@
 
 #import "TRemoteTournament.h"
 #import "TSport.h"
+#import "TTransientSchedule.h"
 
 @implementation TRemoteTournament
 
@@ -17,6 +18,7 @@
     self = [super init];
     if (self) {
         _sport = [TSport initSportWith:kSoccer name:S(@"SPORT_SOCCER") availablePoints:@{TWinPoints : @(3), TTiePoints : @(1) , TLosePoints : @(0)}];
+        _schedule = [[TTransientSchedule alloc] init];
     }
     return self;
 }

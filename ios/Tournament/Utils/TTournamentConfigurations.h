@@ -30,6 +30,8 @@ typedef NS_ENUM(NSInteger, kSport) {
 
 @interface TTournamentConfigurations : NSObject
 
-@property (strong, nonatomic, readonly) NSArray *sports;
+@property (strong, nonatomic) NSArray *sports;
+@property (strong, nonatomic, readonly) NSDictionary *days;
+@property (strong, nonatomic) NSArray *periodicity;
 
 @end

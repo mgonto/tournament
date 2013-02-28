@@ -29,6 +29,8 @@
 		DF414C1116DD7C0E00184C38 /* UIImage+ResizableImages.m in Sources */ = {isa = PBXBuildFile; fileRef = DF414C1016DD7C0E00184C38 /* UIImage+ResizableImages.m */; };
 		DF414C1416DD813C00184C38 /* TSportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF414C1316DD813C00184C38 /* TSportsViewController.m */; };
 		DF414C1716DD9E4F00184C38 /* UIViewController+CustomNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = DF414C1616DD9E4F00184C38 /* UIViewController+CustomNavigation.m */; };
+		DF414C1A16DDA77E00184C38 /* TCreateTournamentThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF414C1916DDA77E00184C38 /* TCreateTournamentThirdViewController.m */; };
+		DF414C2016DED21B00184C38 /* TDateSelectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF414C1F16DED21B00184C38 /* TDateSelectionViewController.m */; };
 		DF73DEA816D938CE009C492D /* TCreateTournamentSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF73DEA716D938CE009C492D /* TCreateTournamentSecondViewController.m */; };
 		DF73DEAB16D94109009C492D /* TTournamentConfigurations.m in Sources */ = {isa = PBXBuildFile; fileRef = DF73DEAA16D94109009C492D /* TTournamentConfigurations.m */; };
 		DF73DEAE16D94200009C492D /* TSport.m in Sources */ = {isa = PBXBuildFile; fileRef = DF73DEAD16D94200009C492D /* TSport.m */; };
@@ -96,6 +98,10 @@
 		DF414C1316DD813C00184C38 /* TSportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSportsViewController.m; sourceTree = "<group>"; };
 		DF414C1516DD9E4F00184C38 /* UIViewController+CustomNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+CustomNavigation.h"; sourceTree = "<group>"; };
 		DF414C1616DD9E4F00184C38 /* UIViewController+CustomNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+CustomNavigation.m"; sourceTree = "<group>"; };
+		DF414C1816DDA77E00184C38 /* TCreateTournamentThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCreateTournamentThirdViewController.h; sourceTree = "<group>"; };
+		DF414C1916DDA77E00184C38 /* TCreateTournamentThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCreateTournamentThirdViewController.m; sourceTree = "<group>"; };
+		DF414C1E16DED21B00184C38 /* TDateSelectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDateSelectionViewController.h; sourceTree = "<group>"; };
+		DF414C1F16DED21B00184C38 /* TDateSelectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDateSelectionViewController.m; sourceTree = "<group>"; };
 		DF73DEA616D938CE009C492D /* TCreateTournamentSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCreateTournamentSecondViewController.h; sourceTree = "<group>"; };
 		DF73DEA716D938CE009C492D /* TCreateTournamentSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCreateTournamentSecondViewController.m; sourceTree = "<group>"; };
 		DF73DEA916D94109009C492D /* TTournamentConfigurations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTournamentConfigurations.h; sourceTree = "<group>"; };
@@ -271,6 +277,38 @@
 			name = General;
 			sourceTree = "<group>";
 		};
+		DF414C1B16DED17200184C38 /* Tournament Data */ = {
+			isa = PBXGroup;
+			children = (
+				DF9B642B16D41FC700D663A2 /* TCreateTournamentFirstViewController.m */,
+				DF9B642A16D41FC600D663A2 /* TCreateTournamentFirstViewController.h */,
+			);
+			name = "Tournament Data";
+			sourceTree = "<group>";
+		};
+		DF414C1C16DED18900184C38 /* Sport Selection */ = {
+			isa = PBXGroup;
+			children = (
+				DF414C1316DD813C00184C38 /* TSportsViewController.m */,
+				DF414C1216DD813B00184C38 /* TSportsViewController.h */,
+				DF73DEA716D938CE009C492D /* TCreateTournamentSecondViewController.m */,
+				DF73DEA616D938CE009C492D /* TCreateTournamentSecondViewController.h */,
+				DF73DEAF16D945E7009C492D /* Cells */,
+			);
+			name = "Sport Selection";
+			sourceTree = "<group>";
+		};
+		DF414C1D16DED1EE00184C38 /* Schedule */ = {
+			isa = PBXGroup;
+			children = (
+				DF414C1916DDA77E00184C38 /* TCreateTournamentThirdViewController.m */,
+				DF414C1816DDA77E00184C38 /* TCreateTournamentThirdViewController.h */,
+				DF414C1E16DED21B00184C38 /* TDateSelectionViewController.h */,
+				DF414C1F16DED21B00184C38 /* TDateSelectionViewController.m */,
+			);
+			name = Schedule;
+			sourceTree = "<group>";
+		};
 		DF73DEAF16D945E7009C492D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -392,16 +430,12 @@
 		DFD3543D16D1AC4100AC0BE2 /* New Tournaments */ = {
 			isa = PBXGroup;
 			children = (
-				DF73DEAF16D945E7009C492D /* Cells */,
+				DF414C1D16DED1EE00184C38 /* Schedule */,
+				DF414C1C16DED18900184C38 /* Sport Selection */,
+				DF414C1B16DED17200184C38 /* Tournament Data */,
 				DFD3543E16D1ACFF00AC0BE2 /* CreateTournament.storyboard */,
-				DF9B642A16D41FC600D663A2 /* TCreateTournamentFirstViewController.h */,
-				DF9B642B16D41FC700D663A2 /* TCreateTournamentFirstViewController.m */,
-				DF73DEA616D938CE009C492D /* TCreateTournamentSecondViewController.h */,
-				DF73DEA716D938CE009C492D /* TCreateTournamentSecondViewController.m */,
 				DFAAAFC716DAE082006AECC4 /* TCreateTournamentPageViewController.h */,
 				DFAAAFC816DAE082006AECC4 /* TCreateTournamentPageViewController.m */,
-				DF414C1216DD813B00184C38 /* TSportsViewController.h */,
-				DF414C1316DD813C00184C38 /* TSportsViewController.m */,
 			);
 			name = "New Tournaments";
 			sourceTree = "<group>";
@@ -576,6 +610,8 @@
 				DF414C1116DD7C0E00184C38 /* UIImage+ResizableImages.m in Sources */,
 				DF414C1416DD813C00184C38 /* TSportsViewController.m in Sources */,
 				DF414C1716DD9E4F00184C38 /* UIViewController+CustomNavigation.m in Sources */,
+				DF414C1A16DDA77E00184C38 /* TCreateTournamentThirdViewController.m in Sources */,
+				DF414C2016DED21B00184C38 /* TDateSelectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

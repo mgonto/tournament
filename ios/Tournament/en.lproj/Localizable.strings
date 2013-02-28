@@ -10,6 +10,30 @@
 "DONE_BUTTON" = "Done";
 "BACK_BUTTON" = "Back";
 
+// Days
+"MONDAY" = "Monday";
+"TUESDAY" = "Tuesday";
+"WEDNESDAY" = "Wednesday";
+"THURSDAY" = "Thursday";
+"FRIDAY" = "Friday";
+"SATURDAY" = "Saturday";
+"SUNDAY" = "Sunday";
+"MON" = "Mon";
+"TUE" = "Tue";
+"WED" = "Wed";
+"THU" = "Thu";
+"FRI" = "Fri";
+"SAT" = "Sat";
+"SUN" = "Sun";
+"ONCE_WEEK" = "Once Week";
+"TWICE_WEEK" = "Twice a Week";
+"TWO_WEEKS" = "Two Weeks";
+"NONE" = "None";
+"WHOLE_WEEK" = "All days";
+"START_DATE" = "Start";
+"END_DATE" = "End";
+
+
 // Sports
 "SPORT_SOCCER" = "Soccer";
 "SPORT_BASKETBALL" = "Basketball";

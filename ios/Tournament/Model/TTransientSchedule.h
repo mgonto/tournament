@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, kPeriodicity) {
-    kWeekly,
+    kOnceWeekly,
+    kTwiceInWeek,
     kTwoWeeks,
-    kMonthly,
     kNone
 };
 
@@ -21,7 +21,8 @@ typedef NS_ENUM(NSInteger, kPeriodicity) {
 @property (strong, nonatomic) NSDate *endDate;
 @property (assign, nonatomic) kPeriodicity periodicity;
 @property (strong, nonatomic) NSArray *daysOfMatch;
-@property (strong, nonatomic) NSString *matchSchedule;
+@property (strong, nonatomic) NSString *timeStartRange;
+@property (strong, nonatomic) NSString *timeEndRange;
 
 
 @end

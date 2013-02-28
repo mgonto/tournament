@@ -9,6 +9,7 @@
 #import "TCreateTournamentPageViewController.h"
 #import "TCreateTournamentFirstViewController.h"
 #import "TCreateTournamentSecondViewController.h"
+#import "TCreateTournamentThirdViewController.h"
 
 @interface TCreateTournamentPageViewController () <UIPageViewControllerDataSource, UIPageViewControllerDelegate>
 
@@ -28,8 +29,9 @@
     
     TCreateTournamentFirstViewController *firstStep = [self.storyboard instantiateViewControllerWithIdentifier:@"CTMainData"];
     TCreateTournamentSecondViewController *secondStep = [self.storyboard instantiateViewControllerWithIdentifier:@"CTSport"];
+    TCreateTournamentThirdViewController *thirdStep = [self.storyboard instantiateViewControllerWithIdentifier:@"CTSchedule"];
     
-    self.viewControllers = @[firstStep, secondStep];
+    self.viewControllers = @[firstStep, secondStep, thirdStep];
     
     self.pageViewController = [[UIPageViewController alloc] initWithTransitionStyle:UIPageViewControllerTransitionStyleScroll
                                                               navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal

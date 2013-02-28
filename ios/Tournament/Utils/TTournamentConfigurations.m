@@ -28,6 +28,20 @@ NSString *const TTiePoints = @"KEY_TIE_POINTS";
                     [TSport initSportWith:kSoccer name:S(@"SPORT_BASKETBALL") availablePoints:@{TWinPoints : @(3) , TLosePoints : @(0)}],
                     [TSport initSportWith:kSoccer name:S(@"SPORT_OTHER") availablePoints:@{TWinPoints : @(3), TTiePoints : @(1) , TLosePoints : @(0)}]
         ];
+        
+        _days = @{S(@"MONDAY"): S(@"MON"),
+                  S(@"TUESDAY"): S(@"TUE"),
+                  S(@"WEDNESDAY"): S(@"WED"),
+                  S(@"THURSDAY"): S(@"THU"),
+                  S(@"FRIDAY"): S(@"FRI"),
+                  S(@"SATURDAY"): S(@"SAT"),
+                  S(@"SUNDAY"): S(@"SUN")
+                  };
+        
+        _periodicity = @[S(@"ONCE_WEEK"),
+                         S(@"TWICE_WEEK"),
+                         S(@"TWO_WEEKS"),
+                         S(@"NONE")];
     }
     return self;
 }
