@@ -30,7 +30,7 @@
     TSport *sport = [[[self class] alloc] init];
     sport.identifier = idenifier;
     sport.name = name;
-    sport.defaultPoints = defaultPoints;
+    sport.defaultPoints = [NSMutableDictionary dictionaryWithDictionary:defaultPoints];
     return sport;
 }
 

@@ -1,5 +1,30 @@
 
+SPEC CHECKSUMS: 
+  TestFlightSDK: f638b08651a37af099e40c47241fc58fd3cb1a66
+  YRDropdownView: 6cd453679912af8d45cf73ea8d9e079885b99012
+  RestKit/Network: 0382132969d823a872b377c1ab2e383f3c74a339
+  PSAlertView: 5bc4685d044af02724f7d1ac8cd5e113afbee648
+  JSBadgeView: 2508c3bf431b4de495733d8f95272b3594219ca2
+  RestKit/Core: 0382132969d823a872b377c1ab2e383f3c74a339
+  RestKit: 0382132969d823a872b377c1ab2e383f3c74a339
+  SOCKit: ed67aeeca4a697b63a933229e53f4670d5b9300f
+  Kiwi: ab0fa8d13b97dca05915e31df9b2d888d74ab717
+  RestKit/Support: 0382132969d823a872b377c1ab2e383f3c74a339
+  RestKit/ObjectMapping: 0382132969d823a872b377c1ab2e383f3c74a339
+  RestKit/CoreData: 0382132969d823a872b377c1ab2e383f3c74a339
+  MBProgressHUD: b23ee11c42253d6d804e8e0bfabdc334e8b2571f
+  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
+
 COCOAPODS: 0.16.2
+
+DEPENDENCIES: 
+- JSBadgeView (~> 0.0.1)
+- Kiwi (~> 1.1.1)
+- MBProgressHUD (~> 0.5)
+- PSAlertView (~> 0.0.1)
+- RestKit (~> 0.20.0rc)
+- TestFlightSDK (~> 1.2)
+- YRDropdownView (~> 0.0.1)
 
 PODS: 
 - AFNetworking (1.1.0)
@@ -23,26 +48,4 @@ PODS:
 - RestKit/Support (0.20.0rc1)
 - SOCKit (1.1)
 - TestFlightSDK (1.2.3.beta1)
-
-DEPENDENCIES: 
-- JSBadgeView (~> 0.0.1)
-- Kiwi (~> 1.1.1)
-- MBProgressHUD (~> 0.5)
-- PSAlertView (~> 0.0.1)
-- RestKit (~> 0.20.0rc)
-- TestFlightSDK (~> 1.2)
-
-SPEC CHECKSUMS: 
-  TestFlightSDK: f638b08651a37af099e40c47241fc58fd3cb1a66
-  PSAlertView: 5bc4685d044af02724f7d1ac8cd5e113afbee648
-  MBProgressHUD: b23ee11c42253d6d804e8e0bfabdc334e8b2571f
-  JSBadgeView: 2508c3bf431b4de495733d8f95272b3594219ca2
-  RestKit/Network: 0382132969d823a872b377c1ab2e383f3c74a339
-  SOCKit: 179515c1a621dd5652a60e9be02ea4adcd25bc9b
-  RestKit/Support: 0382132969d823a872b377c1ab2e383f3c74a339
-  Kiwi: ab0fa8d13b97dca05915e31df9b2d888d74ab717
-  RestKit/ObjectMapping: 0382132969d823a872b377c1ab2e383f3c74a339
-  RestKit/CoreData: 0382132969d823a872b377c1ab2e383f3c74a339
-  RestKit/Core: 0382132969d823a872b377c1ab2e383f3c74a339
-  RestKit: 0382132969d823a872b377c1ab2e383f3c74a339
-  AFNetworking: 761a418233d280c1e0580bcb76ff9cb4c3073d17
+- YRDropdownView (0.0.1)

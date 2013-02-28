@@ -33,6 +33,26 @@
     self.tournament = [[[TTournament application] model] inProgressTournament];
 }
 
+- (void)back:(id)sender {
+    if ([self areDatesValid]) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }else{
+        [YRDropdownView showDropdownInView:self.view
+                                     title:S(@"START_END_DATE_ERROR_TITLE")
+                                    detail:S(@"START_END_DATE_ERROR_MESSAGE")
+                                     image:nil
+                           backgroundImage:nil
+                           titleLabelColor:[UIColor blackColor]
+                          detailLabelColor:[UIColor blackColor]
+                                  animated:YES
+                                 hideAfter:2.0];
+    }
+}
+
+- (BOOL)areDatesValid {
+    return [self.tournament.schedule.startDate timeIntervalSinceDate:self.tournament.schedule.endDate] < 0;
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

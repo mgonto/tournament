@@ -20,7 +20,7 @@
         self.startDate = [NSDate date];
         self.endDate = [[NSDate date] dateByAddingTimeInterval:15 * daySeconds];
         self.periodicity = kOnceWeekly;
-        self.daysOfMatch = @[S(@"MONDAY"), S(@"TUESDAY"), S(@"WEDNESDAY"), S(@"THURSDAY"), S(@"FRIDAY"), S(@"SATURDAY")];
+        self.daysOfMatch = @[S(@"MONDAY"), S(@"WEDNESDAY"), S(@"FRIDAY")];
         self.timeStartRange = @"18:30";
         self.timeEndRange = @"23:30";
     }

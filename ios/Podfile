@@ -5,6 +5,7 @@ pod 'TestFlightSDK', '~> 1.2'
 pod 'JSBadgeView', '~>0.0.1'
 pod 'MBProgressHUD', '~> 0.5'
 pod 'PSAlertView',  '~> 0.0.1'
+pod 'YRDropdownView', '~> 0.0.1'
 
 target :test do
   link_with 'TournamentTests'

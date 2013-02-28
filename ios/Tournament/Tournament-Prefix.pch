@@ -23,6 +23,8 @@
     #import "TCustomNavigationBar.h"
     #import "TTournamentConfigurations.h"
 
+    #import <YRDropdownView/YRDropdownView.h>
+
     #define S(x)                   NSLocalizedString(x, nil)
 
     #define RectX(view)            view.frame.origin.x
