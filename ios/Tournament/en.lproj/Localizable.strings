@@ -34,6 +34,8 @@
 "END_DATE" = "End";
 "START_END_DATE_ERROR_TITLE" = "Please check selected days";
 "START_END_DATE_ERROR_MESSAGE" = "End date must be after start date";
+"START_AT" = "Start at";
+"END_AT" = "End at";
 
 
 // Sports

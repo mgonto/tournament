@@ -9,7 +9,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="CTSport" id="MeS-Ll-OdR" customClass="TCreateTournamentSecondViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="95D-Yy-a8E">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -169,7 +169,7 @@
             <objects>
                 <tableViewController id="is5-iQ-ynd" customClass="TSportsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="unA-sq-sem">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -207,7 +207,7 @@
             <objects>
                 <viewController id="oBN-rU-K4S" customClass="TCreateTournamentPageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cJE-aL-Vup">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -238,7 +238,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="CTMainData" id="ltt-Ob-Z1k" customClass="TCreateTournamentFirstViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="YUc-9W-Twg">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="PvO-5o-5DQ">
@@ -414,7 +414,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="CTSchedule" id="bf9-t7-flr" customClass="TCreateTournamentThirdViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="76" sectionHeaderHeight="22" sectionFooterHeight="22" id="Bqk-49-7PN">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <view key="tableHeaderView" contentMode="scaleToFill" id="WOA-uM-eVh">
@@ -659,7 +659,7 @@
                                             <constraint firstItem="cWu-w5-Fxf" firstAttribute="leading" secondItem="hj6-jx-bkB" secondAttribute="leading" constant="10" id="ruz-xw-VzL"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="Xqn-0l-uq0" kind="push" id="e3S-Jb-5pX"/>
+                                            <segue destination="jRN-Kw-bav" kind="push" id="6yM-sV-Uap"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -686,19 +686,112 @@
             </objects>
             <point key="canvasLocation" x="-3646" y="1397"/>
         </scene>
+        <!--Time Range View Controller - Time range-->
+        <scene sceneID="VJx-9I-LI1">
+            <objects>
+                <viewController id="jRN-Kw-bav" customClass="TTimeRangeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ij9-mG-g10">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="yI0-N1-mgr">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" type="user" id="Y08-3D-y6U"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="288" type="user" id="ylz-DM-ZPT"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TimeCell" textLabel="vrM-38-na6" detailTextLabel="TtE-ai-jv5" style="IBUITableViewCellStyleValue1" id="lj3-77-zWI">
+                                        <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vrM-38-na6">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtE-ai-jv5">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.2196078431372549" green="0.32941176470588235" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jRN-Kw-bav" id="4f5-Yb-9S5"/>
+                                    <outlet property="delegate" destination="jRN-Kw-bav" id="08s-jY-grj"/>
+                                </connections>
+                            </tableView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="wQc-4C-v9C">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="1zf-4Y-h62"/>
+                                    <constraint firstAttribute="height" constant="216" type="user" id="Net-iM-AeO"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="383795690.06027699">
+                                    <!--2013-03-01 01:54:50 +0000-->
+                                </date>
+                                <timeZone key="timeZone" name="America/Los_Angeles">
+                                    <mutableData key="data">
+VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
+y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
+5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
+8n/BkPNvwKD0X6OQ9U+ioPY/hZD3L4Sg+CiiEPkPZqD6CIQQ+viDIPvoZhD82GUg/chIEP64RyD/qCoQ
+AJgpIAGIDBACeAsgA3EokARhJ6AFUQqQBkEJoAcw7JAHjUOgCRDOkAmtvyAK8LCQC+CvoAzZzRANwJGg
+DrmvEA+priAQmZEQEYmQIBJ5cxATaXIgFFlVEBVJVCAWOTcQFyk2IBgiU5AZCRggGgI1kBryNKAb4heQ
+HNIWoB3B+ZAesfigH6HbkCB2KyAhgb2QIlYNICNq2hAkNe8gJUq8ECYV0SAnKp4QJ/7toCkKgBAp3s+g
+KupiECu+saAs036QLZ6ToC6zYJAvfnWgMJNCkDFnkiAycySQM0d0IDRTBpA1J1YgNjLokDcHOCA4HAUQ
+OOcaIDn75xA6xvwgO9vJEDywGKA9u6sQPo/6oD+bjRBAb9ygQYSpkEJPvqBDZIuQRC+goEVEbZBF89Mg
+Ry2KEEfTtSBJDWwQSbOXIErtThBLnLOgTNZqkE18laBOtkyQT1x3oFCWLpBRPFmgUnYQkFMcO6BUVfKQ
+VPwdoFY11JBW5TogWB7xEFjFHCBZ/tMQWqT+IFvetRBchOAgXb6XEF5kwiBfnnkQYE3eoGGHlZBiLcCg
+Y2d3kGQNoqBlR1mQZe2EoGcnO5BnzWagaQcdkGmtSKBq5v+Qa5ZlIGzQHBBtdkcgbq/+EG9WKSBwj+AQ
+cTYLIHJvwhBzFe0gdE+kEHT/CaB2OMCQdt7roHgYopB4vs2gefiEkHqer6B72GaQfH6RoH24SJB+XnOg
+f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
+AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
+</mutableData>
+                                </timeZone>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yI0-N1-mgr" firstAttribute="leading" secondItem="Ij9-mG-g10" secondAttribute="leading" type="default" id="21p-Xo-eOg"/>
+                            <constraint firstItem="wQc-4C-v9C" firstAttribute="leading" secondItem="Ij9-mG-g10" secondAttribute="leading" type="default" id="EMU-oA-CoA"/>
+                            <constraint firstItem="yI0-N1-mgr" firstAttribute="trailing" secondItem="Ij9-mG-g10" secondAttribute="trailing" type="default" id="Fv2-NW-RSp"/>
+                            <constraint firstItem="yI0-N1-mgr" firstAttribute="top" secondItem="Ij9-mG-g10" secondAttribute="top" type="user" id="ZOj-2d-wQg"/>
+                            <constraint firstItem="wQc-4C-v9C" firstAttribute="top" secondItem="yI0-N1-mgr" secondAttribute="bottom" type="user" id="cUK-Fi-ihv"/>
+                            <constraint firstAttribute="bottom" secondItem="wQc-4C-v9C" secondAttribute="bottom" type="user" id="onZ-Q0-T2b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Time range" id="uaZ-Ra-eOC"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="yI0-N1-mgr" id="LCT-FB-C10"/>
+                        <outlet property="timePicker" destination="wQc-4C-v9C" id="VzQ-4o-2Ug"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zkq-ZD-sq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3266" y="2110"/>
+        </scene>
         <!--Date Selection View Controller - Start and End Date-->
         <scene sceneID="sMb-Nm-Hpz">
             <objects>
                 <viewController id="7sh-RN-Z0L" customClass="TDateSelectionViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NIy-qT-Vqw">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="WRw-Ne-OKp">
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="148" type="user" id="9bx-EI-Vup"/>
-                                    <constraint firstAttribute="height" constant="287" id="AzF-rs-Kaw"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="287" type="user" id="UAu-64-Uhr"/>
                                 </constraints>
                                 <prototypes>
@@ -736,6 +829,7 @@
                             </tableView>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="2jz-mM-j90">
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="320" type="user" id="9Pb-2c-Qac"/>
                                     <constraint firstAttribute="height" constant="216" type="user" id="RP0-3e-duS"/>
                                 </constraints>
                                 <date key="date" timeIntervalSinceReferenceDate="383701011.36324501">
@@ -766,11 +860,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="WRw-Ne-OKp" secondAttribute="bottom" constant="217" type="user" id="Bxf-dW-wmV"/>
                             <constraint firstItem="WRw-Ne-OKp" firstAttribute="trailing" secondItem="NIy-qT-Vqw" secondAttribute="trailing" type="default" id="OUw-uC-dBb"/>
                             <constraint firstItem="WRw-Ne-OKp" firstAttribute="leading" secondItem="NIy-qT-Vqw" secondAttribute="leading" type="default" id="Snw-wf-WCr"/>
-                            <constraint firstItem="2jz-mM-j90" firstAttribute="leading" secondItem="NIy-qT-Vqw" secondAttribute="leading" type="default" id="U0R-N8-8yc"/>
-                            <constraint firstItem="2jz-mM-j90" firstAttribute="trailing" secondItem="NIy-qT-Vqw" secondAttribute="trailing" type="default" id="X1N-Zs-QW9"/>
-                            <constraint firstItem="WRw-Ne-OKp" firstAttribute="top" secondItem="NIy-qT-Vqw" secondAttribute="top" constant="1" type="user" id="bDZ-Oh-Gha"/>
+                            <constraint firstItem="2jz-mM-j90" firstAttribute="leading" secondItem="NIy-qT-Vqw" secondAttribute="leading" type="user" id="U0R-N8-8yc"/>
+                            <constraint firstItem="WRw-Ne-OKp" firstAttribute="top" secondItem="NIy-qT-Vqw" secondAttribute="top" type="user" id="Uji-Oo-cla"/>
+                            <constraint firstItem="2jz-mM-j90" firstAttribute="trailing" secondItem="NIy-qT-Vqw" secondAttribute="trailing" type="user" id="X1N-Zs-QW9"/>
                             <constraint firstAttribute="bottom" secondItem="2jz-mM-j90" secondAttribute="bottom" constant="1" id="u45-qF-ygj"/>
                         </constraints>
                     </view>
@@ -785,42 +880,12 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             </objects>
             <point key="canvasLocation" x="-3280" y="935"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="26Q-ti-VqG">
-            <objects>
-                <tableViewController id="Xqn-0l-uq0" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Rbs-N2-Zwx">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="re0-3q-tFe">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Xqn-0l-uq0" id="gyr-ry-An7"/>
-                            <outlet property="delegate" destination="Xqn-0l-uq0" id="VgU-9s-A4Y"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="NEQ-1X-TvT"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="REd-Tp-DCj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-3235" y="2167"/>
-        </scene>
         <!--Days View Controller - Play Days-->
         <scene sceneID="Lat-ha-q1z">
             <objects>
                 <tableViewController id="DU6-yi-mxC" customClass="TDaysViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="eIy-xr-DGH">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
@@ -851,7 +916,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <objects>
                 <tableViewController id="IYd-B2-BWf" customClass="TPeriodicityViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="pfX-0Y-w9J">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
@@ -898,88 +963,9 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="-3600" y="-376"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="TCreateTournamentFirstViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentFirstViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="inscriptionCost" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="matchPrice" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="tournamentName" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="typeOfTournament" candidateClass="UISegmentedControl"/>
-                <relationship kind="outletCollection" name="textFieldFrames" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="TCreateTournamentPageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentPageViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="next:"/>
-                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="nextButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="TCreateTournamentSecondViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentSecondViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="didChangeModality:" candidateClass="UISegmentedControl"/>
-            </relationships>
-        </class>
-        <class className="TCreateTournamentThirdViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentThirdViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="endDate" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="periodicity" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="playDays" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="startsDate" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="timeRange" candidateClass="UILabel"/>
-                <relationship kind="outletCollection" name="squares" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="TDateSelectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TDateSelectionViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="didFinishWithDateSelection:" candidateClass="UIDatePicker"/>
-                <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="TDaysViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TDaysViewController.h"/>
-        </class>
-        <class className="TPeriodicityViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TPeriodicityViewController.h"/>
-        </class>
-        <class className="TPointsCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TPointsCell.h"/>
-            <relationships>
-                <relationship kind="action" name="didEndEditingPoints:"/>
-                <relationship kind="outlet" name="pointsTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="pointsTitle" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="square" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="TSportCell" superclassName="UITableViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TSportCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="sport" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="square" candidateClass="UIView"/>
-            </relationships>
-        </class>
-        <class className="TSportsViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TSportsViewController.h"/>
-        </class>
-        <class className="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="back:"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
 </document>

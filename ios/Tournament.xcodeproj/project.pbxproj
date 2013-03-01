@@ -56,6 +56,7 @@
 		DFD3543C16D1A5CE00AC0BE2 /* TCustomNavigationBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD3543B16D1A5CE00AC0BE2 /* TCustomNavigationBarViewController.m */; };
 		DFD3543F16D1ACFF00AC0BE2 /* CreateTournament.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD3543E16D1ACFF00AC0BE2 /* CreateTournament.storyboard */; };
 		DFD3544516D1C3AE00AC0BE2 /* UIColor+CustomBuilders.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD3544416D1C3AE00AC0BE2 /* UIColor+CustomBuilders.m */; };
+		DFD5592C16E044D2006D9B49 /* TTimeRangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD5592B16E044D2006D9B49 /* TTimeRangeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +155,8 @@
 		DFD3543E16D1ACFF00AC0BE2 /* CreateTournament.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateTournament.storyboard; sourceTree = "<group>"; };
 		DFD3544316D1C3AE00AC0BE2 /* UIColor+CustomBuilders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomBuilders.h"; sourceTree = "<group>"; };
 		DFD3544416D1C3AE00AC0BE2 /* UIColor+CustomBuilders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomBuilders.m"; sourceTree = "<group>"; };
+		DFD5592A16E044D2006D9B49 /* TTimeRangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTimeRangeViewController.h; sourceTree = "<group>"; };
+		DFD5592B16E044D2006D9B49 /* TTimeRangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTimeRangeViewController.m; sourceTree = "<group>"; };
 		E1E36014811E4DE8992F1CE2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -315,6 +318,8 @@
 				DF414C2216DEF6A600184C38 /* TPeriodicityViewController.m */,
 				DF414C2416DEFBB100184C38 /* TDaysViewController.h */,
 				DF414C2516DEFBB100184C38 /* TDaysViewController.m */,
+				DFD5592A16E044D2006D9B49 /* TTimeRangeViewController.h */,
+				DFD5592B16E044D2006D9B49 /* TTimeRangeViewController.m */,
 			);
 			name = Schedule;
 			sourceTree = "<group>";
@@ -624,6 +629,7 @@
 				DF414C2016DED21B00184C38 /* TDateSelectionViewController.m in Sources */,
 				DF414C2316DEF6A600184C38 /* TPeriodicityViewController.m in Sources */,
 				DF414C2616DEFBB100184C38 /* TDaysViewController.m in Sources */,
+				DFD5592C16E044D2006D9B49 /* TTimeRangeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
