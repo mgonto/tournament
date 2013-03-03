@@ -162,7 +162,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bsd-9M-hWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3246" y="295"/>
+            <point key="canvasLocation" x="-2770" y="275"/>
         </scene>
         <!--Sports View Controller - Select Sport-->
         <scene sceneID="Qb7-f6-TGc">
@@ -200,7 +200,43 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="myW-Ga-P9s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2857" y="294"/>
+            <point key="canvasLocation" x="-2301" y="266"/>
+        </scene>
+        <!--Extra Information View Controller - Extra Information-->
+        <scene sceneID="c4B-5A-pWs">
+            <objects>
+                <viewController storyboardIdentifier="CTExtraInformation" id="bCD-zK-hah" customClass="TExtraInformationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xjM-V8-u8C">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView contentMode="scaleToFill" text="Add Extra Information" translatesAutoresizingMaskIntoConstraints="NO" id="DN8-DO-3Ut">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="164" type="user" id="K9c-ul-mlz"/>
+                                    <constraint firstAttribute="width" constant="297" type="user" id="o7z-0L-Ctu"/>
+                                    <constraint firstAttribute="width" constant="297" type="user" id="syK-cJ-lG9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DN8-DO-3Ut" firstAttribute="top" secondItem="xjM-V8-u8C" secondAttribute="top" constant="12" id="Mxq-Td-v5v"/>
+                            <constraint firstAttribute="centerX" secondItem="DN8-DO-3Ut" secondAttribute="centerX" type="user" id="Zj1-lE-pWd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Extra Information" id="R6k-iV-PgW"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <connections>
+                        <outlet property="extraInformation" destination="DN8-DO-3Ut" id="bIU-gz-Gtv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KaP-yC-Kp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3240" y="297"/>
         </scene>
         <!--Create Tournament Page View Controller - New Tournament-->
         <scene sceneID="9yN-uj-DvN">
@@ -246,6 +282,33 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="eun-06-hXa">
+                            <rect key="frame" x="0.0" y="270" width="320" height="61"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiR-0T-HLj">
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="206" id="RnN-3h-EaK"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" title="Add Extra Information">
+                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <state key="highlighted">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <segue destination="bCD-zK-hah" kind="push" id="ZtS-5z-lxY"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="centerY" secondItem="eiR-0T-HLj" secondAttribute="centerY" type="user" id="WcD-iK-HYZ"/>
+                                <constraint firstAttribute="centerX" secondItem="eiR-0T-HLj" secondAttribute="centerX" type="user" id="zNJ-HV-ZRi"/>
+                            </constraints>
+                        </view>
                         <sections>
                             <tableViewSection id="khF-23-nkX">
                                 <cells>
@@ -264,7 +327,12 @@
                                                                 <constraint firstAttribute="width" constant="280" id="WCb-Bb-ivD"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                            <textInputTraits key="textInputTraits"/>
+                                                            <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                            <connections>
+                                                                <action selector="next:" destination="ltt-Ob-Z1k" eventType="editingDidEndOnExit" id="eVI-wD-WtA"/>
+                                                                <action selector="startEditing:" destination="ltt-Ob-Z1k" eventType="editingDidBegin" id="pZ7-KA-hMx"/>
+                                                                <outlet property="delegate" destination="ltt-Ob-Z1k" id="VD7-OO-VXQ"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -323,7 +391,11 @@
                                                                 <constraint firstAttribute="height" constant="44" type="user" id="kmA-GY-DaQ"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next"/>
+                                                            <connections>
+                                                                <action selector="startEditing:" destination="ltt-Ob-Z1k" eventType="editingDidBegin" id="kN4-NG-mdW"/>
+                                                                <outlet property="delegate" destination="ltt-Ob-Z1k" id="e3j-Lo-MDr"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -358,7 +430,11 @@
                                                                 <constraint firstAttribute="width" constant="280" id="EIv-ta-DMF"/>
                                                             </constraints>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                            <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                                            <connections>
+                                                                <action selector="startEditing:" destination="ltt-Ob-Z1k" eventType="editingDidBegin" id="u88-AE-7nr"/>
+                                                                <outlet property="delegate" destination="ltt-Ob-Z1k" id="7x9-6g-2lH"/>
+                                                            </connections>
                                                         </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -737,7 +813,7 @@
                                     <!--2013-03-01 01:54:50 +0000-->
                                 </date>
                                 <timeZone key="timeZone" name="America/Los_Angeles">
-                                    <mutableData key="data">
+                                    <data key="data">
 VFppZgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAC5AAAABAAAABCepkign7sVkKCGKqChmveQ
 y4kaoNIj9HDSYSYQ1v50INiArZDa/tGg28CQENzes6DdqayQ3r6VoN+JjpDgnneg4WlwkOJ+WaDjSVKQ
 5F47oOUpNJDmR1gg5xJREOgnOiDo8jMQ6gccIOrSFRDr5v4g7LH3EO3G4CDukdkQ76/8oPBxuxDxj96g
@@ -755,7 +831,7 @@ f5gqkAABAAECAwEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEA
 AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
-</mutableData>
+</data>
                                 </timeZone>
                             </datePicker>
                         </subviews>
@@ -778,7 +854,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zkq-ZD-sq5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3266" y="2110"/>
+            <point key="canvasLocation" x="-3256" y="1976"/>
         </scene>
         <!--Date Selection View Controller - Start and End Date-->
         <scene sceneID="sMb-Nm-Hpz">
@@ -878,7 +954,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yVb-XF-tI2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3280" y="935"/>
+            <point key="canvasLocation" x="-3222" y="889"/>
         </scene>
         <!--Days View Controller - Play Days-->
         <scene sceneID="Lat-ha-q1z">
@@ -909,7 +985,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9ly-Uu-Hyl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2813" y="1843"/>
+            <point key="canvasLocation" x="-2811" y="1767"/>
         </scene>
         <!--Periodicity View Controller - Periodicity-->
         <scene sceneID="s73-kV-VU6">
@@ -940,7 +1016,7 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pxa-nK-q7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2825" y="1177"/>
+            <point key="canvasLocation" x="-2811" y="1213"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HRN-Pa-3oH">
@@ -951,7 +1027,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="2cK-Dm-zKB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.13704357189999999" green="0.70253057070000002" blue="0.1600660384" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -963,6 +1038,102 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
             <point key="canvasLocation" x="-3600" y="-376"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TCreateTournamentFirstViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentFirstViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="hideKeyboard:"/>
+                <relationship kind="action" name="next:" candidateClass="UITextField"/>
+                <relationship kind="action" name="startEditing:" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="inscriptionCost" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="matchPrice" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="tournamentName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="typeOfTournament" candidateClass="UISegmentedControl"/>
+                <relationship kind="outletCollection" name="textFieldFrames" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="TCreateTournamentPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentPageViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="next:"/>
+                <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="nextButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="TCreateTournamentSecondViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentSecondViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="didChangeModality:" candidateClass="UISegmentedControl"/>
+            </relationships>
+        </class>
+        <class className="TCreateTournamentThirdViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentThirdViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="endDate" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="periodicity" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="playDays" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="startsDate" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="timeRange" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="squares" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="TDateSelectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TDateSelectionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="didFinishWithDateSelection:" candidateClass="UIDatePicker"/>
+                <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="TDaysViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TDaysViewController.h"/>
+        </class>
+        <class className="TExtraInformationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TExtraInformationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+                <relationship kind="outlet" name="extraInformation" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="TPeriodicityViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TPeriodicityViewController.h"/>
+        </class>
+        <class className="TPointsCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TPointsCell.h"/>
+            <relationships>
+                <relationship kind="action" name="didEndEditingPoints:"/>
+                <relationship kind="outlet" name="pointsTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pointsTitle" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="square" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="TSportCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TSportCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="sport" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="square" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="TSportsViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TSportsViewController.h"/>
+        </class>
+        <class className="TTimeRangeViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TTimeRangeViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="timePicker" candidateClass="UIDatePicker"/>
+            </relationships>
+        </class>
+        <class className="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

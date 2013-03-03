@@ -12,9 +12,11 @@
 
 #import <QuartzCore/QuartzCore.h>
 
-@interface TCreateTournamentFirstViewController ()
+@interface TCreateTournamentFirstViewController () <UIGestureRecognizerDelegate>
 
 @property (weak, nonatomic) TRemoteTournament *tournament;
+@property (weak, nonatomic) UITextField *active;
+@property (strong, nonatomic) UITapGestureRecognizer *gestureRecognizer;
 
 @end
 
@@ -23,6 +25,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideKeyboard:)];
+    self.gestureRecognizer.cancelsTouchesInView = NO;
+    self.gestureRecognizer.delegate = self;
+    [self.tableView addGestureRecognizer:self.gestureRecognizer];
     
     for (UIView *squares in self.textFieldFrames) {
         squares.layer.borderColor = [UIColor grayColor].CGColor;
@@ -55,5 +62,34 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)next:(UITextField *)sender {
+    UITextField *next = nil;
+    if (self.active == self.tournamentName) {
+        next = self.inscriptionCost;
+    }else if (self.active == self.inscriptionCost) {
+        next = self.matchPrice;
+    }
+    [next becomeFirstResponder];
+}
+
+- (IBAction)startEditing:(UITextField *)sender {
+    self.active = sender;
+}
+
+- (IBAction)hideKeyboard:(id)sender {
+    [self.active resignFirstResponder];
+    self.active = nil;
+}
+
+#pragma mark - UIGestureRecognizerDelegate
+
+- (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    if(([touch.view isKindOfClass:[UITextField class]]) && (gestureRecognizer == self.gestureRecognizer))
+    {
+        return NO;
+    }
+    return YES;
+}
 
 @end

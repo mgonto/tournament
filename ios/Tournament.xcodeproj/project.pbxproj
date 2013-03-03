@@ -41,6 +41,7 @@
 		DF7DEC6616D116410092D578 /* TTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7DEC6516D116410092D578 /* TTimelineViewController.m */; };
 		DF7DEC6916D116570092D578 /* TTournamentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7DEC6816D116570092D578 /* TTournamentsViewController.m */; };
 		DF7DEC7416D124710092D578 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7DEC7316D124700092D578 /* MainStoryboard.storyboard */; };
+		DF87992416E2810F00804AB8 /* TExtraInformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF87992316E2810F00804AB8 /* TExtraInformationViewController.m */; };
 		DF9B642C16D41FC700D663A2 /* TCreateTournamentFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B642B16D41FC700D663A2 /* TCreateTournamentFirstViewController.m */; };
 		DF9B642F16D53DC300D663A2 /* TRemoteTournament.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B642E16D53DC300D663A2 /* TRemoteTournament.m */; };
 		DF9B643416D5456600D663A2 /* TTransientSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = DF9B643316D5456600D663A2 /* TTransientSchedule.m */; };
@@ -126,6 +127,8 @@
 		DF7DEC6A16D11BCE0092D578 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DF7DEC6B16D11BCE0092D578 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF7DEC7316D124700092D578 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DF87992216E2810F00804AB8 /* TExtraInformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TExtraInformationViewController.h; sourceTree = "<group>"; };
+		DF87992316E2810F00804AB8 /* TExtraInformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TExtraInformationViewController.m; sourceTree = "<group>"; };
 		DF9B642A16D41FC600D663A2 /* TCreateTournamentFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCreateTournamentFirstViewController.h; sourceTree = "<group>"; };
 		DF9B642B16D41FC700D663A2 /* TCreateTournamentFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCreateTournamentFirstViewController.m; sourceTree = "<group>"; };
 		DF9B642D16D53DC300D663A2 /* TRemoteTournament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRemoteTournament.h; sourceTree = "<group>"; };
@@ -335,6 +338,15 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		DF87992116E280E400804AB8 /* Extra information */ = {
+			isa = PBXGroup;
+			children = (
+				DF87992216E2810F00804AB8 /* TExtraInformationViewController.h */,
+				DF87992316E2810F00804AB8 /* TExtraInformationViewController.m */,
+			);
+			name = "Extra information";
+			sourceTree = "<group>";
+		};
 		DF9B643016D5452500D663A2 /* Remote Objects */ = {
 			isa = PBXGroup;
 			children = (
@@ -445,6 +457,7 @@
 		DFD3543D16D1AC4100AC0BE2 /* New Tournaments */ = {
 			isa = PBXGroup;
 			children = (
+				DF87992116E280E400804AB8 /* Extra information */,
 				DF414C1D16DED1EE00184C38 /* Schedule */,
 				DF414C1C16DED18900184C38 /* Sport Selection */,
 				DF414C1B16DED17200184C38 /* Tournament Data */,
@@ -630,6 +643,7 @@
 				DF414C2316DEF6A600184C38 /* TPeriodicityViewController.m in Sources */,
 				DF414C2616DEFBB100184C38 /* TDaysViewController.m in Sources */,
 				DFD5592C16E044D2006D9B49 /* TTimeRangeViewController.m in Sources */,
+				DF87992416E2810F00804AB8 /* TExtraInformationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

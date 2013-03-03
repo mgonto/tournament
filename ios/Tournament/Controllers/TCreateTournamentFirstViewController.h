@@ -16,5 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *matchPrice;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *typeOfTournament;
 
+- (IBAction)next:(UITextField *)sender;
+- (IBAction)startEditing:(UITextField *)sender;
 
 @end
