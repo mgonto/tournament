@@ -1045,7 +1045,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="TCreateTournamentFirstViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentFirstViewController.h"/>
             <relationships>
-                <relationship kind="action" name="hideKeyboard:"/>
                 <relationship kind="action" name="next:" candidateClass="UITextField"/>
                 <relationship kind="action" name="startEditing:" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="inscriptionCost" candidateClass="UITextField"/>
@@ -1094,7 +1093,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="TExtraInformationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TExtraInformationViewController.h"/>
             <relationships>
-                <relationship kind="action" name="back:"/>
                 <relationship kind="outlet" name="extraInformation" candidateClass="UITextView"/>
             </relationships>
         </class>

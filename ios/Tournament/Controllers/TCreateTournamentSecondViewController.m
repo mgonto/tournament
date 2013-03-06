@@ -113,8 +113,9 @@ typedef NS_ENUM(NSInteger, kStatsSection) {
         cell = [tableView dequeueReusableCellWithIdentifier:modalityId forIndexPath:indexPath];
     }else {
         TPointsCell *pointsCell = [tableView dequeueReusableCellWithIdentifier:pointsId forIndexPath:indexPath];
-        pointsCell.pointsTitle.text = S(self.tournament.sport.defaultPoints.allKeys[indexPath.row]);
-        NSNumber *points = [self.tournament.sport.defaultPoints objectForKey:pointsCell.pointsTitle.text];
+        NSString *pointKey = self.tournament.sport.defaultPoints.allKeys[indexPath.row];
+        pointsCell.pointsTitle.text = S(pointKey);
+        NSNumber *points = [self.tournament.sport.defaultPoints objectForKey:pointKey];
         pointsCell.pointsTextField.text = [NSString stringWithFormat:@"%d", [points intValue]];
         __weak TCreateTournamentSecondViewController *weakSelf = self;
         pointsCell.completion = ^(NSString *pointsKey, int points){
