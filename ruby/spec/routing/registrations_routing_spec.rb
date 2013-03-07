@@ -1,18 +1,15 @@
 require "spec_helper"
 
-describe UsersController do
+describe RegistrationsController do
   describe "routing" do
 
     it "routes to #create" do
-      post("users").should route_to("users#create")
+      post("users").should route_to("registrations#create")
     end
 
     it "routes to #destroy" do
+      pending "until we know how to configure this in devise"
       delete("users/2").should route_to("users#destroy", :id => "2")
-    end
-
-    it "routes to #login" do
-      post("users/login").should route_to("users#login")
     end
 
   end
