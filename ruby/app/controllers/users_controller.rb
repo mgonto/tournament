@@ -1,4 +1,4 @@
-class V1::UsersController < ApplicationController
+class UsersController < ApplicationController
   respond_to :json
 
   before_filter :authenticate_user!, :only => :destroy

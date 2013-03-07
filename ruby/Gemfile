@@ -54,9 +54,6 @@ gem 'koala'
 gem 'devise'
 gem 'validates_email_format_of'
 
-# API Rest
-gem 'versionist'
-
 # Database
 gem 'mongoid', '~> 3.0.2'
 gem 'sqlite3'
