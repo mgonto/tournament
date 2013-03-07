@@ -1,8 +1,12 @@
 class Schedule
   include Mongoid::Document
-  field :startDate, type: Date
-  field :endDate, type: Date
-  field :startTime, type: Time
-  field :endTime, type: Time
-  field :playDow, type: String
+  field :start_date, type: Date
+  field :end_date, type: Date
+  field :start_time, type: Time
+  field :end_time, type: Time
+  field :play_dow, type: String
+
+  validates_datetime :finish_time, :after => :start_time
+
+
 end

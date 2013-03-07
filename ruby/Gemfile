@@ -56,6 +56,7 @@ gem 'devise'
 #Model
 gem 'validates_email_format_of'
 gem 'phony_rails'
+gem 'validates_timeliness'
 
 # Database
 gem 'mongoid', '~> 3.0.2'
