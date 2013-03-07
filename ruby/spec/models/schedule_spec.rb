@@ -1,6 +1,9 @@
 require 'spec_helper'
 
 describe Schedule do
+
+  it { should validate_numericality_of(:start_time).greater_than_or_equal_to(0).less_than(1440) }
+  it { should validate_numericality_of(:end_time).greater_than_or_equal_to(0).less_than(1440) }
   
   it "should save valid schedule" do
     schedule = Fabricate.build(:schedule)
