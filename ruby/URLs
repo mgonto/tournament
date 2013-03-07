@@ -1,0 +1,16 @@
+# URLs
+
+POST /users creates a new user and returns auth_token.
+
+POST /sessions logins user. facebook_token or mail+password
+DELETE /sessions/{id}  logouts user
+
+POST /tournaments
+
+GET /sports
+
+TOURNAMENT {
+  SCHEDULE,
+  SPORT,
+  STADIUMs (Id or values)
+}
