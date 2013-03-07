@@ -21,4 +21,24 @@ describe Schedule do
     schedule.errors.should_not include(:start_date)
   end
 
+  describe "test time_to_int" do
+
+    cases = Hash.new
+    cases["00:00"] = 0
+    cases["01:00"] = 60
+    cases["01:01"] = 61
+    cases["as:as"] = -1
+    cases["1:1"]   = -1
+
+    cases.each do |hour, minutes_from_midnight|
+      
+      it("should convert the time #{hour} to #{minutes_from_midnight}") do 
+        schedule = Fabricate.build(:schedule)
+        schedule.time_to_int(hour).should eq minutes_from_midnight
+      end
+
+    end
+
+  end    
+
 end
