@@ -6,9 +6,19 @@
 //
 //
 
-#import "TTransientStadium.h"
+#import "TRemoteStadium.h"
 
-@implementation TTransientStadium
+@implementation TRemoteStadium
+
++ (id) stadiumWithName:(NSString *)name zone:(NSString *)zone address:(NSString *)address phone:(NSString *)phone {
+    TRemoteStadium *stadium = [[[self class] alloc] init];
+    stadium.name = name;
+    stadium.zone = zone;
+    stadium.address = address;
+    stadium.phone = phone;
+    
+    return stadium;
+}
 
 #pragma mark - NSCoding Protocol
 

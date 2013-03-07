@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class TTransientSchedule;
-@class TTransientStadium;
+@class TRemoteStadium;
 @class TSport;
 
 @interface TRemoteTournament : NSObject <NSCoding>

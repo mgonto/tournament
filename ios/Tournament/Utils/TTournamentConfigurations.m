@@ -8,6 +8,7 @@
 
 #import "TTournamentConfigurations.h"
 #import "TRemoteTournament.h"
+#import "TRemoteStadium.h"
 #import "TSport.h"
 
 NSString *const TWinPoints = @"KEY_WIN_POINTS";
@@ -42,6 +43,12 @@ NSString *const TTiePoints = @"KEY_TIE_POINTS";
                          S(@"TWICE_WEEK"),
                          S(@"TWO_WEEKS"),
                          S(@"NONE")];
+        
+        _stadiums = [NSMutableArray array];
+        [self.stadiums addObject:[TRemoteStadium stadiumWithName:@"Open Cangallo"
+                                                            zone:@"Villa Crespo"
+                                                         address:@"Lavalleja 64"
+                                                           phone:@"61234612361"]];
     }
     return self;
 }

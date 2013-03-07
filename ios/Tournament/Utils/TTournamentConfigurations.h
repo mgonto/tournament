@@ -33,5 +33,6 @@ typedef NS_ENUM(NSInteger, kSport) {
 @property (strong, nonatomic) NSArray *sports;
 @property (strong, nonatomic, readonly) NSDictionary *days;
 @property (strong, nonatomic) NSArray *periodicity;
+@property (strong, nonatomic) NSMutableArray *stadiums;
 
 @end
