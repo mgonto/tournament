@@ -1,10 +1,10 @@
 require "spec_helper"
 
 describe RegistrationsController do
-  describe "routing" do
+  describe "routing login" do
 
     it "routes to #create" do
-      post("users").should route_to("registrations#create")
+      post("/users/sign_in").should route_to("sessions#create")
     end
 
   end
