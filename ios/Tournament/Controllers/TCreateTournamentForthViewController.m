@@ -37,6 +37,14 @@ typedef NS_ENUM(NSInteger, kSearchScope) {
     
     [self.searchDisplayController.searchResultsTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"StadiumCell"];
     [self.searchDisplayController.searchResultsTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"AddStadiumCell"];
+    
+    __weak TCreateTournamentForthViewController *weakSelf = self;
+    self.beforeBackBlock = ^(void) {
+        __strong TCreateTournamentForthViewController *strongSelf = weakSelf;
+        if ([strongSelf.searchDisplayController isActive]) {
+            [strongSelf.searchDisplayController setActive:NO];
+        }
+    };
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,13 +77,6 @@ typedef NS_ENUM(NSInteger, kSearchScope) {
             [self.tableView deselectRowAtIndexPath:selectedIndexPath animated:YES];
         }
     }
-}
-
-- (void)back:(id)sender {
-    if ([self.searchDisplayController.searchBar isFirstResponder]) {
-        [self.searchDisplayController setActive:NO];
-    }
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma mark - Table view data source

@@ -74,6 +74,10 @@
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
 
+    if (viewController.beforeBackBlock) {
+        viewController.beforeBackBlock();
+    }
+
     [self changeDoneButtonIntoNextButton];
     NSUInteger index = [self.viewControllers indexOfObject:viewController];
     if (index == NSNotFound || index == 0) {
@@ -134,6 +138,9 @@
     if (viewController) {
         if ([viewController isEqual:self.viewControllers[0]]) {
             [self changeBackButtonIntoCancelButton];
+        }
+        if (viewController.beforeBackBlock) {
+            viewController.beforeBackBlock();
         }
         [self.pageViewController setViewControllers:@[viewController] direction:UIPageViewControllerNavigationDirectionReverse animated:YES completion:nil];
     }

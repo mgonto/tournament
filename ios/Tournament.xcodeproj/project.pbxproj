@@ -10,6 +10,7 @@
 		7F0CC8E489664C67BDA1935E /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A707D111D3D549D89300469D /* libPods-test.a */; };
 		BDC76A535B6547389B893411 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E36014811E4DE8992F1CE2 /* libPods.a */; };
 		DF00D94F16D71E730098AB4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00D94E16D71E730098AB4F /* QuartzCore.framework */; };
+		DF0CF67516E83E3E00318271 /* UIViewController+BlockActioner.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0CF67416E83E3E00318271 /* UIViewController+BlockActioner.m */; };
 		DF2D93A016E805F000D51C6C /* TCreateTournamentForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D939F16E805F000D51C6C /* TCreateTournamentForthViewController.m */; };
 		DF2D93A316E8100900D51C6C /* TStadiumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D93A216E8100900D51C6C /* TStadiumViewController.m */; };
 		DF3402C816B76F440061D4E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C716B76F440061D4E8 /* UIKit.framework */; };
@@ -77,6 +78,8 @@
 		7017C02E1F9B4C598F60C603 /* Pods-test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.xcconfig"; path = "Pods/Pods-test.xcconfig"; sourceTree = SOURCE_ROOT; };
 		A707D111D3D549D89300469D /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF00D94E16D71E730098AB4F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DF0CF67316E83E3E00318271 /* UIViewController+BlockActioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BlockActioner.h"; sourceTree = "<group>"; };
+		DF0CF67416E83E3E00318271 /* UIViewController+BlockActioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BlockActioner.m"; sourceTree = "<group>"; };
 		DF2D939E16E805F000D51C6C /* TCreateTournamentForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCreateTournamentForthViewController.h; sourceTree = "<group>"; };
 		DF2D939F16E805F000D51C6C /* TCreateTournamentForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCreateTournamentForthViewController.m; sourceTree = "<group>"; };
 		DF2D93A116E8100900D51C6C /* TStadiumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TStadiumViewController.h; sourceTree = "<group>"; };
@@ -453,6 +456,8 @@
 				DFD3543316D1A3F200AC0BE2 /* UIStoryboard+ViewControllerInstantiate.m */,
 				DFD3543416D1A3F200AC0BE2 /* UIViewController+MultipleStoryboardNavigation.h */,
 				DFD3543516D1A3F200AC0BE2 /* UIViewController+MultipleStoryboardNavigation.m */,
+				DF0CF67316E83E3E00318271 /* UIViewController+BlockActioner.h */,
+				DF0CF67416E83E3E00318271 /* UIViewController+BlockActioner.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -664,6 +669,7 @@
 				DF87992416E2810F00804AB8 /* TExtraInformationViewController.m in Sources */,
 				DF2D93A016E805F000D51C6C /* TCreateTournamentForthViewController.m in Sources */,
 				DF2D93A316E8100900D51C6C /* TStadiumViewController.m in Sources */,
+				DF0CF67516E83E3E00318271 /* UIViewController+BlockActioner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
