@@ -24,6 +24,20 @@ describe Schedule do
     schedule.errors.should_not include(:start_date)
   end
 
+  it "should create schedule ok with time parsed" do 
+      schedule_attrs = Fabricate.build(:schedule).attributes
+
+      schedule_attrs[:start_time_string] = "01:00"
+      schedule_attrs[:end_time_string] = "01:01"
+      
+      schedule = Schedule.new(schedule_attrs)
+      
+      schedule.valid?.should be_true
+      schedule.start_time.should eq 60
+      schedule.end_time.should eq 61
+    end
+
+
   describe "test time_to_int" do
 
     cases = Hash.new
@@ -36,9 +50,10 @@ describe Schedule do
     cases.each do |hour, minutes_from_midnight|
       
       it("should convert the time #{hour} to #{minutes_from_midnight}") do 
-        schedule = Fabricate.build(:schedule)
-        schedule.time_to_int(hour).should eq minutes_from_midnight
+        Schedule.time_to_int(hour).should eq minutes_from_midnight
       end
+
+
 
     end
 
