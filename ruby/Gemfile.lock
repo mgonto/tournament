@@ -14,6 +14,8 @@ GEM
       rack-cache (~> 1.2)
       rack-test (~> 0.6.1)
       sprockets (~> 2.2.1)
+    active_model_serializers (0.7.0)
+      activemodel (>= 3.0)
     activemodel (3.2.11)
       activesupport (= 3.2.11)
       builder (~> 3.0.0)
@@ -31,8 +33,6 @@ GEM
     addressable (2.3.3)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
-    binding_of_caller (0.7.1)
-      debug_inspector (>= 0.0.1)
     builder (3.0.4)
     childprocess (0.3.8)
       ffi (~> 1.0, >= 1.0.11)
@@ -43,7 +43,6 @@ GEM
     crack (0.3.2)
     currencies (0.4.0)
     database_cleaner (0.9.1)
-    debug_inspector (0.0.2)
     debugger (1.2.4)
       columnize (>= 0.3.1)
       debugger-linecache (~> 1.1.1)
@@ -131,9 +130,6 @@ GEM
     pry-debugger (0.2.1)
       debugger (~> 1.2.0)
       pry (~> 0.9.10)
-    pry-stack_explorer (0.4.9)
-      binding_of_caller (>= 0.7)
-      pry (~> 0.9.11)
     rabl (0.8.0)
       activesupport (>= 2.3.14)
     rack (1.4.5)
@@ -224,6 +220,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers
   database_cleaner
   devise
   fabrication
@@ -240,7 +237,6 @@ DEPENDENCIES
   phony_rails
   pry
   pry-debugger
-  pry-stack_explorer
   rabl
   rails (= 3.2.11)
   rb-fsevent

@@ -4,6 +4,7 @@ require 'spork'
 require 'webmock/rspec'
 require 'vcr'
 require 'spec_session_helper'
+require 'spec_login_helper'
 #uncomment the following line to use spork with the debugger
 #require 'spork/ext/ruby-debug'
 
@@ -35,6 +36,7 @@ Spork.prefork do
   RSpec.configure do |config|
 
     config.include SpecSessionHelper
+    config.include SpecLoginHelper #adds login method
 
     # config.mock_with :mocha
 

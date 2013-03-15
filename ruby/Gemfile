@@ -28,8 +28,6 @@ group :test, :development do
   gem 'json_spec'
 
   gem 'pry'
-  gem 'pry'
-  gem 'pry-stack_explorer'
   gem 'pry-debugger'
   gem 'rest-client'
 
@@ -68,6 +66,9 @@ gem 'oj'
 
 # Pagination
 gem 'kaminari'
+
+#JSON
+gem "active_model_serializers"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

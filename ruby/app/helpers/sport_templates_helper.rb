@@ -1,0 +1,2 @@
+module SportTemplatesHelper
+end
