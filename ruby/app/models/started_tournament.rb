@@ -1,3 +1,3 @@
-class StartedTournament < TournamentStatu
+class StartedTournament < TournamentStatus
   include Mongoid::Document
 end
