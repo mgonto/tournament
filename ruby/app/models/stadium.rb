@@ -6,7 +6,7 @@ class Stadium
   field :address, type: String
   field :phone, type: String
 
-  embedded_in :tourney
+  belongs_to :tourney
 
   phony_normalize :phone, :default_country_code => 'AR'
 
