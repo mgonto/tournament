@@ -125,7 +125,16 @@
         }
         [self.pageViewController setViewControllers:@[viewController] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     } else {
-        // TODO Check Validation of tournament.
+        // TODO
+        
+//    if ([[TTournament application] isSessionAvailable]) {
+//        Check Tournament Validation.
+//        Create tournament request.
+//        When Finish the request push view controller.
+//    }else{
+//        Show authentication form.
+//    }
+
         [self.navigationController pushViewControllerWithIdentifier:@"FinishTournamentCreation"
                                                      fromStoryboard:@"FinishTournament"
                                                               block:nil];

@@ -13,6 +13,7 @@
 		DF0CF67516E83E3E00318271 /* UIViewController+BlockActioner.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0CF67416E83E3E00318271 /* UIViewController+BlockActioner.m */; };
 		DF23827C1703BA2E008238C3 /* FinishTournament.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF23827B1703BA2E008238C3 /* FinishTournament.storyboard */; };
 		DF23827F1703C2C4008238C3 /* TShareTournamentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF23827E1703C2C4008238C3 /* TShareTournamentViewController.m */; };
+		DF2382851703C874008238C3 /* TRemoteShare.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2382841703C874008238C3 /* TRemoteShare.m */; };
 		DF2D93A016E805F000D51C6C /* TCreateTournamentForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D939F16E805F000D51C6C /* TCreateTournamentForthViewController.m */; };
 		DF2D93A316E8100900D51C6C /* TStadiumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D93A216E8100900D51C6C /* TStadiumViewController.m */; };
 		DF3402C816B76F440061D4E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C716B76F440061D4E8 /* UIKit.framework */; };
@@ -85,6 +86,8 @@
 		DF23827B1703BA2E008238C3 /* FinishTournament.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinishTournament.storyboard; sourceTree = "<group>"; };
 		DF23827D1703C2C4008238C3 /* TShareTournamentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TShareTournamentViewController.h; sourceTree = "<group>"; };
 		DF23827E1703C2C4008238C3 /* TShareTournamentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TShareTournamentViewController.m; sourceTree = "<group>"; };
+		DF2382831703C874008238C3 /* TRemoteShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRemoteShare.h; sourceTree = "<group>"; };
+		DF2382841703C874008238C3 /* TRemoteShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRemoteShare.m; sourceTree = "<group>"; };
 		DF2D939E16E805F000D51C6C /* TCreateTournamentForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCreateTournamentForthViewController.h; sourceTree = "<group>"; };
 		DF2D939F16E805F000D51C6C /* TCreateTournamentForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCreateTournamentForthViewController.m; sourceTree = "<group>"; };
 		DF2D93A116E8100900D51C6C /* TStadiumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TStadiumViewController.h; sourceTree = "<group>"; };
@@ -389,6 +392,8 @@
 				DF9B643616D545D700D663A2 /* TRemoteStadium.m */,
 				DF9B642D16D53DC300D663A2 /* TRemoteTournament.h */,
 				DF9B642E16D53DC300D663A2 /* TRemoteTournament.m */,
+				DF2382831703C874008238C3 /* TRemoteShare.h */,
+				DF2382841703C874008238C3 /* TRemoteShare.m */,
 			);
 			name = "Remote Objects";
 			sourceTree = "<group>";
@@ -688,6 +693,7 @@
 				DF2D93A316E8100900D51C6C /* TStadiumViewController.m in Sources */,
 				DF0CF67516E83E3E00318271 /* UIViewController+BlockActioner.m in Sources */,
 				DF23827F1703C2C4008238C3 /* TShareTournamentViewController.m in Sources */,
+				DF2382851703C874008238C3 /* TRemoteShare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
