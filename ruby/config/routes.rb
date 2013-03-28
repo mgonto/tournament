@@ -4,6 +4,6 @@ Tournament::Application.routes.draw do
                                        :sessions => "sessions" }
 
   resources :sport_templates, only: [:index]
-  resources :tournaments, only: [:create]                                     
+  resources :tournaments, only: [:create, :show]                                     
 
 end

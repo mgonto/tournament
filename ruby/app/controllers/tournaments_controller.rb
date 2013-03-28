@@ -1,6 +1,7 @@
 class TournamentsController < ApplicationController
-  
-  before_filter :authenticate_user!  
+  include ApplicationHelper
+
+  before_filter :authenticate_user!
 
   def create
     @tournament = Tourney.new(params[:tournament])
@@ -17,6 +18,13 @@ class TournamentsController < ApplicationController
     @tournament = Tourney.find(params[:id])
 
     render json: @tournament
+  end
+
+  def share
+    if params[:share][:facebook]
+      @graph = facebook_user_with_token(params[:share][:facebook_token])
+      graph.put_wall_post("explodingdog!", {:name => "i love loving you", :link => "http://www.explodingdog.com/title/ilovelovingyou.html"}, "tmiley")
+    end
   end
 
 end

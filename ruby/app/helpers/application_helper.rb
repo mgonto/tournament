@@ -1,8 +1,13 @@
 module ApplicationHelper
 
   def facebook_user
-    @graph = Koala::Facebook::API.new(params[:user][:facebook_token])
+    @graph = facebook_user_with_token(params[:user][:facebook_token])
     @facebook_user = @graph.get_object("me")
+  end
+
+  def facebook_user_with_token(token)
+    @graph = Koala::Facebook::API.new(token)
+    @graph
   end
 
   def create_or_get_facebook_user
