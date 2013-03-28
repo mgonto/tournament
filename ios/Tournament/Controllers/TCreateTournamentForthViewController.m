@@ -65,7 +65,9 @@ typedef NS_ENUM(NSInteger, kSearchScope) {
         __weak TCreateTournamentForthViewController *weakSelf = self;
         stadiumViewController.creationSuccess = ^(TRemoteStadium *newStadium){
             __strong TCreateTournamentForthViewController *strongSelf = weakSelf;
-            [strongSelf.stadiums addObject:newStadium];
+            if (newStadium) {
+                [strongSelf.stadiums addObject:newStadium];
+            }
             [strongSelf.navigationController popViewControllerAnimated:YES];
         };
         if ([self.searchDisplayController.searchBar isFirstResponder]) {

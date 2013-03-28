@@ -217,6 +217,13 @@
 			name = "Finish Tournament";
 			sourceTree = "<group>";
 		};
+		DF2382861704BD51008238C3 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Validators;
+			sourceTree = "<group>";
+		};
 		DF2D939D16E805BF00D51C6C /* Stadiums */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +430,7 @@
 		DFB4FACE16CD10F70014A427 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DF2382861704BD51008238C3 /* Validators */,
 				DF9B643116D5453400D663A2 /* Transient Objects */,
 				DF9B643016D5452500D663A2 /* Remote Objects */,
 			);
