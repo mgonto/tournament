@@ -13,4 +13,7 @@ class TournamentsController < ApplicationController
     
   end
 
+  def show
+  end
+
 end
