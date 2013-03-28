@@ -14,6 +14,9 @@ class TournamentsController < ApplicationController
   end
 
   def show
+    @tournament = Tourney.find(params[:id])
+
+    render json: @tournament
   end
 
 end
