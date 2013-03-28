@@ -46,5 +46,12 @@ class Tourney
   validates :match_cost, presence: true, numericality: {greater_than_or_equal_to: 0, less_than: 10000}
   validates :privacy, presence: true
 
+  after_initialize :init_tournament
+
+  private
+    def init_tournament
+      tournament_status = CreatedTournament.new
+    end
+
 
 end
