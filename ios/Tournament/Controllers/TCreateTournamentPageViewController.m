@@ -125,11 +125,10 @@
         }
         [self.pageViewController setViewControllers:@[viewController] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     } else {
-//        if ([[TTournament application] isSessionAvailable]) {
-//             TODO Create tournament request.
-//        }else{
-//             TODO show authentication form.
-//    s    }
+        // TODO Check Validation of tournament.
+        [self.navigationController pushViewControllerWithIdentifier:@"FinishTournamentCreation"
+                                                     fromStoryboard:@"FinishTournament"
+                                                              block:nil];
     }
 }
 

@@ -11,7 +11,9 @@
 
 - (void)pushViewControllerWithIdentifier:(NSString *)viewControllerIdentifier fromStoryboard:(NSString *)storyboard block:(void (^)(id))block {
     UIViewController *controller = [UIStoryboard instantiateViewControllerWithIdentifier:viewControllerIdentifier fromStoryboard:storyboard];
-    block(controller);
+    if (block) {
+        block(controller);
+    }
     [self pushViewController:controller animated:YES];
 }
 

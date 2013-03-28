@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="dLJ-sZ-K9V">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Share Tournament View Controller-->
+        <scene sceneID="8Kd-ns-gk1">
+            <objects>
+                <viewController storyboardIdentifier="FinishTournamentCreation" id="dLJ-sZ-K9V" customClass="TShareTournamentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oz2-gX-JWt">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hda-lT-ca2">
+                                <color key="backgroundColor" red="1" green="0.89499057989999997" blue="0.26421386699999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="167" id="z8O-l3-wv1"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tournament creation was success" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKv-Ov-Tfc">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="rr0-JG-3xI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Congratulations" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebK-Hs-gSH">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="6tI-fF-QLn"/>
+                                    <constraint firstAttribute="height" constant="31" id="Fbd-mD-KlB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5b-b2-UZV">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="goR-PM-5ZR"/>
+                                    <constraint firstAttribute="height" constant="29" id="hrX-lq-vBt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Share by Email">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nkf-o3-Yil">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Se9-nH-ftB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="TW">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdo-Yg-WzG">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="vbi-QU-2z9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="FB">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hdo-Yg-WzG" firstAttribute="leading" secondItem="nkf-o3-Yil" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="24W-0S-ndM"/>
+                            <constraint firstAttribute="trailing" secondItem="hdo-Yg-WzG" secondAttribute="trailing" constant="28" id="2Bt-Cf-qVW"/>
+                            <constraint firstItem="nkf-o3-Yil" firstAttribute="bottom" secondItem="M5b-b2-UZV" secondAttribute="bottom" type="default" id="2nH-Us-MVZ"/>
+                            <constraint firstItem="hdo-Yg-WzG" firstAttribute="top" secondItem="nkf-o3-Yil" secondAttribute="top" type="default" id="7wF-8K-sDv"/>
+                            <constraint firstItem="ebK-Hs-gSH" firstAttribute="centerX" secondItem="UKv-Ov-Tfc" secondAttribute="centerX" type="default" id="Ktf-QD-cXy"/>
+                            <constraint firstAttribute="centerX" secondItem="Hda-lT-ca2" secondAttribute="centerX" type="user" id="Nt7-dD-0fd"/>
+                            <constraint firstItem="hdo-Yg-WzG" firstAttribute="bottom" secondItem="nkf-o3-Yil" secondAttribute="bottom" type="default" id="PnE-2b-smA"/>
+                            <constraint firstItem="M5b-b2-UZV" firstAttribute="leading" secondItem="Oz2-gX-JWt" secondAttribute="leading" constant="28" id="SfM-Nv-bjR"/>
+                            <constraint firstAttribute="bottom" secondItem="M5b-b2-UZV" secondAttribute="bottom" constant="78" id="ZjO-92-Fh1"/>
+                            <constraint firstItem="ebK-Hs-gSH" firstAttribute="top" secondItem="Oz2-gX-JWt" secondAttribute="top" constant="39" id="bgP-UT-lmM"/>
+                            <constraint firstItem="nkf-o3-Yil" firstAttribute="top" secondItem="M5b-b2-UZV" secondAttribute="top" type="default" id="c9r-xf-5Ce"/>
+                            <constraint firstAttribute="centerX" secondItem="ebK-Hs-gSH" secondAttribute="centerX" type="user" id="ddN-1d-tHa"/>
+                            <constraint firstItem="UKv-Ov-Tfc" firstAttribute="top" secondItem="ebK-Hs-gSH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qh1-Uy-O2s"/>
+                            <constraint firstItem="ebK-Hs-gSH" firstAttribute="leading" secondItem="Hda-lT-ca2" secondAttribute="leading" type="default" id="tuL-1x-65g"/>
+                            <constraint firstAttribute="centerY" secondItem="Hda-lT-ca2" secondAttribute="centerY" type="user" id="zWT-uN-B5X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="reB-pM-kXC">
+                        <barButtonItem key="rightBarButtonItem" title="Finish" id="F1x-S5-JoY">
+                            <connections>
+                                <segue destination="c8j-sb-GjW" kind="unwind" unwindAction="finishedTournamentCreation:" id="OgN-I9-FBY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="cupImage" destination="Hda-lT-ca2" id="yai-96-k8h"/>
+                        <outlet property="shareByEmailButton" destination="M5b-b2-UZV" id="Rm6-r4-uK1"/>
+                        <outlet property="shareFBButton" destination="hdo-Yg-WzG" id="jhY-cm-7K7"/>
+                        <outlet property="shareTwitterButton" destination="nkf-o3-Yil" id="gHf-DN-B3Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Y5-OU-nwI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="c8j-sb-GjW" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="54"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TShareTournamentViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TShareTournamentViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="cupImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="shareByEmailButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="shareFBButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="shareTwitterButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="back:"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

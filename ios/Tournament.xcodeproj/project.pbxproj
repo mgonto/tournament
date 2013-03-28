@@ -11,6 +11,8 @@
 		BDC76A535B6547389B893411 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E36014811E4DE8992F1CE2 /* libPods.a */; };
 		DF00D94F16D71E730098AB4F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF00D94E16D71E730098AB4F /* QuartzCore.framework */; };
 		DF0CF67516E83E3E00318271 /* UIViewController+BlockActioner.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0CF67416E83E3E00318271 /* UIViewController+BlockActioner.m */; };
+		DF23827C1703BA2E008238C3 /* FinishTournament.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF23827B1703BA2E008238C3 /* FinishTournament.storyboard */; };
+		DF23827F1703C2C4008238C3 /* TShareTournamentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF23827E1703C2C4008238C3 /* TShareTournamentViewController.m */; };
 		DF2D93A016E805F000D51C6C /* TCreateTournamentForthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D939F16E805F000D51C6C /* TCreateTournamentForthViewController.m */; };
 		DF2D93A316E8100900D51C6C /* TStadiumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2D93A216E8100900D51C6C /* TStadiumViewController.m */; };
 		DF3402C816B76F440061D4E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C716B76F440061D4E8 /* UIKit.framework */; };
@@ -80,6 +82,9 @@
 		DF00D94E16D71E730098AB4F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DF0CF67316E83E3E00318271 /* UIViewController+BlockActioner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+BlockActioner.h"; sourceTree = "<group>"; };
 		DF0CF67416E83E3E00318271 /* UIViewController+BlockActioner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+BlockActioner.m"; sourceTree = "<group>"; };
+		DF23827B1703BA2E008238C3 /* FinishTournament.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FinishTournament.storyboard; sourceTree = "<group>"; };
+		DF23827D1703C2C4008238C3 /* TShareTournamentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TShareTournamentViewController.h; sourceTree = "<group>"; };
+		DF23827E1703C2C4008238C3 /* TShareTournamentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TShareTournamentViewController.m; sourceTree = "<group>"; };
 		DF2D939E16E805F000D51C6C /* TCreateTournamentForthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCreateTournamentForthViewController.h; sourceTree = "<group>"; };
 		DF2D939F16E805F000D51C6C /* TCreateTournamentForthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCreateTournamentForthViewController.m; sourceTree = "<group>"; };
 		DF2D93A116E8100900D51C6C /* TStadiumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TStadiumViewController.h; sourceTree = "<group>"; };
@@ -199,6 +204,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DF23827A1703BA08008238C3 /* Finish Tournament */ = {
+			isa = PBXGroup;
+			children = (
+				DF23827B1703BA2E008238C3 /* FinishTournament.storyboard */,
+				DF23827D1703C2C4008238C3 /* TShareTournamentViewController.h */,
+				DF23827E1703C2C4008238C3 /* TShareTournamentViewController.m */,
+			);
+			name = "Finish Tournament";
+			sourceTree = "<group>";
+		};
 		DF2D939D16E805BF00D51C6C /* Stadiums */ = {
 			isa = PBXGroup;
 			children = (
@@ -479,6 +494,7 @@
 		DFD3543D16D1AC4100AC0BE2 /* New Tournaments */ = {
 			isa = PBXGroup;
 			children = (
+				DF23827A1703BA08008238C3 /* Finish Tournament */,
 				DF2D939D16E805BF00D51C6C /* Stadiums */,
 				DF87992116E280E400804AB8 /* Extra information */,
 				DF414C1D16DED1EE00184C38 /* Schedule */,
@@ -573,6 +589,7 @@
 				DFD3543F16D1ACFF00AC0BE2 /* CreateTournament.storyboard in Resources */,
 				DF414C0C16DD7B9700184C38 /* back-black.png in Resources */,
 				DF414C0D16DD7B9700184C38 /* back-black@2x.png in Resources */,
+				DF23827C1703BA2E008238C3 /* FinishTournament.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -670,6 +687,7 @@
 				DF2D93A016E805F000D51C6C /* TCreateTournamentForthViewController.m in Sources */,
 				DF2D93A316E8100900D51C6C /* TStadiumViewController.m in Sources */,
 				DF0CF67516E83E3E00318271 /* UIViewController+BlockActioner.m in Sources */,
+				DF23827F1703C2C4008238C3 /* TShareTournamentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

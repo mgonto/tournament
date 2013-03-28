@@ -56,7 +56,13 @@
 
 - (IBAction)finishedTournamentCreation:(UIStoryboardSegue *)segue {
     //TODO
+//    if ([[TTournament application] isSessionAvailable]) {
+//         TODO Create tournament request.
+//    }else{
+//         TODO show authentication form.
+//    }
     [[[TTournament application] model] finishCurrentTournament];
+
 }
 
 

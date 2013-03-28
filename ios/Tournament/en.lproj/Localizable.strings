@@ -9,6 +9,7 @@
 "NEXT_BUTTON" = "Next";
 "DONE_BUTTON" = "Done";
 "BACK_BUTTON" = "Back";
+"FINISH_BUTTON" = "Finish";
 
 // Days
 "MONDAY" = "Monday";
