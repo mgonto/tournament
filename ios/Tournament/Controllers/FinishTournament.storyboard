@@ -75,6 +75,23 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yme-V5-Xqg">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="krP-cc-HB7"/>
+                                    <constraint firstAttribute="height" constant="31" id="quO-k2-AdS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Add Extra Information">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addExtraInformation:" destination="dLJ-sZ-K9V" eventType="touchUpInside" id="cWr-pA-eVD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -82,14 +99,16 @@
                             <constraint firstAttribute="trailing" secondItem="hdo-Yg-WzG" secondAttribute="trailing" constant="28" id="2Bt-Cf-qVW"/>
                             <constraint firstItem="nkf-o3-Yil" firstAttribute="bottom" secondItem="M5b-b2-UZV" secondAttribute="bottom" type="default" id="2nH-Us-MVZ"/>
                             <constraint firstItem="hdo-Yg-WzG" firstAttribute="top" secondItem="nkf-o3-Yil" secondAttribute="top" type="default" id="7wF-8K-sDv"/>
+                            <constraint firstItem="Hda-lT-ca2" firstAttribute="centerX" secondItem="Yme-V5-Xqg" secondAttribute="centerX" type="default" id="EJz-Cl-kZc"/>
                             <constraint firstItem="ebK-Hs-gSH" firstAttribute="centerX" secondItem="UKv-Ov-Tfc" secondAttribute="centerX" type="default" id="Ktf-QD-cXy"/>
                             <constraint firstAttribute="centerX" secondItem="Hda-lT-ca2" secondAttribute="centerX" type="user" id="Nt7-dD-0fd"/>
                             <constraint firstItem="hdo-Yg-WzG" firstAttribute="bottom" secondItem="nkf-o3-Yil" secondAttribute="bottom" type="default" id="PnE-2b-smA"/>
                             <constraint firstItem="M5b-b2-UZV" firstAttribute="leading" secondItem="Oz2-gX-JWt" secondAttribute="leading" constant="28" id="SfM-Nv-bjR"/>
-                            <constraint firstAttribute="bottom" secondItem="M5b-b2-UZV" secondAttribute="bottom" constant="78" id="ZjO-92-Fh1"/>
                             <constraint firstItem="ebK-Hs-gSH" firstAttribute="top" secondItem="Oz2-gX-JWt" secondAttribute="top" constant="39" id="bgP-UT-lmM"/>
                             <constraint firstItem="nkf-o3-Yil" firstAttribute="top" secondItem="M5b-b2-UZV" secondAttribute="top" type="default" id="c9r-xf-5Ce"/>
+                            <constraint firstAttribute="bottom" secondItem="M5b-b2-UZV" secondAttribute="bottom" constant="27" id="dCk-Gd-z2T"/>
                             <constraint firstAttribute="centerX" secondItem="ebK-Hs-gSH" secondAttribute="centerX" type="user" id="ddN-1d-tHa"/>
+                            <constraint firstAttribute="bottom" secondItem="Yme-V5-Xqg" secondAttribute="bottom" constant="76" id="mOy-4a-vtp"/>
                             <constraint firstItem="UKv-Ov-Tfc" firstAttribute="top" secondItem="ebK-Hs-gSH" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="qh1-Uy-O2s"/>
                             <constraint firstItem="ebK-Hs-gSH" firstAttribute="leading" secondItem="Hda-lT-ca2" secondAttribute="leading" type="default" id="tuL-1x-65g"/>
                             <constraint firstAttribute="centerY" secondItem="Hda-lT-ca2" secondAttribute="centerY" type="user" id="zWT-uN-B5X"/>
@@ -105,6 +124,7 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="cupImage" destination="Hda-lT-ca2" id="yai-96-k8h"/>
+                        <outlet property="extraInformation" destination="Yme-V5-Xqg" id="GzG-Xh-aA5"/>
                         <outlet property="shareByEmailButton" destination="M5b-b2-UZV" id="Rm6-r4-uK1"/>
                         <outlet property="shareFBButton" destination="hdo-Yg-WzG" id="jhY-cm-7K7"/>
                         <outlet property="shareTwitterButton" destination="nkf-o3-Yil" id="gHf-DN-B3Q"/>
@@ -124,6 +144,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TShareTournamentViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="cupImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="extraInformation" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="shareByEmailButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="shareFBButton" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="shareTwitterButton" candidateClass="UIButton"/>

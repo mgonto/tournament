@@ -14,5 +14,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *shareByEmailButton;
 @property (weak, nonatomic) IBOutlet UIButton *shareTwitterButton;
 @property (weak, nonatomic) IBOutlet UIButton *shareFBButton;
+@property (weak, nonatomic) IBOutlet UIButton *extraInformation;
+
+- (IBAction)addExtraInformation:(id)sender;
 
 @end

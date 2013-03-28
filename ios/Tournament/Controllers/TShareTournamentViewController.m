@@ -20,4 +20,8 @@
     self.navigationItem.hidesBackButton = YES;
 }
 
+- (IBAction)addExtraInformation:(id)sender {
+    [self.navigationController pushViewControllerWithIdentifier:@"CTExtraInformation" fromStoryboard:@"CreateTournament" block:nil];
+}
+
 @end
