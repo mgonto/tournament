@@ -10,10 +10,10 @@
 
 @implementation TRemoteStadium
 
-+ (id) stadiumWithName:(NSString *)name zone:(NSString *)zone address:(NSString *)address phone:(NSString *)phone {
++ (id) stadiumWithName:(NSString *)name neighbour:(NSString *)zone address:(NSString *)address phone:(NSString *)phone {
     TRemoteStadium *stadium = [[[self class] alloc] init];
-    stadium.name = name;
-    stadium.zone = zone;
+    stadium.stadiumName = name;
+    stadium.neighborhood = zone;
     stadium.address = address;
     stadium.phone = phone;
     
@@ -26,8 +26,8 @@
     self = [super init];
     if (self) {
         self.identifier = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(identifier))];
-        self.name = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(name))];
-        self.zone = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(zone))];
+        self.stadiumName = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(stadiumName))];
+        self.neighborhood = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(neighborhood))];
         self.address = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(address))];
         self.phone = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(phone))];
     }
@@ -36,8 +36,8 @@
 
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.identifier forKey:NSStringFromSelector(@selector(identifier))];
-    [aCoder encodeObject:self.name forKey:NSStringFromSelector(@selector(name))];
-    [aCoder encodeObject:self.zone forKey:NSStringFromSelector(@selector(zone))];
+    [aCoder encodeObject:self.stadiumName forKey:NSStringFromSelector(@selector(stadiumName))];
+    [aCoder encodeObject:self.neighborhood forKey:NSStringFromSelector(@selector(neighborhood))];
     [aCoder encodeObject:self.address forKey:NSStringFromSelector(@selector(address))];
     [aCoder encodeObject:self.phone forKey:NSStringFromSelector(@selector(phone))];
 }

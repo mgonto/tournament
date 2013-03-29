@@ -31,7 +31,6 @@
 		DF3402E716B76F450061D4E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C716B76F440061D4E8 /* UIKit.framework */; };
 		DF3402E816B76F450061D4E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3402C916B76F440061D4E8 /* Foundation.framework */; };
 		DF3402F016B76F450061D4E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3402EE16B76F450061D4E8 /* InfoPlist.strings */; };
-		DF3402F316B76F450061D4E8 /* TournamentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3402F216B76F450061D4E8 /* TournamentTests.m */; };
 		DF414C0C16DD7B9700184C38 /* back-black.png in Resources */ = {isa = PBXBuildFile; fileRef = DF414C0A16DD7B9700184C38 /* back-black.png */; };
 		DF414C0D16DD7B9700184C38 /* back-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DF414C0B16DD7B9700184C38 /* back-black@2x.png */; };
 		DF414C1116DD7C0E00184C38 /* UIImage+ResizableImages.m in Sources */ = {isa = PBXBuildFile; fileRef = DF414C1016DD7C0E00184C38 /* UIImage+ResizableImages.m */; };
@@ -46,6 +45,7 @@
 		DF73DEAE16D94200009C492D /* TSport.m in Sources */ = {isa = PBXBuildFile; fileRef = DF73DEAD16D94200009C492D /* TSport.m */; };
 		DF73DEB216D94853009C492D /* TSportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF73DEB116D94853009C492D /* TSportCell.m */; };
 		DF73DEB816D94877009C492D /* TPointsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF73DEB716D94877009C492D /* TPointsCell.m */; };
+		DF76B05A1705F3FC0083059B /* TStadiumValidatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DF76B0591705F3FC0083059B /* TStadiumValidatorSpec.m */; };
 		DF7DEC6616D116410092D578 /* TTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7DEC6516D116410092D578 /* TTimelineViewController.m */; };
 		DF7DEC6916D116570092D578 /* TTournamentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7DEC6816D116570092D578 /* TTournamentsViewController.m */; };
 		DF7DEC7416D124710092D578 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7DEC7316D124700092D578 /* MainStoryboard.storyboard */; };
@@ -115,8 +115,6 @@
 		DF3402E516B76F450061D4E8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		DF3402ED16B76F450061D4E8 /* TournamentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TournamentTests-Info.plist"; sourceTree = "<group>"; };
 		DF3402EF16B76F450061D4E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		DF3402F116B76F450061D4E8 /* TournamentTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TournamentTests.h; sourceTree = "<group>"; };
-		DF3402F216B76F450061D4E8 /* TournamentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TournamentTests.m; sourceTree = "<group>"; };
 		DF414C0A16DD7B9700184C38 /* back-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-black.png"; sourceTree = "<group>"; };
 		DF414C0B16DD7B9700184C38 /* back-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-black@2x.png"; sourceTree = "<group>"; };
 		DF414C0F16DD7C0E00184C38 /* UIImage+ResizableImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizableImages.h"; sourceTree = "<group>"; };
@@ -143,6 +141,7 @@
 		DF73DEB116D94853009C492D /* TSportCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSportCell.m; sourceTree = "<group>"; };
 		DF73DEB616D94877009C492D /* TPointsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPointsCell.h; sourceTree = "<group>"; };
 		DF73DEB716D94877009C492D /* TPointsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPointsCell.m; sourceTree = "<group>"; };
+		DF76B0591705F3FC0083059B /* TStadiumValidatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TStadiumValidatorSpec.m; sourceTree = "<group>"; };
 		DF7DEC6416D116410092D578 /* TTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTimelineViewController.h; sourceTree = "<group>"; };
 		DF7DEC6516D116410092D578 /* TTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTimelineViewController.m; sourceTree = "<group>"; };
 		DF7DEC6716D116570092D578 /* TTournamentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTournamentsViewController.h; sourceTree = "<group>"; };
@@ -311,8 +310,7 @@
 		DF3402EB16B76F450061D4E8 /* TournamentTests */ = {
 			isa = PBXGroup;
 			children = (
-				DF3402F116B76F450061D4E8 /* TournamentTests.h */,
-				DF3402F216B76F450061D4E8 /* TournamentTests.m */,
+				DFCCFEB21705EFB0005CAF72 /* Validator */,
 				DF3402EC16B76F450061D4E8 /* Supporting Files */,
 			);
 			path = TournamentTests;
@@ -477,6 +475,14 @@
 				DF7DEC6816D116570092D578 /* TTournamentsViewController.m */,
 			);
 			name = Tournaments;
+			sourceTree = "<group>";
+		};
+		DFCCFEB21705EFB0005CAF72 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				DF76B0591705F3FC0083059B /* TStadiumValidatorSpec.m */,
+			);
+			name = Validator;
 			sourceTree = "<group>";
 		};
 		DFD3542F16D1A3BA00AC0BE2 /* Categories */ = {
@@ -721,7 +727,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF3402F316B76F450061D4E8 /* TournamentTests.m in Sources */,
+				DF76B05A1705F3FC0083059B /* TStadiumValidatorSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

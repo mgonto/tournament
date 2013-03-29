@@ -46,7 +46,7 @@ NSString *const TTiePoints = @"KEY_TIE_POINTS";
         
         _stadiums = [NSMutableArray array];
         [self.stadiums addObject:[TRemoteStadium stadiumWithName:@"Open Cangallo"
-                                                            zone:@"Villa Crespo"
+                                                            neighbour:@"Villa Crespo"
                                                          address:@"Lavalleja 64"
                                                            phone:@"61234612361"]];
     }

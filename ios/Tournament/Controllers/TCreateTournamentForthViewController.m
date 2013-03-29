@@ -110,8 +110,8 @@ typedef NS_ENUM(NSInteger, kSearchScope) {
     }else{
         cell = [self.tableView dequeueReusableCellWithIdentifier:stadiumCell forIndexPath:indexPath];
         TRemoteStadium *stadium = tableView == self.searchDisplayController.searchResultsTableView ? self.filtered[indexPath.row] : self.stadiums[indexPath.row];
-        cell.textLabel.text = stadium.name;
-        cell.detailTextLabel.text = stadium.zone;
+        cell.textLabel.text = stadium.stadiumName;
+        cell.detailTextLabel.text = stadium.neighborhood;
         if ([self.selectedStadiums containsObject:stadium]) {
             cell.accessoryType = UITableViewCellAccessoryCheckmark;
         }else{

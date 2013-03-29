@@ -24,17 +24,17 @@
 + (NSString *) validateStadium:(TRemoteStadium *)stadium {
     NSMutableString *errorMessage = [NSMutableString string];
     
-    if (stadium.name.length == 0) {
+    if (stadium.stadiumName.length == 0) {
         [errorMessage appendString:S(@"ERROR_EMPTY_STADIUM_NAME")];
         [errorMessage appendString:@"\n"];
     }
     
-    if (stadium.name.length < kMinStadiumNameLength || stadium.name.length > kMaxStadiumNameLength) {
+    if (stadium.stadiumName.length < kMinStadiumNameLength || stadium.stadiumName.length > kMaxStadiumNameLength) {
         [errorMessage appendString:S(@"ERROR_LENGTH_STADIUM_NAME")];
         [errorMessage appendString:@"\n"];
     }
     
-    if (stadium.zone.length < kMinStadiumZoneLength || stadium.zone.length > kMaxStadiumZoneLength) {
+    if (stadium.neighborhood.length < kMinStadiumZoneLength || stadium.neighborhood.length > kMaxStadiumZoneLength) {
         [errorMessage appendString:S(@"ERROR_LENGTH_STADIUM_ZONE")];
         [errorMessage appendString:@"\n"];
     }
