@@ -23,6 +23,7 @@
     #import "TTournament.h"
     #import "TCustomNavigationBar.h"
     #import "TTournamentConfigurations.h"
+    #import "TErrorHandler.h"
 
     #import <YRDropdownView/YRDropdownView.h>
 

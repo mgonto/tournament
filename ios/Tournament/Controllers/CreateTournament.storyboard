@@ -225,7 +225,6 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -1326,7 +1325,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="TCreateTournamentPageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TCreateTournamentPageViewController.h"/>
             <relationships>
-                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="next:"/>
                 <relationship kind="outlet" name="cancelButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="nextButton" candidateClass="UIBarButtonItem"/>
@@ -1352,7 +1350,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="TDateSelectionViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TDateSelectionViewController.h"/>
             <relationships>
-                <relationship kind="action" name="back:"/>
                 <relationship kind="action" name="didFinishWithDateSelection:" candidateClass="UIDatePicker"/>
                 <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
@@ -1364,7 +1361,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="TExtraInformationViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TExtraInformationViewController.h"/>
             <relationships>
-                <relationship kind="action" name="back:"/>
                 <relationship kind="outlet" name="extraInformation" candidateClass="UITextView"/>
             </relationships>
         </class>
@@ -1393,7 +1389,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="TStadiumViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TStadiumViewController.h"/>
             <relationships>
-                <relationship kind="action" name="hideKeyboard:"/>
                 <relationship kind="action" name="next:" candidateClass="UITextField"/>
                 <relationship kind="action" name="saveNewStadium:"/>
                 <relationship kind="action" name="startEditing:" candidateClass="UITextField"/>
@@ -1407,8 +1402,6 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
         <class className="TTimeRangeViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TTimeRangeViewController.h"/>
             <relationships>
-                <relationship kind="action" name="back:"/>
-                <relationship kind="action" name="didFinishWithDateSelection:" candidateClass="UIDatePicker"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="timePicker" candidateClass="UIDatePicker"/>
             </relationships>

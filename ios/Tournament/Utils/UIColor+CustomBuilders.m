@@ -1,9 +1,7 @@
 //
 //  UIColor+CustomBuilders.m
-//  Observing
 //
-//  Created by Hernan Zalazar on 12/11/12.
-//  Copyright (c) 2012 UPhoenix. All rights reserved.
+//  Created by Nicolas Purita on 12/11/12.
 //
 
 #import "UIColor+CustomBuilders.h"

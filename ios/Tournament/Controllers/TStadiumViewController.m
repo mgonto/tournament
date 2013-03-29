@@ -7,6 +7,7 @@
 //
 
 #import "TStadiumViewController.h"
+#import "TModelValidator.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface TStadiumViewController () <UIGestureRecognizerDelegate>
@@ -49,7 +50,13 @@
     newStadium.address = self.addressTextField.text;
     newStadium.phone = self.phoneTextField.text;
     
-    self.creationSuccess(newStadium);
+    NSString *errorMessage = [TModelValidator validateStadium:newStadium];
+    if (errorMessage.length == 0) {
+        self.creationSuccess(newStadium);
+    }else{
+        [TErrorHandler showErrorMessage:errorMessage title:S(@"ERROR_STADIUM_CREATION_TITLE") inView:self.view];
+    }
+    
 }
 
 - (IBAction)next:(UITextField *)textfield {

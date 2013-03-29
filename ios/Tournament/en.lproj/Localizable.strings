@@ -38,7 +38,6 @@
 "START_AT" = "Start at";
 "END_AT" = "End at";
 
-
 // Sports
 "SPORT_SOCCER" = "Soccer";
 "SPORT_BASKETBALL" = "Basketball";
@@ -46,6 +45,15 @@
 "KEY_WIN_POINTS" = "Win";
 "KEY_LOSE_POINTS" = "Lose";
 "KEY_TIE_POINTS" = "Tie";
+
+// Validator
+// Stadium
+"ERROR_STADIUM_CREATION_TITLE" = "Please check following fields:";
+"ERROR_EMPTY_STADIUM_NAME" = "•Name mustn't be empty";
+"ERROR_LENGTH_STADIUM_NAME" = "•Name must contains between 5 and 120 characters";
+"ERROR_LENGTH_STADIUM_ZONE" = "•Zone must contains between 5 and 120 characters";
+"ERROR_LENGTH_STADIUM_ADDRESS" = "•Address must contains between 5 and 120 characters";
+"ERROR_LENGTH_STADIUM_PHONE" = "•Phone must contains between 5 and 20 characters";
 
 
 
