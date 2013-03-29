@@ -151,15 +151,20 @@ typedef NS_ENUM(NSInteger, kSearchScope) {
     [self.filtered removeAllObjects]; // First clear the filtered array.
     if (scope == kSearchScopeAll) {
         [self.filtered addObjectsFromArray:[self.stadiums filteredArrayUsingPredicate:
-                                            [NSPredicate predicateWithFormat:@"(SELF.name contains[cd] %@) OR (SELF.zone contains[cd] %@)", searchText, searchText]]];
+                                            [NSPredicate predicateWithFormat:@"(SELF.stadiumName contains[cd] %@) OR (SELF.neighborhood contains[cd] %@)", searchText, searchText]]];
     }else if (scope == kSearchScopeName) {
-        [self.filtered addObjectsFromArray:[self.stadiums filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(SELF.name contains[cd] %@)", searchText]]];
+        [self.filtered addObjectsFromArray:[self.stadiums filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(SELF.stadiumName contains[cd] %@)", searchText]]];
     }else if (scope == kSearchScopeZone) {
-        [self.filtered addObjectsFromArray:[self.stadiums filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(SELF.zone contains[cd] %@)", searchText]]];        
+        [self.filtered addObjectsFromArray:[self.stadiums filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"(SELF.neighborhood contains[cd] %@)", searchText]]];        
     }
 }
 
 #pragma mark - UISearchDisplayDelegate
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchScope:(NSInteger)searchOption {
+    [self filterContentForSearchText:controller.searchBar.text scope:searchOption];
+    return YES;
+}
 
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString {
     [self filterContentForSearchText:searchString scope:controller.searchBar.selectedScopeButtonIndex];
