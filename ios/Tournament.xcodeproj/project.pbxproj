@@ -46,6 +46,7 @@
 		DF73DEB216D94853009C492D /* TSportCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF73DEB116D94853009C492D /* TSportCell.m */; };
 		DF73DEB816D94877009C492D /* TPointsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF73DEB716D94877009C492D /* TPointsCell.m */; };
 		DF76B05A1705F3FC0083059B /* TStadiumValidatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DF76B0591705F3FC0083059B /* TStadiumValidatorSpec.m */; };
+		DF76B05D170665A60083059B /* TTournamentModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = DF76B05C170665A60083059B /* TTournamentModelSpec.m */; };
 		DF7DEC6616D116410092D578 /* TTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7DEC6516D116410092D578 /* TTimelineViewController.m */; };
 		DF7DEC6916D116570092D578 /* TTournamentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7DEC6816D116570092D578 /* TTournamentsViewController.m */; };
 		DF7DEC7416D124710092D578 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF7DEC7316D124700092D578 /* MainStoryboard.storyboard */; };
@@ -142,6 +143,7 @@
 		DF73DEB616D94877009C492D /* TPointsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPointsCell.h; sourceTree = "<group>"; };
 		DF73DEB716D94877009C492D /* TPointsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPointsCell.m; sourceTree = "<group>"; };
 		DF76B0591705F3FC0083059B /* TStadiumValidatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TStadiumValidatorSpec.m; sourceTree = "<group>"; };
+		DF76B05C170665A60083059B /* TTournamentModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTournamentModelSpec.m; sourceTree = "<group>"; };
 		DF7DEC6416D116410092D578 /* TTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTimelineViewController.h; sourceTree = "<group>"; };
 		DF7DEC6516D116410092D578 /* TTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTimelineViewController.m; sourceTree = "<group>"; };
 		DF7DEC6716D116570092D578 /* TTournamentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTournamentsViewController.h; sourceTree = "<group>"; };
@@ -159,8 +161,8 @@
 		DF9B643316D5456600D663A2 /* TSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSchedule.m; sourceTree = "<group>"; };
 		DF9B643516D545D700D663A2 /* TStadium.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TStadium.h; sourceTree = "<group>"; };
 		DF9B643616D545D700D663A2 /* TStadium.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TStadium.m; sourceTree = "<group>"; };
-		DF9B643816D547F500D663A2 /* TTournamentApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTournamentApplication.h; sourceTree = "<group>"; };
-		DF9B643916D547F500D663A2 /* TTournamentApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTournamentApplication.m; sourceTree = "<group>"; };
+		DF9B643816D547F500D663A2 /* TTournamentApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTournamentApplication.h; path = ../Controllers/TTournamentApplication.h; sourceTree = "<group>"; };
+		DF9B643916D547F500D663A2 /* TTournamentApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTournamentApplication.m; path = ../Controllers/TTournamentApplication.m; sourceTree = "<group>"; };
 		DF9B643B16D548AA00D663A2 /* TTournamentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTournamentModel.h; sourceTree = "<group>"; };
 		DF9B643C16D548AA00D663A2 /* TTournamentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTournamentModel.m; sourceTree = "<group>"; };
 		DF9B643E16D7012100D663A2 /* TTournamentUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTournamentUserDefaults.h; sourceTree = "<group>"; };
@@ -311,6 +313,7 @@
 		DF3402EB16B76F450061D4E8 /* TournamentTests */ = {
 			isa = PBXGroup;
 			children = (
+				DF76B05B170665730083059B /* Utils */,
 				DFCCFEB21705EFB0005CAF72 /* Validator */,
 				DF3402EC16B76F450061D4E8 /* Supporting Files */,
 			);
@@ -392,6 +395,14 @@
 			name = Cells;
 			sourceTree = "<group>";
 		};
+		DF76B05B170665730083059B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DF76B05C170665A60083059B /* TTournamentModelSpec.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		DF87992116E280E400804AB8 /* Extra information */ = {
 			isa = PBXGroup;
 			children = (
@@ -441,6 +452,8 @@
 			isa = PBXGroup;
 			children = (
 				DFD3542F16D1A3BA00AC0BE2 /* Categories */,
+				DF9B643816D547F500D663A2 /* TTournamentApplication.h */,
+				DF9B643916D547F500D663A2 /* TTournamentApplication.m */,
 				DF9B643B16D548AA00D663A2 /* TTournamentModel.h */,
 				DF9B643C16D548AA00D663A2 /* TTournamentModel.m */,
 				DF9B643E16D7012100D663A2 /* TTournamentUserDefaults.h */,
@@ -506,8 +519,6 @@
 				DFB4FAD516CD18320014A427 /* TCustomNavigationBar.m */,
 				DFD3543A16D1A5CE00AC0BE2 /* TCustomNavigationBarViewController.h */,
 				DFD3543B16D1A5CE00AC0BE2 /* TCustomNavigationBarViewController.m */,
-				DF9B643816D547F500D663A2 /* TTournamentApplication.h */,
-				DF9B643916D547F500D663A2 /* TTournamentApplication.m */,
 			);
 			name = General;
 			path = Controllers;
@@ -721,6 +732,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF76B05A1705F3FC0083059B /* TStadiumValidatorSpec.m in Sources */,
+				DF76B05D170665A60083059B /* TTournamentModelSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

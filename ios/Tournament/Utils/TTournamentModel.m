@@ -21,6 +21,7 @@
     if (self.currentTournament) {
         DLog(@"Tournament in progress");
     }else{
+        [self clearTournamentInProgress];
         self.currentTournament = [[TTourney alloc] init];
     }
     return self.currentTournament;
