@@ -8,7 +8,7 @@
 
 #import "TCreateTournamentSecondViewController.h"
 #import "TSportsViewController.h"
-#import "TRemoteTournament.h"
+#import "TTourney.h"
 #import "TSportCell.h"
 #import "TPointsCell.h"
 #import "TSport.h"
@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, kStatsSection) {
 
 @interface TCreateTournamentSecondViewController ()
 
-@property (weak, nonatomic) TRemoteTournament *tournament;
+@property (weak, nonatomic) TTourney *tournament;
 
 @end
 
@@ -32,7 +32,7 @@ typedef NS_ENUM(NSInteger, kStatsSection) {
 {
     [super viewDidLoad];
     
-    self.tournament = [[[TTournament application] model] inProgressTournament];
+    self.tournament = [[[TTournamentApplication application] model] inProgressTournament];
 }
 
 - (void)didReceiveMemoryWarning

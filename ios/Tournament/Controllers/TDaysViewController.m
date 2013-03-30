@@ -9,12 +9,12 @@
 #import "TDaysViewController.h"
 #import "TTournamentConfigurations.h"
 #import "TTournamentModel.h"
-#import "TTransientSchedule.h"
-#import "TRemoteTournament.h"
+#import "TSchedule.h"
+#import "TTourney.h"
 
 @interface TDaysViewController ()
 
-@property (weak, nonatomic) TRemoteTournament *tournament;
+@property (weak, nonatomic) TTourney *tournament;
 @property (strong, nonatomic) NSArray *days;
 @property (strong, nonatomic) NSMutableArray *selectedDays;
 
@@ -26,7 +26,7 @@
 {
     [super viewDidLoad];
     
-    TTournament *application = [TTournament application];
+    TTournamentApplication *application = [TTournamentApplication application];
     
     self.tournament = [[application model] inProgressTournament];
     self.days = [NSArray arrayWithArray:[application.configurations.days allKeys]];

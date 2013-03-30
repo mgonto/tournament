@@ -7,21 +7,25 @@
 //
 
 #import "TModelValidator.h"
-#import "TRemoteStadium.h"
+#import "TStadium.h"
+#import "TTourney.h"
+#import "TSchedule.h"
 
 #define kMinStadiumNameLength       5
 #define kMinStadiumZoneLength       5
 #define kMinStadiumAddressLength    5
 #define kMinStadiumPhoneLength      8
+#define kMinTournamentNameLength    5
 
 #define kMaxStadiumNameLength       120
 #define kMaxStadiumZoneLength       120
 #define kMaxStadiumAddressLength    120
 #define kMaxStadiumPhoneLength      20
+#define kMaxTournamentNameLength    120
 
 @implementation TModelValidator
 
-+ (NSString *) validateStadium:(TRemoteStadium *)stadium {
++ (NSString *) validateStadium:(TStadium *)stadium {
     NSMutableString *errorMessage = [NSMutableString string];
     
     if (stadium.stadiumName.length == 0) {
@@ -50,6 +54,36 @@
     }
     
     return errorMessage;
+}
+
+//typedef NS_ENUM(NSInteger, kErrorTournamentCreation) {
+//    kErrorNameInvalid,
+//    kErrorSchedule,
+//    kErrorStadiums
+//};
+
++ (BOOL)validateSchedule:(TSchedule *)schedule {
+    
+    BOOL valid = YES;
+    
+    valid &= schedule.startDate == nil;
+    valid &= schedule.endDate == nil;
+    
+    return YES;
+}
+
++ (kErrorTournamentCreation) validateTournament:(TTourney *)tournament {
+    
+    kErrorTournamentCreation error = kNoErrors;
+    
+    if (tournament.name.length < kMinTournamentNameLength || tournament.name.length > kMaxTournamentNameLength) {
+        error = kErrorNameInvalid;
+    }else if (![self validateSchedule:tournament.schedule]) {
+        error = kErrorSchedule;
+    }
+    
+    
+    return error;
 }
 
 @end

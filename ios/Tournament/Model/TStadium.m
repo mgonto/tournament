@@ -6,12 +6,12 @@
 //
 //
 
-#import "TRemoteStadium.h"
+#import "TStadium.h"
 
-@implementation TRemoteStadium
+@implementation TStadium
 
 + (id) stadiumWithName:(NSString *)name neighbour:(NSString *)zone address:(NSString *)address phone:(NSString *)phone {
-    TRemoteStadium *stadium = [[[self class] alloc] init];
+    TStadium *stadium = [[[self class] alloc] init];
     stadium.stadiumName = name;
     stadium.neighborhood = zone;
     stadium.address = address;

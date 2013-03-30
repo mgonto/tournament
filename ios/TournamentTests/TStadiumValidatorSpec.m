@@ -8,16 +8,16 @@
 
 #import "Kiwi.h"
 #import "TModelValidator.h"
-#import "TRemoteStadium.h"
+#import "TStadium.h"
 
 SPEC_BEGIN(TStadiumValidatorSpec)
 
 describe(@"Stadium_Validator", ^{
     
-    __block TRemoteStadium *stadium;
+    __block TStadium *stadium;
     
     beforeEach(^{
-        stadium = [TRemoteStadium nullMock];
+        stadium = [TStadium nullMock];
     });
     
     describe(NSStringFromSelector(@selector(validateStadium:)), ^{

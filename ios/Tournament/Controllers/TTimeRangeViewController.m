@@ -7,13 +7,13 @@
 //
 
 #import "TTimeRangeViewController.h"
-#import "TRemoteTournament.h"
-#import "TTransientSchedule.h"
+#import "TTourney.h"
+#import "TSchedule.h"
 #import "TTournamentModel.h"
 
 @interface TTimeRangeViewController ()
 
-@property (weak, nonatomic) TRemoteTournament *tournament;
+@property (weak, nonatomic) TTourney *tournament;
 @property (strong, nonatomic) NSIndexPath *selectedCell;
 @property (strong, nonatomic) NSDateFormatter *formatter;
 @property (strong, nonatomic) NSDate *startTime;
@@ -32,7 +32,7 @@
     
     self.selectedCell = [NSIndexPath indexPathForRow:0 inSection:0];
     
-    self.tournament = [[[TTournament application] model] inProgressTournament];
+    self.tournament = [[[TTournamentApplication application] model] inProgressTournament];
     
     self.formatter = [[NSDateFormatter alloc] init];
     [self.formatter setDateFormat:@"HH:mm"];

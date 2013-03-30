@@ -7,15 +7,15 @@
 //
 
 #import "TCreateTournamentThirdViewController.h"
-#import "TRemoteTournament.h"
+#import "TTourney.h"
 #import "TTournamentModel.h"
-#import "TTransientSchedule.h"
+#import "TSchedule.h"
 #import "TTournamentConfigurations.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface TCreateTournamentThirdViewController ()
 
-@property (weak, nonatomic) TRemoteTournament *tournament;
+@property (weak, nonatomic) TTourney *tournament;
 @property (strong, nonatomic) NSDateFormatter *formmatter;
 
 @end
@@ -31,7 +31,7 @@
         square.layer.borderWidth = 1.0;
     }
     
-    self.tournament = [[[TTournament application] model] inProgressTournament];
+    self.tournament = [[[TTournamentApplication application] model] inProgressTournament];
 
     [self reloadInputs];
 }
@@ -55,7 +55,7 @@
                                                        dateStyle:NSDateFormatterMediumStyle
                                                        timeStyle:NSDateFormatterNoStyle];
     
-    self.periodicity.text = [[[TTournament application] configurations] periodicity][self.tournament.schedule.periodicity];
+    self.periodicity.text = [[[TTournamentApplication application] configurations] periodicity][self.tournament.schedule.periodicity];
     
     [self trimDayOfMatchesWithDates:self.tournament.schedule.daysOfMatch];
     self.timeRange.text = [NSString stringWithFormat:@"%@ - %@", self.tournament.schedule.timeStartRange, self.tournament.schedule.timeEndRange];
@@ -69,7 +69,7 @@
         NSString *trimDays = @"";
         
         for (NSString *day in days) {
-            NSString *shortDay = [[[[TTournament application] configurations] days] objectForKey:day];
+            NSString *shortDay = [[[[TTournamentApplication application] configurations] days] objectForKey:day];
             trimDays = [trimDays stringByAppendingFormat:@"%@,", shortDay];
         }
         

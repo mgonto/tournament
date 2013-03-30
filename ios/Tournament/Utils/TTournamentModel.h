@@ -8,12 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@class TRemoteTournament;
+@class TTourney;
 
 @interface TTournamentModel : NSObject
 
-- (TRemoteTournament *) createNewTournament;
-- (TRemoteTournament *) inProgressTournament;
+- (TTourney *) createNewTournament;
+- (TTourney *) inProgressTournament;
 - (void) finishCurrentTournament;
 - (void) clearTournamentInProgress;
 

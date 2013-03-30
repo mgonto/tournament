@@ -6,11 +6,11 @@
 //
 //
 
-#import "TTransientSchedule.h"
+#import "TSchedule.h"
 
 #define daySeconds 60 * 60 * 24
 
-@implementation TTransientSchedule
+@implementation TSchedule
 
 #pragma mark - NSCoding Protocol
 

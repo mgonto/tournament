@@ -9,7 +9,7 @@
 #import "TCreateTournamentForthViewController.h"
 #import "TTournamentConfigurations.h"
 #import "TStadiumViewController.h"
-#import "TRemoteStadium.h"
+#import "TStadium.h"
 
 typedef NS_ENUM(NSInteger, kSearchScope) {
     kSearchScopeAll,
@@ -31,7 +31,7 @@ typedef NS_ENUM(NSInteger, kSearchScope) {
 {
     [super viewDidLoad];
     
-    self.stadiums = [[[TTournament application] configurations] stadiums];
+    self.stadiums = [[[TTournamentApplication application] configurations] stadiums];
     self.filtered = [NSMutableArray array];
     self.selectedStadiums = [NSMutableArray array];
     
@@ -63,7 +63,7 @@ typedef NS_ENUM(NSInteger, kSearchScope) {
     if ([segue.identifier isEqualToString:@"NewStadium"]) {
         TStadiumViewController *stadiumViewController = segue.destinationViewController;
         __weak TCreateTournamentForthViewController *weakSelf = self;
-        stadiumViewController.creationSuccess = ^(TRemoteStadium *newStadium){
+        stadiumViewController.creationSuccess = ^(TStadium *newStadium){
             __strong TCreateTournamentForthViewController *strongSelf = weakSelf;
             if (newStadium) {
                 [strongSelf.stadiums addObject:newStadium];
@@ -109,7 +109,7 @@ typedef NS_ENUM(NSInteger, kSearchScope) {
         cell = [self.tableView dequeueReusableCellWithIdentifier:addStadiumCell forIndexPath:indexPath];
     }else{
         cell = [self.tableView dequeueReusableCellWithIdentifier:stadiumCell forIndexPath:indexPath];
-        TRemoteStadium *stadium = tableView == self.searchDisplayController.searchResultsTableView ? self.filtered[indexPath.row] : self.stadiums[indexPath.row];
+        TStadium *stadium = tableView == self.searchDisplayController.searchResultsTableView ? self.filtered[indexPath.row] : self.stadiums[indexPath.row];
         cell.textLabel.text = stadium.stadiumName;
         cell.detailTextLabel.text = stadium.neighborhood;
         if ([self.selectedStadiums containsObject:stadium]) {
@@ -128,7 +128,7 @@ typedef NS_ENUM(NSInteger, kSearchScope) {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     if (indexPath.row != [self tableView:tableView numberOfRowsInSection:0] - 1) {
         UITableViewCell *cell = [self tableView:tableView cellForRowAtIndexPath:indexPath];
-        TRemoteStadium *stadium = (tableView == self.searchDisplayController.searchResultsTableView ? self.filtered[indexPath.row] : self.stadiums[indexPath.row]);
+        TStadium *stadium = (tableView == self.searchDisplayController.searchResultsTableView ? self.filtered[indexPath.row] : self.stadiums[indexPath.row]);
         if (cell.accessoryType == UITableViewCellAccessoryCheckmark) {
             cell.accessoryType = UITableViewCellAccessoryNone;
             [self.selectedStadiums removeObject:stadium];

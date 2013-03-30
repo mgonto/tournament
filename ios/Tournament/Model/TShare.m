@@ -6,8 +6,8 @@
 //
 //
 
-#import "TRemoteShare.h"
+#import "TShare.h"
 
-@implementation TRemoteShare
+@implementation TShare
 
 @end

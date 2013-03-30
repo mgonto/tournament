@@ -7,26 +7,26 @@
 //
 
 #import "TTournamentModel.h"
-#import "TRemoteTournament.h"
+#import "TTourney.h"
 
 @interface TTournamentModel ()
 
-@property (strong, nonatomic) TRemoteTournament *currentTournament;
+@property (strong, nonatomic) TTourney *currentTournament;
 
 @end
 
 @implementation TTournamentModel
 
-- (TRemoteTournament *) createNewTournament {
+- (TTourney *) createNewTournament {
     if (self.currentTournament) {
         DLog(@"Tournament in progress");
     }else{
-        self.currentTournament = [[TRemoteTournament alloc] init];
+        self.currentTournament = [[TTourney alloc] init];
     }
     return self.currentTournament;
 }
 
-- (TRemoteTournament *) inProgressTournament {
+- (TTourney *) inProgressTournament {
     return self.currentTournament;
 }
 

@@ -9,13 +9,13 @@
 #import "TPeriodicityViewController.h"
 #import "TTournamentConfigurations.h"
 #import "TTournamentModel.h"
-#import "TTransientSchedule.h"
-#import "TRemoteTournament.h"
+#import "TSchedule.h"
+#import "TTourney.h"
 
 @interface TPeriodicityViewController ()
 
 @property (strong, nonatomic) NSArray *data;
-@property (weak, nonatomic) TRemoteTournament *tournament;
+@property (weak, nonatomic) TTourney *tournament;
 
 @end
 
@@ -25,8 +25,8 @@
 {
     [super viewDidLoad];
     
-    self.data = [NSArray arrayWithArray:[[[TTournament application] configurations] periodicity]];
-    self.tournament = [[[TTournament application] model] inProgressTournament];
+    self.data = [NSArray arrayWithArray:[[[TTournamentApplication application] configurations] periodicity]];
+    self.tournament = [[[TTournamentApplication application] model] inProgressTournament];
     
     self.navigationItem.leftBarButtonItem = [self setCustomBackButton];
 }

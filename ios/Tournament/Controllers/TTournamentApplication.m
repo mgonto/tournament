@@ -6,12 +6,12 @@
 //
 //
 
-#import "TTournament.h"
+#import "TTournamentApplication.h"
 #import "TTournamentModel.h"
 #import "TTournamentUserDefaults.h"
 #import "TTournamentConfigurations.h"
 
-@interface TTournament ()
+@interface TTournamentApplication ()
 
 @property (strong, nonatomic) TTournamentModel *model;
 @property (strong, nonatomic) TTournamentUserDefaults *userDefaults;
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation TTournament
+@implementation TTournamentApplication
 
 - (id)init {
     self = [super init];
@@ -31,11 +31,11 @@
     return self;
 }
 
-+ (TTournament *)application {
-    static TTournament *application = nil;
++ (TTournamentApplication *)application {
+    static TTournamentApplication *application = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        application = [[TTournament alloc] init];
+        application = [[TTournamentApplication alloc] init];
     });
     return application;
 }

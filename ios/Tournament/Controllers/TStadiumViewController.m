@@ -44,7 +44,7 @@
 }
 
 - (IBAction)saveNewStadium:(id)sender {
-    TRemoteStadium *newStadium = [[TRemoteStadium alloc] init];
+    TStadium *newStadium = [[TStadium alloc] init];
     newStadium.stadiumName = self.nameTextField.text;
     newStadium.neighborhood = self.zoneTextField.text;
     newStadium.address = self.addressTextField.text;

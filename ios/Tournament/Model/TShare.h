@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TRemoteShare : NSObject
+@interface TShare : NSObject
 
 @property (assign, nonatomic) BOOL shareOnTwitter;
 @property (assign, nonatomic) BOOL shareOnFacebook;

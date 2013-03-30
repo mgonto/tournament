@@ -7,14 +7,14 @@
 //
 
 #import "TCreateTournamentFirstViewController.h"
-#import "TRemoteTournament.h"
+#import "TTourney.h"
 #import "TTournamentModel.h"
 
 #import <QuartzCore/QuartzCore.h>
 
 @interface TCreateTournamentFirstViewController () <UIGestureRecognizerDelegate>
 
-@property (weak, nonatomic) TRemoteTournament *tournament;
+@property (weak, nonatomic) TTourney *tournament;
 @property (weak, nonatomic) UITextField *active;
 @property (strong, nonatomic) UITapGestureRecognizer *gestureRecognizer;
 
@@ -36,7 +36,7 @@
         squares.layer.borderWidth = 1.0;
     }
     
-    self.tournament = [[[TTournament application] model] inProgressTournament];
+    self.tournament = [[[TTournamentApplication application] model] inProgressTournament];
     
     self.tournamentName.text = self.tournament.name;
 
@@ -46,14 +46,14 @@
     if (self.tournament.matchPrice > 0) {
         self.matchPrice.text = [NSString stringWithFormat:@"%.2f", self.tournament.matchPrice];
     }
-    self.typeOfTournament.selectedSegmentIndex = self.tournament.type;
+    self.typeOfTournament.selectedSegmentIndex = self.tournament.privacy;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     self.tournament.name = self.tournamentName.text;
     self.tournament.inscriptionCost = [self.inscriptionCost.text floatValue];
     self.tournament.matchPrice = [self.matchPrice.text floatValue];
-    self.tournament.type = self.typeOfTournament.selectedSegmentIndex;
+    self.tournament.privacy = self.typeOfTournament.selectedSegmentIndex;
 }
 
 - (void)didReceiveMemoryWarning

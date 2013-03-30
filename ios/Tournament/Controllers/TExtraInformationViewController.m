@@ -7,13 +7,13 @@
 //
 
 #import "TExtraInformationViewController.h"
-#import "TRemoteTournament.h"
+#import "TTourney.h"
 #import "TTournamentModel.h"
 #import <QuartzCore/QuartzCore.h>
 
 @interface TExtraInformationViewController ()
 
-@property (weak, nonatomic) TRemoteTournament *tournament;
+@property (weak, nonatomic) TTourney *tournament;
 
 @end
 
@@ -23,7 +23,7 @@
 {
     [super viewDidLoad];
 
-    self.tournament = [[[TTournament application] model] inProgressTournament];
+    self.tournament = [[[TTournamentApplication application] model] inProgressTournament];
     
     self.extraInformation.layer.borderColor = [UIColor blackColor].CGColor;
     self.extraInformation.layer.borderWidth = 1.0;

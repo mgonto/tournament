@@ -20,7 +20,7 @@
     #import "UIViewController+CustomNavigation.h"
     #import "UIViewController+BlockActioner.h"
 
-    #import "TTournament.h"
+    #import "TTournamentApplication.h"
     #import "TCustomNavigationBar.h"
     #import "TTournamentConfigurations.h"
     #import "TErrorHandler.h"

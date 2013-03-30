@@ -23,7 +23,7 @@
     
     self.navigationItem.leftBarButtonItem = [self setCustomBackButton];
     
-    self.sports = [[[TTournament application] configurations] sports];
+    self.sports = [[[TTournamentApplication application] configurations] sports];
 }
 
 - (void)didReceiveMemoryWarning

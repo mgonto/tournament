@@ -6,11 +6,11 @@
 //
 //
 
-#import "TRemoteTournament.h"
+#import "TTourney.h"
 #import "TSport.h"
-#import "TTransientSchedule.h"
+#import "TSchedule.h"
 
-@implementation TRemoteTournament
+@implementation TTourney
 
 #pragma mark - NSCoding Protocol
 
@@ -18,7 +18,7 @@
     self = [super init];
     if (self) {
         _sport = [TSport initSportWith:kSoccer name:S(@"SPORT_SOCCER") availablePoints:@{TWinPoints : @(3), TTiePoints : @(1) , TLosePoints : @(0)}];
-        _schedule = [[TTransientSchedule alloc] init];
+        _schedule = [[TSchedule alloc] init];
     }
     return self;
 }
@@ -28,7 +28,7 @@
     if (self) {
         self.identifier = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(identifier))];
         self.name = [aDecoder decodeObjectForKey:NSStringFromSelector(@selector(name))];
-        self.type = [aDecoder decodeIntegerForKey:NSStringFromSelector(@selector(type))];
+        self.privacy = [aDecoder decodeIntegerForKey:NSStringFromSelector(@selector(privacy))];
         self.inscriptionCost = [aDecoder decodeFloatForKey:NSStringFromSelector(@selector(inscriptionCost))];
         self.matchPrice = [aDecoder decodeFloatForKey:NSStringFromSelector(@selector(matchPrice))];
         
@@ -47,7 +47,7 @@
 - (void)encodeWithCoder:(NSCoder *)aCoder {
     [aCoder encodeObject:self.identifier forKey:NSStringFromSelector(@selector(identifier))];
     [aCoder encodeObject:self.name forKey:NSStringFromSelector(@selector(name))];
-    [aCoder encodeInteger:self.type forKey:NSStringFromSelector(@selector(type))];
+    [aCoder encodeInteger:self.privacy forKey:NSStringFromSelector(@selector(privacy))];
     [aCoder encodeFloat:self.inscriptionCost forKey:NSStringFromSelector(@selector(inscriptionCost))];
     [aCoder encodeFloat:self.matchPrice forKey:NSStringFromSelector(@selector(matchPrice))];
     

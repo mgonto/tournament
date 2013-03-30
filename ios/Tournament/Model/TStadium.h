@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TRemoteStadium : NSObject <NSCoding>
+@interface TStadium : NSObject <NSCoding>
 
 @property (strong, nonatomic) NSString *identifier;
 @property (strong, nonatomic) NSString *stadiumName;

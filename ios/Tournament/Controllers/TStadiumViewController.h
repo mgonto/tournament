@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TRemoteStadium.h"
+#import "TStadium.h"
 
 @interface TStadiumViewController : UITableViewController
 
-@property (copy, nonatomic) void(^creationSuccess)(TRemoteStadium *newStadium);
+@property (copy, nonatomic) void(^creationSuccess)(TStadium *newStadium);
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *zoneTextField;

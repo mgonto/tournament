@@ -8,22 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
-@class TTransientSchedule;
-@class TRemoteStadium;
+@class TSchedule;
+@class TStadium;
 @class TSport;
 
-@interface TRemoteTournament : NSObject <NSCoding>
+@interface TTourney : NSObject <NSCoding>
 
 @property (strong, nonatomic) NSString *identifier;
 @property (strong, nonatomic) NSString *name;
-@property (assign, nonatomic) kTournamentType type;
+@property (assign, nonatomic) kTournamentPrivacy privacy;
 @property (assign, nonatomic) float inscriptionCost;
 @property (assign, nonatomic) float matchPrice;
 
 @property (strong, nonatomic) TSport *sport;
-@property (assign, nonatomic) ktournamentMode mode;
+@property (assign, nonatomic) kTournamentMode mode;
 
-@property (strong, nonatomic) TTransientSchedule *schedule;
+@property (strong, nonatomic) TSchedule *schedule;
 
 @property (strong, nonatomic) NSMutableArray *stadiums;
 

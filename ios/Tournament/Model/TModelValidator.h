@@ -8,10 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
-@class TRemoteStadium;
+typedef NS_ENUM(NSInteger, kErrorTournamentCreation) {
+    kNoErrors,
+    kErrorNameInvalid,
+    kErrorSchedule,
+    kErrorStadiums
+};
+
+@class TStadium;
+@class TTourney;
 
 @interface TModelValidator : NSObject
 
-+ (NSString *) validateStadium:(TRemoteStadium *)stadium;
++ (NSString *) validateStadium:(TStadium *)stadium;
++ (kErrorTournamentCreation) validateTournament:(TTourney *)tournament;
 
 @end

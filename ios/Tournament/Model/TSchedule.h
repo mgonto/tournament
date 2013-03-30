@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger, kPeriodicity) {
     kNone
 };
 
-@interface TTransientSchedule : NSObject <NSCoding>
+@interface TSchedule : NSObject <NSCoding>
 
 @property (strong, nonatomic) NSDate *startDate;
 @property (strong, nonatomic) NSDate *endDate;

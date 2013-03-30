@@ -12,12 +12,12 @@ extern NSString *const TWinPoints;
 extern NSString *const TLosePoints;
 extern NSString *const TTiePoints;
 
-typedef NS_ENUM(NSInteger, kTournamentType) {
+typedef NS_ENUM(NSInteger, kTournamentPrivacy) {
     kPublic,
     kPrivate
 };
 
-typedef NS_ENUM(NSInteger, ktournamentMode) {
+typedef NS_ENUM(NSInteger, kTournamentMode) {
     kHome,
     kHomeAndAway
 };
