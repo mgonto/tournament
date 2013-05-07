@@ -7,6 +7,7 @@
 //
 
 #import "TCustomNavigationBarViewController.h"
+#import "TTournamentModel.h"
 
 @interface TCustomNavigationBarViewController ()
 
@@ -38,10 +39,25 @@
 }
 
 - (void)didSelectNewTournament:(UIButton *)button {
+    [[[TTournament application] model] createNewTournament];
+    
     UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"CreateTournament" bundle:nil];
     UIViewController *viewController = [storyboard instantiateInitialViewController];
-    viewController.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:viewController animated:YES];
+    [self.navigationController presentViewController:viewController animated:YES completion:nil];
 }
+
+#pragma mark - Unwind Segues
+
+- (IBAction)cancelTournamentCreation:(UIStoryboardSegue *)segue {
+    [[[TTournament application] model] clearTournamentInProgress];
+    
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)finishedTournamentCreation:(UIStoryboardSegue *)segue {
+    //TODO
+    [[[TTournament application] model] finishCurrentTournament];
+}
+
 
 @end

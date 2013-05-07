@@ -29,7 +29,7 @@
     self = [super initWithCoder:aDecoder];
     if (self) {
         
-        self.barStyle = UIBarStyleBlackOpaque;
+        self.tintColor = kCustomNavigationColor;
         
         _inbox = [[UIButton alloc] initWithFrame:CGRectMake(20, 15, kButtonWidth, kButtonHeight)];
         _inbox.backgroundColor = [UIColor redColor];
@@ -46,7 +46,6 @@
         _notificationsBadgeView.badgePositionAdjustment = CGPointMake(0, 0);
         
         _createButton = [[UIButton alloc] initWithFrame:CGRectMake(RectLastXPoint(self.notifications) + 50, RectY(self.inbox), 150, kButtonHeight)];
-        _createButton.backgroundColor = [UIColor blueColor];
         [_createButton addTarget:self action:@selector(createNewTournament:) forControlEvents:UIControlEventTouchUpInside];
         [_createButton setTitle:S(@"New Tournament") forState:UIControlStateNormal];
         

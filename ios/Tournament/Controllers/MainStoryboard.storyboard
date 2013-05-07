@@ -179,6 +179,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Ao-je-Yp6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.13704357185026667" green="0.70253057065217384" blue="0.16006603843827882" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -198,6 +199,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VLs-Hr-Fxb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.13704357189999999" green="0.70253057070000002" blue="0.1600660384" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

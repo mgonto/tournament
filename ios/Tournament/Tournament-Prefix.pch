@@ -15,10 +15,13 @@
     #import "UIStoryboard+ViewControllerInstantiate.h"
     #import "UIViewController+MultipleStoryboardNavigation.h"
     #import "UINavigationController+MultipleStoryboardNavigation.h"
+    #import "UIColor+CustomBuilders.h"
 
+    #import "TTournament.h"
     #import "TCustomNavigationBar.h"
+    #import "TTournamentConfigurations.h"
 
-    #define S(x)                    NSLocalizedString(x, nil)
+    #define S(x)                   NSLocalizedString(x, nil)
 
     #define RectX(view)            view.frame.origin.x
     #define RectY(view)            view.frame.origin.y

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define kCustomNavigationColor      [UIColor colorWithRGBValuesForRed:35 green:179 blue:41]
+
 @protocol TCustomNavigationBarDelegate <NSObject>
 
 - (void) didSelectInbox:(UIButton *)button;
